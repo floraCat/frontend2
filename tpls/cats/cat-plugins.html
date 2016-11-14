@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <title>插件</title>
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/page-cat.css" />
+    <script src="../../js/rconfig.js"></script>
+    <script src="../../js/require.js" data-main="../../js/app/cat-plugins.js"></script>
+</head>
+<body data-render="head-foot">
+
+
+
+<div class="p-container p-plugins">
+
+
+    <!--插件导航-->
+	<div class="p-tabs" data-rs="rs-nav"></div>
+	<script data-tpl="tpl-nav" type="text/x-jsrender">
+		{{for _nav_}}
+	    <li>{{:_zh_}}</li>
+	    {{/for}}
+	</script>
+
+    <!--=====jsRender渲染======-->
+    <div class="p-cats-wraper" data-rs="rs-cat"></div>
+    <script data-tpl="tpl-cat" type="text/x-jsrender">	
+    	<ul class="p-cats" data-nav="show" data-link="../lists/list-plugins.html">
+    		{{for _cat_._show_}}
+            <li data-trans="{{:_title_}}">
+                <a class="img"><img src="../../images/3.jpg" alt="" /></a>
+                <h4><a class="A">{{:_zh_}}</a></h4>
+            </li>
+            {{/for}}
+        </ul>
+    	<ul class="p-cats" data-nav="function" data-link="../lists/list-plugins.html">
+    		{{for _cat_._function_}}
+            <li data-trans="{{:_title_}}">
+                <a class="img"><img src="../../images/3.jpg" alt="" /></a>
+                <h4><a class="A">{{:_zh_}}</a></h4>
+            </li>
+            {{/for}}
+        </ul>
+        <ul class="p-cats" data-nav="layout" data-link="../lists/list-plugins.html">
+            {{for _cat_._layout_}}
+            <li data-trans="{{:_title_}}">
+                <a class="img"><img src="../../images/3.jpg" alt="" /></a>
+                <h4><a class="A">{{:_zh_}}</a></h4>
+            </li>
+            {{/for}}
+        </ul>
+        <ul class="p-cats" data-nav="compat" data-link="../lists/list-plugins.html">
+            {{for _cat_._compat_}}
+            <li data-trans="{{:_title_}}">
+                <a class="img"><img src="../../images/3.jpg" alt="" /></a>
+                <h4><a class="A">{{:_zh_}}</a></h4>
+            </li>
+            {{/for}}
+        </ul>
+        <ul class="p-cats" data-nav="other" data-link="../lists/list-plugins.html">
+            {{for _cat_._other_}}
+            <li data-trans="{{:_title_}}">
+                <a class="img"><img src="../../images/3.jpg" alt="" /></a>
+                <h4><a class="A">{{:_zh_}}</a></h4>
+            </li>
+            {{/for}}
+        </ul>
+    </script>
+    <!--=====/jsRender渲染======-->
+
+</div><!--/p-container-->
+
+
+
+</body>
+</html>

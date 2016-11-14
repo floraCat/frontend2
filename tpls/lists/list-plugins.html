@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8">
+	<title>插件</title>
+	<link rel="stylesheet" href="../../css/common.css" />
+	<link rel="stylesheet" href="../../css/page-list.css" />
+	<script src="../../js/rconfig.js"></script>
+	<script src="../../js/require.js" data-main="../../js/app/list-default.js"></script>
+</head>
+<body data-render="head-foot">
+
+
+
+<div class="p-container">
+
+
+	<div class="g-note">
+		<p style="width:1200px; margin:0 auto; text-align: left;">
+			<span>点击图片进入详情页 / </span>
+			<span>快捷键说明 </span>
+			<span class="f"> -></span>
+			<span><em>效果展示</em>：模块的前端展示效果</span>
+			<span class="c"> | </span>
+			<span><em>源码复制</em>：把模板的主体源码复制到剪切板</span>
+			<span class="c"> | </span>
+			<span><em>自定义设置</em>：提供源码的修改</span>
+		</p>
+	</div>
+
+
+	<!--=====jsRender渲染======-->
+	<div class="p-list" data-rs="rs-list" data-link="../articles/articles-plugins.html"></div>
+	<script data-tpl="tpl-list" type="text/x-jsrender">
+		{{for _searchKey_}}
+		<li data-trans="{{:_title_}}">
+			<a class="a img"><img src="../../images/sketch/plugins/{{:~root.nav}}/{{:_title_}}_default.png"></a>
+			<h4>{{:_title_}} / {{:_zh_}}</h4>
+		</li>
+		{{/for}}
+	</script>
+	<!--=====/jsRender渲染======-->
+
+
+	<div class="g-mask"></div><!--覆盖层-->
+	<div class="g-pop-copy">已复制到剪切板！</div>
+
+
+</div><!--/p-container-->
+
+
+
+
+</body>
+</html>

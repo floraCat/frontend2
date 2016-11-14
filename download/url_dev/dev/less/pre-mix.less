@@ -1,0 +1,50 @@
+
+/*常用样式*/
+
+	.fl(){ float:left;}
+	.fr(){ float:right;}
+	.re(){ position:relative;}
+	.ab(){ position:absolute;}
+	.fix(){ postion:fixed;}
+	.L0(){ left:0;}
+	.R0(){ right:0;}
+	.T0(){ top:0;}
+	.B0(){ bottom:0;}
+
+	.e-(){ display:block; overflow:hidden; white-spacing:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis;} /*文本超出省略号*/
+
+
+
+/*css3兼容*/
+
+	.boxS(){
+		        box-sizing:border-box;
+		   -moz-box-sizing:border-box;
+		-webkit-box-sizing:border-box;
+	}
+
+
+	.yj(@radius:5px){
+		        border-radius:@radius;
+		   -moz-border-radius:@radius;
+		-webkit-border-radius:@radius;
+	}
+
+
+	.opa(@opa:.8){
+		@opaPercentage:@opa*100;
+		opacity:@opa;
+		filter: ~"progid:DXImageTransform.Microsoft.Alpha(opacity=(@{opaPercentage}))"; /*兼容ie6~ie8*/
+	}
+
+
+	.sd(@sd){ 
+		    box-shadow:@sd;  
+	   -moz-box-shadow:@sd; 
+	 -khtml-box-shadow:@sd; 
+	-webkit-box-shadow:@sd; 
+	}
+
+
+
+

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_list_>
+	<_button2_>
+		<_item_><_title_>button2_01</_title_></_item_>
+		<_item_><_title_>button2_02</_title_></_item_>
+		<_item_><_title_>button2_03</_title_></_item_>
+		<_item_><_title_>button2_04</_title_></_item_>
+	</_button2_>
+	<_carousel_>
+		<_item_><_title_>carousel_01</_title_></_item_>
+	</_carousel_>
+	<_collapse_>
+		<_item_><_title_>collapse_01</_title_></_item_>
+		<_item_><_title_>collapse_02</_title_></_item_>
+	</_collapse_>
+	<_modal_>
+		<_item_><_title_>modal_01</_title_></_item_>
+		<_item_><_title_>modal_02</_title_></_item_>
+		<_item_><_title_>modal_03</_title_></_item_>
+		<_item_><_title_>modal_04</_title_></_item_>
+		<_item_><_title_>modal_05</_title_></_item_>
+	</_modal_>
+	<_popover_>
+		<_item_><_title_>popover_01</_title_></_item_>
+		<_item_><_title_>popover_02</_title_></_item_>
+		<_item_><_title_>popover_03</_title_></_item_>
+		<_item_><_title_>popover_04</_title_></_item_>
+		<_item_><_title_>popover_05</_title_></_item_>
+	</_popover_>
+	<_scrollspy_>
+		<_item_><_title_>scrollspy_01</_title_></_item_>
+	</_scrollspy_>
+	<_tabs_>
+		<_item_><_title_>tabs_01</_title_></_item_>
+		<_item_><_title_>tabs_02</_title_></_item_>
+		<_item_><_title_>tabs_03</_title_></_item_>
+	</_tabs_>
+	<_tooltip_>
+		<_item_><_title_>tooltip_01</_title_></_item_>
+		<_item_><_title_>tooltip_02</_title_></_item_>
+		<_item_><_title_>tooltip_03</_title_></_item_>
+		<_item_><_title_>tooltip_04</_title_></_item_>
+	</_tooltip_>
+</_list_>

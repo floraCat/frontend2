@@ -1,0 +1,500 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8">
+	<title>前端规范文档</title>
+	<link rel="stylesheet" href="../../css/common.css" />
+	<link rel="stylesheet" href="../../css/static-standard.css" />
+	<script src="../../js/rconfig.js"></script>
+	<script src="../../js/require.js" data-main="../../js/app/static-standard.js"></script>
+</head>
+<body data-render="head-foot">
+
+
+
+<h1 class="mainTtl">网站前端规范<a class="switch close">全部展开</a></h1>
+
+<div class="main">
+
+	<!--@左边导航-->
+	<div class="mLeft">
+		<ol>
+			<a href="#rule">基本规范</a>
+			<a href="#html">HTML规范</a>
+			<a href="#css">CSS规范</a>
+			<a href="#js">JAVASCRIPT规范</a>
+		</ol>
+		<ul>
+			<h6>快捷入口：</h6>
+			<a target="_blank" href="standard-html-frame.html">html基本结构</a>
+			<a target="_blank" href="standard-html-ASCII.html">html实体名对照表</a>
+			<a target="_blank" href="standard-html-naming.html">html相关命名参考</a>
+			<br />
+			<a target="_blank" href="standard-css-reset.html">reset.css参考设置</a>
+			<a target="_blank" href="standard-css-attr.html">css属性声明顺序</a>
+			<a target="_blank" href="standard-css-hack.html">CSS Hack说明</a>
+			<a target="_blank" href="standard-css-naming.html">css相关命名参考</a>
+			<br />
+			<a target="_blank" href="standard-js-naming.html">js相关命名规范</a>
+			<br />
+			<a target="_blank" href="standard-css-colors.html">216web安全色</a>
+			<a target="_blank" href="standard-html-ARIA.html">ARIA无障碍网页应用属性</a>
+			<a target="_blank" href="standard-js-keycode.html">键盘按钮keycode</a>
+		</ul>
+	</div><!--/mLeft-->
+
+
+	<!--@右边正文-->
+	<div class="mRight">
+
+		<!--基本规范-->
+		<a name="rule"></a>
+		<div class="section rule" style="padding-top: 15px;">
+			<a class="key0 close2" style="top: -10px;">'基本规范'<span>全部展开</span></a>
+			<ol>
+				<a class="key" href="javascript:;">规范目的</a>
+				<div class="unit">
+					<ul class="unit2">
+						<p>为提高团队协作效率, 便于后台人员添加功能及前端后期优化维护,前端开发人员必须按本文档规范进行前端页面的开发；
+		本文档如有不对或者不合理的地方请及时提出, 经讨论决定后方可更改。</p>
+					</ul>
+				</div>
+			</ol>
+
+			<ol>
+				<a class="key" href="javascript:;">基本准则</a>
+				<div class="unit">
+					<ul class="unit2">
+						<li>符合web标准；</li>
+						<li>结构/表现/行为 分离；</li>
+						<li>语义化html；</li>
+						<li>代码书写简洁明了有序；</li>
+						<li>测试需兼容Firefox,Chrome,Opera,IE(ie8及以上版本)浏览器;</li>
+						<li>尽可能减小服务器负载, 保证最快的解析速度。</li>
+					</ul>
+				</div>
+			</ol>
+
+			<ol>
+				<a class="key" href="javascript:;">文件命名原则</a>
+				<div class="unit">
+					<ul class="unit2">
+						<li>命名优先考虑对应英文，可使用常规缩写形式，如英文太生僻或复杂再考虑拼音</li>
+						<li>命名尽可能使得你自己和工作组的每一个成员能够理解每一个文件的意义；</li>
+						<li>同一类的文件使用一样的前缀，使得同类文件都能排列在一起，如：
+						<xmp>shopping                //商城首页	
+shopping-cart          //购物车
+shopping-order        //订购清单</xmp></li>
+					</ul>
+				</div>
+			</ol>
+
+			<ol>
+				<a class="key" href="javascript:;">图片规范</a>
+				<div class="unit">
+					<a class="key2" href="javascript:;">案例图片</a>
+					<ul class="unit2">
+						<li>案例图片指前端页面用img元素调用的图片，一般为后台可配置的图片</li>
+						<li>存放路径：项目根目录的/images文件夹内</li>
+						<li>在保证视觉效果的情况下选择最小的图片格式与图片质量, 以减少加载时间</li>
+						<li>非首页轮播大图外的图片大小尽量限定在 70K 左右或更小</li>
+						<li>图片格式仅限于gif || png || jpg</li>
+					</ul>
+				</div>
+				<div class="unit">
+					<a class="key2" href="javascript:;">背景图片</a>
+					<ul class="unit2">
+						<li>背景图片指样式中使用background属性设置的图片，一般为比较少改动的背景图或小图标</li>
+						<li>存放路径：项目根目录的/css/imgs文件夹内</li>
+						<li>项目发布前背景图需分类合并，以减小http请求</li>
+						<li>图片格式仅限于gif || png || jpg</li>
+						<li>透明背景的图标用png24格式；非透明背景的图标如图形扁平色彩单一的用png8格式，否则用jpg格式</li>
+					</ul>
+				</div>
+			</ol>
+
+		</div>
+
+
+
+
+		<!--html规范-->
+		<a name="html"></a>
+		<i style=" margin: 60px 0 25px;">----------------------------------------以下是html规范 START----------------------------------------</i>
+
+		<div class="section html">
+			<a class="key0 close2">'html规范'<span>全部展开</span></a>
+			<ol>
+				<a class="key" href="javascript:;"><s>html</s>基本结构</a>
+				<div class="unit">
+					<!-- <a class="key2" href="javascript:;"><s>html</s>基本结构</a> -->	
+					<div class="unit2">
+						<li>使用tab键缩进代码</li>
+						<li>推荐使用html5的文档声明<xmp class="inline"><!DOCTYPE HTML></xmp>，且在文档的第一行，位于html标签之前</li>
+						<li>必须申明文档的编码charset，且与文件本身编码保持一致，推荐使用UTF-8编码 <xmp class="inline"><meta charset="utf-8"></xmp></li>
+						<li>模板参看：<a target="_blank" class="btn" href="standard-html-frame.html"><s>html</s>基本结构</a></li>
+					</div>
+				</div>
+				<!-- <div class="unit">
+					<a class="key2" href="javascript:;"><s>html</s>参考模板</a>	
+					<div class="unit2">
+						<li>模板参看：<a target="_blank" class="btn" href="standard-html-frame.html"><s>html</s>基本结构</a><xmp class="txt">此文档内容说明：
+- 文档中的common.css为项目共用的样式表，包含重置样式、头部底部等网站共用模块的样式
+- 文档中的iconfig.js为项目通用路径配置
+- 项目使用了requirejs技术来模块化管理脚本代码，文档中的rconfig.js为requirejs的配置文件</xmp></li>
+					</div>
+				</div> -->
+			</ol>
+
+			<ol>
+				<a class="key" href="javascript:;"><s>html</s>标签</a>
+				<div class="unit">
+					<a class="key2" href="javascript:;"><s>html</s>标签使用</a>	
+					<div class="unit2">
+						<li>h1 - 用于网页主题，一个页面只有一个</li>
+						<li>h2 - 用于大栏目标题 or 楼层标题 等</li>
+						<li>h3 - 用于小栏目标题</li>
+						<li>h4 - 用于列表每一条目的标题</li>
+						<li>h5,h6 - 用于除以上情况的其他如强调加粗等情况</li>
+						<li>ul+li - 列表最佳元素组合</li>
+						<li>p - 用于描述简介等文本</li>
+						<li>span - 用于搭配其他元素用以布局标签等，尽量不要用于外容器</li>
+						<li>table - 表格型数据</li>
+					</div>
+				</div>
+				<div class="unit">
+					<a class="key2" href="javascript:;"><s>html</s>标签格式</a>	
+					<div class="unit2">
+						<li>标签要闭合，不能省略可选的结束标签，如：<xmp class="inline"><div>的结束标签</div>不能省略</xmp></li>
+					</div>
+				</div>
+				<div class="unit">
+					<a class="key2" href="javascript:;"><s>html</s>标签优化</a>	
+					<div class="unit2">
+						<li>页面元信息的<xmp class="inline"><title></xmp>元素不可缺少，控制在25个字、50个字节以内。“二级栏目 - 一级栏目 - 网站名称”。</li>
+						<li>表单的radio控件和checkbox控件的标签文本使用label元素包裹，或使用label的for属性确保点击标签文本时能激活对应控件，如：
+						<xmp><label>check-1:<input type="checkbox" /></label>
+或<lable for="check2">check-2:</lable><input type="checkbox" id="check2" /></xmp></li>
+					</div>
+				</div>
+			</ol>
+
+			<ol>
+				<a class="key" href="javascript:;"><s>html</s>属性</a>
+				<div class="unit">
+					<a class="key2" href="javascript:;"><s>html</s>属性顺序</a>	
+					<div class="unit2">
+					请尽量按以下顺序排列标签属性：
+						<li>class</li>
+						<li>id,name</li>
+						<li>data-*</li>
+						<li>src,for,type,href</li>
+						<li>title,alt</li>
+						<li>aria-*</li>
+					实例如下：
+					<xmp><a class="..." id="..." data-modal="toggle" href="#"> Example link </a>
+<input class="form-control" name="control" type="text" />
+<img src="..." alt="..." /></xmp>
+					</div>
+				</div>
+				<div class="unit">
+					<a class="key2" href="javascript:;"><s>html</s>属性格式</a>	
+					<div class="unit2">
+						<li>html标签属性使用双引号包裹，不使用单引号</li>
+						<li>ID属性在一个页面内是唯一的</li>
+						<li>外调文件如果是默认类型时统一不用声明type，如：
+						<xmp><link rel="stylesheet" href="xxx.css" />
+<script src="xxx.js"></script>
+</xmp></li>
+						<li>一般情况下不使用内置style</li>
+						<li>合理设置链接的target属性，如：target='_blank'</li>
+					</div>
+				</div>
+				<div class="unit">
+					<a class="key2" href="javascript:;"><s>html</s>属性优化</a>	
+					<div class="unit2">
+						<li>a标签如无链接时其属性href值填充':javascript:;'</li>
+						<li>img标签需要添加alt属性以增加可访问性<xmp class="inline"><img src="" title="图片描述" alt="图片描述"></xmp></li>
+						<li>a链接如锚文本不足以描述此链接，需要加title属性，如：
+						<xmp><a title="力德网站" href="#">点击这里</a></xmp></li>
+						<li>元信息的<xmp class="inline">keywords</xmp>关键词发布前请添加合适内容，针对SEO。（关键词控制在5个左右,单个8汉字以内）</li>
+						<li>元信息的<xmp class="inline">description</xmp>网站描述发布前请添加合适内容，针对SEO。（字数尽量控制在80个汉字，160个字符以内）</li>
+						<li>布尔型属性在声明时统一不赋值，如：
+						<xmp><input type="text" disabled>
+<input type="checkbox" value="1" checked>
+<select>
+  <option value="1" selected>1</option>
+</select></xmp></li>
+						<li>对于属性值或颜色参数，省略小于 1 的小数前面的 0 ，如：
+						<xmp>.5 代替 0.5
+-.5px 代替 -0.5px</xmp></li>
+					</div>
+				</div>
+			</ol>
+
+			<ol>
+				<a class="key" href="javascript:;"><s>html</s>文本<s>&</s>注释</a>
+				<div class="unit">
+					<div class="unit2">
+						<li>带有实体名称的 ASCII 实体或特殊字符要使用实体名（实体名称对大小写敏感）；<br />请参看：<a target="_blank" class="btn" href="standard-html-ASCII.html"><s>html</s>实体名对照表</a></li>
+						<li>网页每个模块都应该注释其栏目名称或简短说明，注释格式如下（允许只有开始注释）：
+						<xmp><!--头部-->
+...
+<!--/头部--></xmp></li>
+					</div>
+				</div>
+			</ol>
+
+			<ol>
+				<a class="key" href="javascript:;"><s>html</s>命名</a>
+				<div class="unit">
+					<div class="unit2">
+						<li>模板参看：<a target="_blank" class="btn" href="standard-html-naming.html">html相关命名参考</a>
+						</li>
+					</div>
+				</div>
+			</ol>
+
+		</div><!--/html-->
+		<i style=" margin: 40px 0 60px;">-----------------------------------------以上是html规范 END------------------------------------------</i>
+
+
+
+
+
+		<!--css规范-->
+		<a name="css"></a>
+		<i style=" margin: 60px 0 25px;">-----------------------------------------以下是css规范 START-----------------------------------------</i>
+		<div class="section css">
+			<a class="key0 close2">'<s>css</s>规范'<span>全部展开</span></a>
+
+			<ol>
+				<a class="key" href="javascript:;"><s>css</s>基本设置</a>
+				<div class="unit">
+					<a class="key2" href="javascript:;">重置样式</a>	
+					<div class="unit2">
+						<li>模板参看：<a target="_blank" class="btn" href="standard-css-reset.html">reset.css参考设置</a>
+						</li>
+					</div>
+				</div>
+				<div class="unit">
+					<a class="key2" href="javascript:;">页面编码</a>	
+					<div class="unit2">
+						<li>统一使用 UTF-8 编码,用@charset "utf-8"指定页面编码</li>
+						<li>全局字体设置：
+						<xmp>windows 7系统：微软雅黑 Arial；<br />
+windows XP及以下：新宋体，宋体，Arial<br />
+MAC默认字体：Helvetica Neue和Helvetica Hiragino Sans GB。<br />
+font-family:"Microsoft Yahei","Hiragino Sans GB","Helvetica Neue",Helvetica,tahoma,arial,Verdana,sans-serif,"WenQuanYi Micro Hei","\5B8B\4F53";</xmp></li>
+						<li>中文字体使用编码转换，参考：
+						<xmp>微软雅黑   \5FAE\8F6F\96C5\9ED1  或 Microsoft YaHei<br />
+黑体       \9ED1\4F53<br />
+新宋体     \65b0\5b8b\4f53<br />
+宋体       \5b8b\4f53</xmp></li>
+						<li>推荐使用颜色参考：<a target="_blank" class="btn" href="standard-css-colors.html">216web安全色</a></li>
+					</div>
+				</div>
+			</ol>
+
+			<ol>
+				<a class="key" href="javascript:;"><s>css</s>属性</a>
+				<div class="unit">
+					<a class="key2" href="javascript:;">css属性声明顺序</a>
+					<div class="unit2">
+						<li>模板参看：<a target="_blank" class="btn" href="standard-css-attr.html">css属性声明顺序</a>
+						</li>
+					</div>
+				</div>
+				<div class="unit">
+					<a class="key2" href="javascript:;">css属性格式</a>	
+					<div class="unit2">
+						<li>当属性值需要加引号时，请使用双引号，如：
+						<xmp>font-family:"Microsoft Yahei",arial,Tahoma,sans-serif;
+content:"xxx";
+input[type="text"]</xmp></li>
+						<li>每条声明独占一行，如：
+						<xmp>a:hover,
+a.on{...}</xmp></li>
+						<li>每个样式属性后的分号";"不能省略</li>
+						<li>属性值尽量使用缩写，如：
+						<xmp>border:0 10px;
+margin:10px 15px 20px;
+padding:10px;
+color:#efg;
+background:#eee url(xxx.png) no-repeat center right;</xmp></li>
+					</div>
+				</div>
+				<div class="unit">
+					<a class="key2" href="javascript:;">css属性优化</a>
+					<div class="unit2">
+						<li>样式都用class设置，慎用id</li>
+						<li>基于减少类名设置、防止属性设置冲突、保持结构清晰的目的，尽量使用css选择器，如：
+						<xmp>ul > li{...}
+input[type=text]{...}</xmp></li>
+						<li>选择器尽量减少不必要的嵌套层级，如：
+						<xmp>一个外容器类名为p-list的模块内只有一个ul和ul下几个同级的li，设置li样式时用.p-list .li{...}而不用.p-list ul li{...}</xmp></li>
+						<li>相同或类似的模块尽量把代码整合重用起来</li>
+						<li>针对特殊浏览器的属性，应写在标准属性之前，例如：-webkit-box-shadow:;-moz-box-shadow:;box-shaow:;</li>
+						<li>带有前缀的属性，单独一行，通过缩进，让每个属性的值垂直对齐，方便编辑维护</li>
+						<li>避免使用各种CSS Hack，如需对 IE 进行特殊定义，请参阅：<a target="_blank" class="btn" href="standard-css-hack.html">CSS Hack说明</a></li>
+						<li>.hover，selected，disabled，current等具有特定意义的请勿直接占用。</li>
+						<li>.:link :visited :hover :active书写顺序 L-V-H-A，速记：LoVe（喜欢）HAte（讨厌）。</li>
+					</div>
+				</div>
+			</ol>
+
+			<ol>
+				<a class="key" href="javascript:;"><s>css</s>属性值</a>
+				<div class="unit">
+					<a class="key2" href="javascript:;">css属性值格式</a>
+					<div class="unit2">
+						<li>值为0时后面不加单位</li>
+						<li>颜色值英文的都用小写</li>
+					</div>
+				</div>
+				<div class="unit">
+					<a class="key2" href="javascript:;">css属性值优化</a>
+					<div class="unit2">
+						<li>css慎用expression表达式</li>
+						<li>慎用 !important</li>
+						<li>避免使用兼容性不好的滤镜</li>
+						<li>上下模块之间的间距统一使用下一个模块的margin-top来实现，好处是：如果没有下一个模块也不会多出一段空隙</li>
+					</div>
+				</div>
+			</ol>
+
+			<ol>
+				<a class="key" href="javascript:;"><s>css</s>导入<s>&</s>注释</a>
+				<div class="unit">
+					<div class="unit2">
+						<li>不要使用 @import导入样式表</li>
+						<li>注释格式，统一使用双斜杠加*。</li>
+						<li>需注释所属栏目或模块标题，跟html对应模块标题一致; 多个模块标题用'&'分隔，格式如下：
+						<xmp>/*案件列表 & 新闻列表*/
+.p-list-pics{...}</xmp></li>
+					</div>
+				</div>
+			</ol>
+
+			<ol>
+				<a class="key" href="javascript:;"><s>css</s>命名</a>
+				<div class="unit">
+					<div class="unit2">
+						<li>模板参看：<a target="_blank" class="btn" href="standard-css-naming.html">css相关命名参考</a>
+						</li>
+					</div>
+				</div>
+			</ol>
+
+		</div><!--/css-->
+		<i style=" margin: 40px 0 60px;">------------------------------------------以上是css规范 END-------------------------------------------</i>
+
+
+
+
+
+
+		<!--js规范-->
+		<a name="js"></a>
+		<i style=" margin: 60px 0 25px;">-----------------------------------------以下是js规范 START-----------------------------------------</i>
+		<div class="section js">
+			<a class="key0 close2">'<s>js</s>规范'<span>全部展开</span></a>
+
+			<ol>
+				<a class="key" href="javascript:;"><s>js</s>基本设置</a>
+				<div class="unit">
+					<div class="unit2">
+						<li>传统js脚本的编写，要求使用下面的模板进行包裹：
+						<xmp>(function($){
+	'use strict';
+	// code...
+}(jQuery));</xmp></li>
+						<li>requirejs脚本的编写，要求使用下面的格式：
+						<xmp>define([
+    "jquery",
+    "angular"
+], function ($, angular) {
+    'use strict';
+    // code...
+});</xmp></li>
+						
+					</div>
+				</div>
+			</ol>
+
+			<ol>
+				<a class="key" href="javascript:;"><s>js</s>格式</a>
+				<div class="unit">
+					<div class="unit2">
+						<li>每句语句后的';'不能省略</li>
+						<li>if、while、for、do语句的执行体总是用"{"和"}"括起来，即使在其结构体内只有一条语句</li>
+						<li>代码编写时应该优先使用单引号(‘)，防止字符串可能包含带有双引号(“)的HTML代码</li>
+						<li>总是使用var声明变量，避免全局变量的污染</li>
+					</div>
+				</div>
+			</ol>
+
+			<ol>
+				<a class="key" href="javascript:;"><s>js</s>优化</a>
+				<div class="unit">
+					<div class="unit2">
+						<li>使用闭包时防止循环引用</li>
+						<li>尽量避免使用存在兼容性及消耗资源的方法或属性, 比如eval() & innerText</li>
+						<li>避免对象上使用with()</li>
+						<li>避免数组使用for in</li>
+					</div>
+				</div>
+			</ol>
+
+			<ol>
+				<a class="key" href="javascript:;"><s>js</s>注释</a>
+				<div class="unit">
+					<div class="unit2">
+						<li>脚本模块需写明所属页面或栏目，注释必要时尽量详尽且到位</li>
+						<li>插件等独立脚本文件需添加详细的头描述，格式参考如下：
+						<xmp>/*
+ * 简述
+ *
+ * 功能详细描述
+ *
+ * @param <String> arg1 参数1
+ * @param <Number> arg2 参数2，默认为0
+ * @return <Boolean> 看xxx是否成功
+ */
+ +(function(){
+	'use strict';
+	var pluginName = "xxx";
+	...
+})();
+</xmp></li>
+					</div>
+				</div>
+			</ol>
+
+			<ol>
+				<a class="key" href="javascript:;"><s>js</s>命名</a>
+				<div class="unit">
+					<div class="unit2">
+						<li>模板参看：<a target="_blank" class="btn" href="standard-js-naming.html">js相关命名规范</a>
+						</li>
+					</div>
+				</div>
+			</ol>
+			
+		</div><!--/js-->
+		<i style=" margin: 40px 0 60px;">------------------------------------------以上是js规范 END-------------------------------------------</i>
+
+
+
+
+	</div>
+
+</div>
+
+
+<a class="gotop" href="javascript:;">返回顶部</a>
+
+
+
+</body>
+</html>

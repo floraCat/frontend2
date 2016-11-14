@@ -1,0 +1,188 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8">
+	<title>组件</title>
+	<link rel="stylesheet" href="../../css/common.css" />
+	<link rel="stylesheet" href="../../css/page-article.css" />
+	<script src="../../js/rconfig.js"></script>
+	<script src="../../js/require.js" data-main="../../js/app/article-default.js"></script>
+</head>
+<body data-render="head-foot">
+
+
+
+<div class="p-container" data-rs="rs-article">
+<script data-tpl="tpl-article" type="text/x-jsrender">
+
+
+<!--传递的数据(效果展示下级窗口获取)-->
+<xmp class="dataTrans" style="display: none;">
+<style>
+{{:_article_._style_}}
+</style>
+{{:_article_._html_}}
+{{if _article_._rely_[0]._url2_}}
+{{for _article_._rely_}}
+{{if #data._url2_.indexOf(".css")>=0}}
+<link rel="stylesheet" href="{{:#data._url2_}}" />
+{{else}}
+<script src="{{:#data._url2_}}">{{:~root._article_._tab_script_right_}}
+{{/if}}
+{{/for}}
+{{/if}}
+<script>
+{{:_article_._script_}}
+{{:_article_._tab_script_right_}}
+</xmp>
+
+
+	<div class="p-details">
+
+		<!--===================图片===================-->
+		<div class="p-pic">
+			<ul>
+				<ol>
+					<img src="../../images/sketch/{{:col}}/{{:_article_._title_}}.png">
+				</ol>
+			</ul>
+		</div>
+
+
+		<!--===================标题===================-->
+		<div class="p-section p-name">
+			<h3>名称：</h3>
+			<div class="cont">{{:_article_._title_}}</div>
+		</div>
+		
+
+		<!--===================简介===================-->
+		<div class="p-section">
+			<h3>简介：</h3>
+			<div class="cont">{{:_article_._desc_}}</div>
+		</div>
+
+
+		<!--===================兼容===================-->
+		<div class="p-hack">
+			<ol id="firefox" class="{{if _article_._hack_._f_}}yes{{else}}no{{/if}}"><img src="../../css/imgs/tab_firefox.png" /></ol>
+			<ol id="chrome" class="{{if _article_._hack_._c_}}yes{{else}}no{{/if}}"><img src="../../css/imgs/tab_chrome.png" /></ol>
+			<ol id="safari" class="{{if _article_._hack_._s_}}yes{{else}}no{{/if}}"><img src="../../css/imgs/tab_safari.png" /></ol>
+			<ol class="ie">
+				<img src="../../css/imgs/tab_ie.png" />
+				<ul>
+					<li id="ie11" class="{{if _article_._hack_._i11_}}yes{{else}}no{{/if}}">11</li>
+					<li id="ie10" class="{{if _article_._hack_._i10_}}yes{{else}}no{{/if}}">10</li>
+					<li id="ie9" class="{{if _article_._hack_._i9_}}yes{{else}}no{{/if}}">9</li>
+					<li id="ie8" class="{{if _article_._hack_._i8_}}yes{{else}}no{{/if}}">8</li>
+					<li id="ie7" class="{{if _article_._hack_._i7_}}yes{{else}}no{{/if}}">7</li>
+					<li id="ie6" class="{{if _article_._hack_._i6_}}yes{{else}}no{{/if}}">6</li>
+				</ul>
+			</ol>
+		</div>
+
+		<!--===================操作按键===================-->
+		<ol class="p-btns">
+			<ul class="btn1">
+				<a data-j-display class="fl display">效果展示</a>
+				<a class="fr off">自定义设置</a>
+			</ul>
+			<ul class="btn2">
+				<a data-j-copy class="fl copy">源码复制</a>
+				<a class="fr off">整套下载</a>
+			</ul>
+		</ol>	
+		<!-- <xmp id="code" style="display:none;">
+			
+		</xmp> -->
+		<div class="g-mask"></div>
+		<div class="g-pop-copy">已复制到剪切板！</div>
+
+
+		<!--===================依赖===================-->
+		<div class="p-section">
+			<h3>依赖：</h3>
+			<div class="cont grey">(Demo所依赖的文件)</div>
+			<div class="p-rely">
+				<ol>
+					<li>
+						<p>reset.css</p>
+						<span>：浏览器重置样式</span>
+						<a target="_blank" href="../../css/spec/reset.css">查看源码</a>
+						<a class="off" target="_blank" href="col_zip.php?act=zipOne&file=css/reset.css">点击下载</a>
+					</li>
+					<li>
+						<p>jquery-1.10.2.js</p>
+						<span>：JQ库</span>
+						<a target="_blank" href="../../js/lib/jquery/jquery-1.10.2.js">查看源码</a>
+						<a class="off" target="_blank" href="col_zip.php?act=zipOne&file=js/jquery-1.10.2.js">点击下载</a>
+					</li>
+					{{if _article_._rely_[0]._url2_}}
+					{{for _article_._rely_}}
+					<li>
+						<p>{{:_url2_}}</p>
+						<span>：{{:_desc2_}}</span>
+						<a target="_blank" href="{{:}}">查看源码</a>
+						<a class="off" target="_blank" href="col_zip.php?act=zipOne&file=js/jquery-1.10.2.js">点击下载</a>
+					</li>
+					{{/for}}
+					{{/if}}
+				</ol>
+			</div>
+		</div>
+
+
+		<!--===================链接===================-->
+		<div class="p-section">
+			<h3>链接：</h3>
+			<div class="cont">
+				{{for _article_._link_}}
+				<p><a class="link" href="#">{{:#data}}</a></p>
+				{{/for}}
+			</div>
+		</div>
+
+
+		<!--===================参数===================-->
+		<div class="p-section">
+			<h3>常用参数：</h3>
+			<div class="cont grey">(此处只列举插件常用的参数，更多详情请点击上面链接查询)</div>
+			<div class="param">
+				<table border="1">
+					<tr class="hd">
+						<td class="t1">参数名</td>
+						<td class="t2">是否必要</td>
+						<td class="t3">说明</td>
+					</tr>
+					{{for _article_._parm_}}
+					<tr>
+						<td>{{:_name2_}}</td>
+						<td>{{:_need2_}}</td>
+						<td>{{:_txt2_}}</td>
+					</tr>
+					{{/for}}
+				</table>
+			</div>
+		</div>
+
+
+		<!--===================其他说明===================-->
+		<div class="p-content">
+			<h3>其他说明：</h3>
+			<ol>
+				{{:_article_._content_}}
+			</ol>
+		</div>
+
+
+	</div><!--/p-details-->
+
+</script>
+
+
+</div><!--/p-container-->
+
+
+
+</body>
+</html>

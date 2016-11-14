@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8">
+	<title>组件</title>
+	<link rel="stylesheet" href="../../css/common.css" />
+	<link rel="stylesheet" href="../../css/extra-form.css" />
+	<script src="../../js/rconfig.js"></script>
+	<script src="../../js/require.js" data-main="../../js/app/extra-form-cart.js"></script>
+</head>
+<body data-render="head-foot">
+
+
+
+	<xmp class="dataTrans" style="display: none;"></xmp><!--传递的数据(下级窗口获取)-->
+
+
+
+	<div class="g-note">
+		<p style="width:900px; margin:0 auto;">以下控件清单可操作<em>排序</em>和<em>删除</em> / 合并后的表单其重复的样式会自动被共用起来</p>
+	</div>
+
+
+    <div class="btn_form">
+        <a data-j-clearCookie class="clearCookie" href="javascript:;">清空控件清单</a>
+        <a class="listCookie" href="../../tpls/extra/form_cart.html?col=form">自定义表单控件清单<p data-j-cartNum>0</p></a>
+        <i></i>
+        <div class="desc">选择控件添加到清单里，点击上面的按键可进入清单列表，可选择预览或生成整个表单，表单中的控件重复的样式会自动被共用起来。</div>
+    </div>
+
+
+	<table class="listCart">
+		<tr class="hd">
+			<td>序号</td>
+			<td>控件图示</td>
+			<td>控件名称</td>
+			<td>排序操作</td>
+			<td>其他操作</td>
+		</tr>
+	</table>
+
+
+	<div class="pBtns">
+		<a class="createForm" href="../../tpls/articles/articles-form-merge.html?col=form">合成表单</a>
+		<a target="_blank" href="javascript:;" class="viewForm">查看效果</a>
+	</div>
+
+
+
+</body>
+</html>

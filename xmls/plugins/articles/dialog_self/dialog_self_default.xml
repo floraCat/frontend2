@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_article_>
+    <_style_>
+    </_style_>
+    <_html_>
+        <![CDATA[
+        ]]>
+    </_html_>
+    <_script_>
+    $.jDialog();
+    </_script_>
+</_article_>

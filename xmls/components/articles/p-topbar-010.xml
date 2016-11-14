@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<_article_>
+
+		<_title_>p-topbar-010</_title_>
+
+		<_desc_>顶部工具栏</_desc_>
+
+		<_hack_>
+			<_f_>Firefox</_f_>
+			<_c_>Chrome</_c_>
+			<_s_>Safari</_s_>
+			<_i11_>i11</_i11_>
+			<_i10_>i10</_i10_>
+			<_i9_>i9</_i9_>
+			<_i8_>i8</_i8_>
+			<_i7_></_i7_>
+			<_i6_></_i6_>
+		</_hack_>
+
+		<_rely_>
+			<_item_>
+				<_url2_>../../js/examples/plugins/show/h-hover.js</_url2_>
+				<_desc2_>通用hover下拉插件</_desc2_>
+			</_item_>
+		</_rely_>
+
+		<_link_>
+			<_item_>暂无</_item_>
+		</_link_>
+
+		<_parm_>
+			<_item_>
+				<_name2_>parmName1</_name2_>
+				<_need2_>yse</_need2_>
+				<_txt2_>descText</_txt2_>
+			</_item_>
+		</_parm_>
+
+		<_style_>
+	.g-cart{ width: 180px; padding: 10px; background-color:#ddd;}
+	.p-topbar{ z-index: 99; position:absolute; left: 0; top: 0; width:100%; height:30px; line-height:30px; background: #f5f5f5; border-bottom: #eee 1px solid;}
+	.p-topbar .wrap{ width: 960px; margin:0 auto;}
+	.p-topbar .left{ float:left;}
+	.p-topbar .right{ float:right;}
+	.p-topbar .wrap > ol > *{ float: left; padding: 0 10px; }
+	.p-topbar [data-js-hover]{ position:relative;}
+	.p-topbar [data-js-hover] > ol{ position:absolute; top:30px; left: 0; display:none;}
+	.p-topbar [data-js-hover] > ol.active{ display:block;}
+	.p-topbar [data-js-hover]> a.on{ color: red;}
+	.p-topbar .nav{ width:100%; background-color:#ddd;}
+	.p-topbar .list a{ display:block;}
+		</_style_>
+
+		<_html_>
+<![CDATA[
+<div class="p-topbar">
+	<div class="wrap">
+		<ol class="left">
+			<span>欢迎光临本站！</span>
+			<a href="#">登录</a>
+			<a href="#">注册</a>
+		</ol>
+		<ol class="right">
+			<div data-js-hover=">a|ol">
+				<a href="javascript:;">快捷导航</a>
+				<ol class="nav">
+					<div class="list">
+						<a href="#">栏目一</a>
+						<a href="#">栏目二</a>
+						<a href="#">栏目三</a>
+					</div>
+				</ol>
+			</div>
+			<div data-js-hover=">a|ol">
+				<a href="javascript:;">购物车</a>
+				<ol class="g-cart">
+					<p>购物车为空！</p>
+				</ol>
+			</div>
+			<a href="#">本站商城</a>
+		</ol>
+	</div>
+</div>
+]]>
+		</_html_>
+
+		<_script_>
+		</_script_>
+
+		<_content_>
+<![CDATA[
+<pre>
+顶部工具栏
+</pre>
+]]>
+		</_content_>
+
+</_article_>

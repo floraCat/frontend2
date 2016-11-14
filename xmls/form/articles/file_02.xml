@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<_article_>
+
+		<_title_>file_02</_title_>
+
+		<_desc_>图片上传_单个</_desc_>
+
+		<_hack_>
+			<_f_>Firefox</_f_>
+			<_c_>Chrome</_c_>
+			<_s_>Safari</_s_>
+			<_i11_>i11</_i11_>
+			<_i10_>i10</_i10_>
+			<_i9_>i9</_i9_>
+			<_i8_>i8</_i8_>
+			<_i7_></_i7_>
+			<_i6_></_i6_>
+		</_hack_>
+
+		<_rely_>
+			<_item_>
+				<_url2_></_url2_>
+				<_desc2_></_desc2_>
+			</_item_>
+		</_rely_>
+
+		<_link_>
+			<_item_>暂无</_item_>
+		</_link_>
+
+		<_parm_>
+			<_item_>
+				<_name2_>parmName1</_name2_>
+				<_need2_>yse</_need2_>
+				<_txt2_>descText</_txt2_>
+			</_item_>
+		</_parm_>
+
+		<_style_>
+	.p-form dl{ position:relative; overflow:hidden; margin-bottom:15px;}
+	.p-form dt{ float:left; width:80px; line-height:35px; text-align:right; white-space:nowrap;}
+	.p-form dd{ margin-left:90px;}
+	.p-form .file-2 .file{ position: relative; display: table-cell; width:80px; height:80px; text-align: center; vertical-align: middle;}
+	.p-form .file-2.active .file{ border:#eee 1px solid; }
+	.p-form .file-2 .file input{ border:none;}
+	.p-form .file-2 .file img{ max-width:100%; max-height: 100%;}
+	.p-form .file-2 .file .mg{ position:absolute; bottom:0; left:90px; height:24px; line-height:24px;}
+	.p-form .file-2 p{ color: #aaa;}
+	.p-form .file-2 p a{ color: red;}
+		</_style_>
+
+		<_html_>
+<![CDATA[
+	<dl>
+	    <dt>图片上传-2：</dt>
+	    <dd class="file-2" data-j-file>
+	        <div class="file">
+	            <img src="../../images/pic_default.jpg" data-default="images/col_form/pic_default.jpg" />
+	            <div class="mg"><input type="file" name="upload-img" /></div>
+	        </div>
+	        <p><a href="javascript:;" class="quit">删除</a> 图片2M之内！</p>
+	    </dd>
+	</dl>
+]]>
+		</_html_>
+
+		<_script_>
+	$("[data-j-file]").each(function(){
+		var _this=$(this);
+		$(this).on("change","input[type=file]",function(){
+			var objUrl = getFileUrl(this);
+			if (objUrl){
+				_this.find("img").attr("src", objUrl);
+				_this.addClass("active");
+			}
+		});
+		$(this).find(".quit").click(function(){
+			var def_img=_this.find("img").data("default");
+			_this.find("img").attr("src",def_img);
+			_this.removeClass("active");
+			var file_old=_this.find("input[type=file]");
+			file_old.after(file_old.clone().val(""));      
+			file_old.remove(); 
+		});
+		function getFileUrl(obj){ 
+			var url; 
+			if (navigator.userAgent.indexOf("MSIE")>=1){ // IE 
+				url = obj.value; 
+			}else if(window.createObjectURL!=undefined){ // basic
+				url = window.createObjectURL(obj.files.item(0));
+			}else if (window.URL!=undefined){ // mozilla(firefox)
+				url = window.URL.createObjectURL(obj.files.item(0)); 
+			}else if (window.webkitURL!=undefined){ // webkit or chrome
+				url = window.webkitURL.createObjectURL(obj.files.item(0)); 
+			} 
+			return url; 
+		}
+	});
+		</_script_>
+
+		<_content_>
+<![CDATA[
+<pre>
+图片上传_单个
+</pre>
+]]>
+		</_content_>
+
+</_article_>

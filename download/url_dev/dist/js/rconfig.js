@@ -1,0 +1,1 @@
+!function(e){"use strict";var r={paths:{jq:"../lib/jquery-1.10.2",carousel:"../plugin/catCarousel",common:"g_common",header:"g_header"}};e.require=r}(window);

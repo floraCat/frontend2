@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_article_>
+    <_style_>
+    .wrap {
+        width: 1000px;
+        margin: 0 auto;
+        padding-top: 100px;
+    }
+    .section {
+        margin-bottom: 30px;
+    }
+    h3 {
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 4px;
+        color: #fff;
+    }
+    input {
+        width: 250px;
+        height: 30px;
+        font-size: 16px;
+    }
+    </_style_>
+    <_html_>
+<![CDATA[
+    <div class="wrap">
+        <div class="section">
+            <h3>常规日期选择：</h3>
+            <input type="text" onfocus="">
+        </div>
+    </div>
+]]>
+    </_html_>
+    <_script_>
+    $('input').on('focus', function() {
+        WdatePicker();
+    });
+    </_script_>
+</_article_>

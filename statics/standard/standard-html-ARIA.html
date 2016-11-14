@@ -1,0 +1,445 @@
+<link rel="stylesheet" href="http://static.h-ui.net/h-ui/css/H-ui.min.css" />
+
+<style>
+.content{width:1000px; margin:20px auto 0;}
+.content ul{ text-indent: 0;}
+.content h3{ font-size: 15px; color: #000;}
+.content p,.content li{ padding: 0; margin:0; color: #666; font-family: 微软雅黑; font-size: 12px; line-height: 26px;}
+.content ol{ list-style-type: decimal; }
+</style>
+<div class="content">
+	<ul>
+        <h3>ARIA是什么</h3>
+        <p>WAI-ARIA指无障碍网页应用。主要针对的是视觉缺陷，失聪，行动不便的残疾人以及假装残疾的测试人员。尤其像视障，眼睛看不到，其浏览网页则需要借助辅助设备，如屏幕阅读器，屏幕阅读机可以大声朗读或者输出盲文。</p>
+        <p>而ARIA就是可以让屏幕阅读器准确识别网页中的内容，变化，状态的技术规范，可以让视障这类用户也能无障碍阅读！</p>
+    </ul>
+    <ul>
+        <h3>为什么需要ARIA</h3>
+        <ol>
+          <li>让视障用户知道当前浏览区域就是网站主导航；</li>
+          <li>让视障用户知道点击某个按钮后出来的是弹框跳转；</li>
+          <li>让视障用户知道点击某个按钮后页面另外一个区域的文字发生了变化；</li>
+          <li>让视障用户知道您使用了li标签是用来模拟标准select控件；</li>
+          <li>让视障用户知道您模拟的select控件是单选呢还是可以多选，等等。</li>
+        </ol>
+        <p>IE8+ 及其他所有浏览器，都已经全方位支持ARIA，真是可喜可贺！</p>
+    </ul>
+    <ul>
+        <h3>ARIA role 属性值表</h3>
+        <table class="table table-border table-bg table-bordered">
+          <thead>
+            <tr>
+              <th width="15%">role属性值</th>
+              <th width="20%">含义</th>
+              <th>说明</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>role="alert"</td>
+              <td>警告</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>role="alertdialog"</td>
+              <td>警告框</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>role="application"</td>
+              <td>应用</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>role="button"</td>
+              <td>按钮</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>role="checkbox"</td>
+              <td>复选框</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>role="grid"</td>
+              <td>网格</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>role="gridcell"</td>
+              <td>网格单元</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>role="group"</td>
+              <td>组合</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>role="heading"</td>
+              <td>应用程序标题</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>role="listbox"</td>
+              <td>列表框</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>role="log"</td>
+              <td>日志</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>role="menu"</td>
+              <td>菜单</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>role="menubar"</td>
+              <td>菜单栏</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>role="menuitem"</td>
+              <td>菜单项</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>role="menuitemcheckbox"</td>
+              <td>可复选的菜单项</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>role="menuitemradio"</td>
+              <td>只能单选的菜单项</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>role="option"</td>
+              <td>选项</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>role="presentation"</td>
+              <td>陈述</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>role="progressbar"</td>
+              <td>进度条</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>role="radio"</td>
+              <td>单选</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>role="radiogroup"</td>
+              <td>单选按钮组</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>role="region"</td>
+              <td>区域</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>role="row"</td>
+              <td>行</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>role="separator"</td>
+              <td>分割</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>role="slider"</td>
+              <td>滑动条</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>role="spinbutton"</td>
+              <td>微调</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>role="tab"</td>
+              <td>tab标签</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>role="tablist"</td>
+              <td>标签列表</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>role="tabpanel"</td>
+              <td>标签面板</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>role="timer"</td>
+              <td>计数</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>role="toolbar"</td>
+              <td>工具栏</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>role="tooltip"</td>
+              <td>提示文本</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>role="tree"</td>
+              <td>树形</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>role="treeitem"</td>
+              <td>树结构选项</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+    </ul>
+    <ul>
+        <h3>ARIA 属性表</h3>
+        <table class="table table-border table-bg table-bordered">
+          <thead>
+            <tr>
+              <th width="15%">属性名</th>
+              <th width="20%">属性值</th>
+              <th>HTML示意</th>
+              <th width="30%">说明</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>aria-activedescendant</td>
+              <td>字符串。表示后代元素的<code>id</code>值。</td>
+              <td><pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">role</span><span class="pun">=</span><span class="atv">"toolbar"</span><span class="pln"> </span><span class="atn">tabindex</span><span class="pun">=</span><span class="atv">"0"</span><span class="pln"> </span><span class="atn">aria-activedescendant</span><span class="pun">=</span><span class="atv">"button1"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;img</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"btncut.png"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"button1"</span><span class="pln"> </span><span class="atn">role</span><span class="pun">=</span><span class="atv">"button"</span><span class="pln"> </span><span class="atn">alt</span><span class="pun">=</span><span class="atv">"cut"</span><span class="pln"> </span><span class="tag">/&gt;</span></li><li class="L2"><span class="pln">  </span><span class="tag">&lt;img</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"btncopy.png"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"button2"</span><span class="pln"> </span><span class="atn">role</span><span class="pun">=</span><span class="atv">"button"</span><span class="pln"> </span><span class="atn">alt</span><span class="pun">=</span><span class="atv">"copy"</span><span class="pln"> </span><span class="tag">/&gt;</span></li><li class="L3"><span class="pln">  </span><span class="tag">&lt;img</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"btnpaste.png"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"button3"</span><span class="pln"> </span><span class="atn">role</span><span class="pun">=</span><span class="atv">"button"</span><span class="pln"> </span><span class="atn">alt</span><span class="pun">=</span><span class="atv">"paste"</span><span class="pln"> </span><span class="tag">/&gt;</span></li><li class="L4"><span class="tag">&lt;/div&gt;</span></li></ol></pre></td>
+              <td>aria-activedescendant 属性定义了当工具栏获取焦点时，哪一个工具栏的子控件获取了焦点。在此HTML示例中，工具栏的第一个控件（拥有<code>id</code> “button1″）是能获取焦点的子控件。</td>
+            </tr>
+            <tr>
+              <td>aria-atomic</td>
+              <td>字符串。表示区域内容是否完整播报。值可以为<code>true</code>和<code>false</code>。当为<code>true</code>时，表示辅助设备需要把整个区域内容都通报给使用者；如果为<code>false</code>则表示只需要通报修改的部分。</td>
+              <td><pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">role</span><span class="pun">=</span><span class="atv">"heading"</span><span class="pln"> </span><span class="atn">aria-live</span><span class="pun">=</span><span class="atv">"assertive"</span><span class="pln"> </span><span class="atn">aria-atomic</span><span class="pun">=</span><span class="atv">"true"</span><span class="tag">&gt;</span><span class="pln">2012年 3月</span><span class="tag">&lt;/div&gt;</span></li></ol></pre></td>
+              <td>还是这个时间选择器年月标题的例子。这里的<code>aria-atomic</code>为<code>true</code>则表示当时间改变的时候，这里的年月日期要完整播放，不要只改了月份就只报月份内容。</td>
+            </tr>
+            <tr>
+              <td>aria-autocomplete</td>
+              <td>字符串。表示用户的文本框的自动提示是否提供。可选值有：<code>inline</code>, <code>list</code>, <code>both</code>, <code>none</code>.</td>
+              <td><pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"cb1-edit"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"cb_edit"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text"</span><span class="pln"> </span><span class="atn">tabindex</span><span class="pun">=</span><span class="atv">"0"</span><span class="pln"> </span><span class="atn">role</span><span class="pun">=</span><span class="atv">"combobox"</span><span class="pln"> </span><span class="atn">aria-autocomplete</span><span class="pun">=</span><span class="atv">"inline"</span><span class="pln"> </span><span class="atn">aria-owns</span><span class="pun">=</span><span class="atv">"list"</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln">    </span></li><li class="L1"><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"list"</span><span class="pln"> </span><span class="atn">tabindex</span><span class="pun">=</span><span class="atv">"-1"</span><span class="pln"> </span><span class="atn">role</span><span class="pun">=</span><span class="atv">"listbox"</span><span class="pln"> </span><span class="atn">aria-expanded</span><span class="pun">=</span><span class="atv">"true"</span><span class="tag">&gt;</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"cb1-opt1"</span><span class="pln"> </span><span class="atn">role</span><span class="pun">=</span><span class="atv">"option"</span><span class="tag">&gt;</span><span class="pln">H-ui</span><span class="tag">&lt;/li&gt;</span></li><li class="L3"><span class="pln">    </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"cb1-opt2"</span><span class="pln"> </span><span class="atn">role</span><span class="pun">=</span><span class="atv">"option"</span><span class="tag">&gt;</span><span class="pln">前端</span><span class="tag">&lt;/li&gt;</span></li><li class="L4"><span class="pln">    </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"cb1-opt3"</span><span class="pln"> </span><span class="atn">role</span><span class="pun">=</span><span class="atv">"option"</span><span class="tag">&gt;</span><span class="pln">框架</span><span class="tag">&lt;/li&gt;</span></li><li class="L5"><span class="tag">&lt;/ul&gt;</span></li></ol></pre></td>
+              <td>目前，该属性对于<code>inline</code>和<code>list</code>两个值的含义暂不清楚。不过可以确定的是该属性对应HTML5中<code>autocomplete</code>属性。需要注意的是，如果<code>aria-autocomplete="list"</code>, <code>aria-autocomplete="inline"</code>或<code>aria-autocomplete="both"</code>被设置在支持<code>autocomplete</code>的元素上，则<code>autocomplete</code>的属性值需要设成<code>"on"</code>, 如果是<code>aria-autocomplete="none"</code>，则需要设成<code>"off"</code></td>
+            </tr>
+            <tr>
+              <td>aria-busy</td>
+              <td>字符串。表当前区域的忙碌状态。默认为<code>false</code>, 表清除busy状态；可选为<code>true</code>, 表该区域正在加载；或为<code>error</code>, 表示该区域验证无效。</td>
+              <td><pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">aria-atomic</span><span class="pun">=</span><span class="atv">"true"</span><span class="pln"> </span><span class="atn">aria-busy</span><span class="pun">=</span><span class="atv">"true"</span><span class="pln"> </span><span class="atn">aria-live</span><span class="pun">=</span><span class="atv">"polite"</span><span class="tag">&gt;</span></li></ol></pre></td>
+              <td>如果某个区域内(如这里<code>ul</code>)有多个地方需要修改，需要全部修改完毕再通知使用者的话，就可以先将<code>aria-busy</code>设为<code>true</code>, 等到全部内容更新完毕后再设成<code>false</code>. 该属性可以避免辅助工具在区域内容更新完毕前不断即时提醒使用者。</td>
+            </tr>
+            <tr>
+              <td>aria-controls</td>
+              <td>字符串。空格分隔的<code>id</code>属性值列表。</td>
+              <td><pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;h3</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"tab1"</span><span class="pln"> </span><span class="atn">aria-selected</span><span class="pun">=</span><span class="atv">"true"</span><span class="pln"> </span><span class="atn">aria-controls</span><span class="pun">=</span><span class="atv">"panel1"</span><span class="pln"> </span><span class="atn">aria-expanded</span><span class="pun">=</span><span class="atv">"true"</span><span class="pln"> </span><span class="atn">role</span><span class="pun">=</span><span class="atv">"tab"</span><span class="pln"> </span><span class="atn">tabindex</span><span class="pun">=</span><span class="atv">"0"</span><span class="tag">&gt;</span><span class="pln">小的们</span><span class="tag">&lt;/h3&gt;</span></li><li class="L1"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"panel1"</span><span class="pln"> </span><span class="atn">aria-labelledby</span><span class="pun">=</span><span class="atv">"tab1"</span><span class="pln"> </span><span class="atn">aria-hidden</span><span class="pun">=</span><span class="atv">"false"</span><span class="pln"> </span><span class="atn">role</span><span class="pun">=</span><span class="atv">"tabpanel"</span><span class="tag">&gt;</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;h3</span><span class="pln"> </span><span class="atn">tabindex</span><span class="pun">=</span><span class="atv">"0"</span><span class="tag">&gt;</span><span class="pln">请选择你中意的美女……</span><span class="tag">&lt;/h3&gt;</span></li><li class="L3"><span class="tag">&lt;/div&gt;</span></li></ol></pre></td>
+              <td>该属性定义了元素间不能通过文档结构决定的关联关系。<code>ariaControls</code>属性主要被<code>role</code>为<code>group</code>, <code>region</code>, 或<code>widget</code>的元素使用。</td>
+            </tr>
+            <tr>
+              <td>aria-describedby</td>
+              <td>字符串。空格分隔的<code>id</code>属性值列表。</td>
+              <td><pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">role</span><span class="pun">=</span><span class="atv">"group"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">role</span><span class="pun">=</span><span class="atv">"checkbox"</span><span class="pln"> </span><span class="atn">aria-checked</span><span class="pun">=</span><span class="atv">"mixed"</span><span class="pln"> </span><span class="atn">tabindex</span><span class="pun">=</span><span class="atv">"0"</span><span class="tag">&gt;</span><span class="pln">所有姑娘</span><span class="tag">&lt;/li&gt;</span><span class="pln">  </span></li><li class="L2"><span class="pln">  </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">role</span><span class="pun">=</span><span class="atv">"checkbox"</span><span class="pln"> </span><span class="atn">aria-checked</span><span class="pun">=</span><span class="atv">"false"</span><span class="pln"> </span><span class="atn">aria-describedby</span><span class="pun">=</span><span class="atv">"desc1"</span><span class="pln"> </span><span class="atn">tabindex</span><span class="pun">=</span><span class="atv">"0"</span><span class="tag">&gt;</span><span class="pln">小龙女</span><span class="tag">&lt;/li&gt;</span></li><li class="L3"><span class="tag">&lt;/ul&gt;</span></li><li class="L4"><span class="tag">&lt;p</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"desc1"</span><span class="tag">&gt;</span><span class="pln">杨幂饰演的穿越女王~~</span><span class="tag">&lt;/p&gt;</span></li></ol></pre></td>
+              <td>同样的，该属性定义了文档结构表现不出来的的元素间的相互关联性。该属性旨在通过标签提供更多用户可能需要的信息。如果指定了不只一个<code>id</code>, 所有元素会合并在一起共同创建一条单独的描述。</td>
+            </tr>
+            <tr>
+              <td>aria-dropeffect</td>
+              <td>字符串。表示拖拽效果。可选值有：<code>copy</code>, <code>move</code>, <code>reference</code>, <code>execute</code>, <code>popup</code>, <code>none</code>, 依次表示：复制，移动，参照，执行，弹出以及没有效果。</td>
+              <td>&nbsp;</td>
+              <td>该属性用在拖拽上。</td>
+            </tr>
+            <tr>
+              <td>aria-flowto</td>
+              <td>字符串。空格分隔的<code>id</code>值们。</td>
+              <td>&nbsp;</td>
+              <td>如果该属性值对应的是单独的<code>id</code>, 辅助技术会恢复目标元素的阅读；如果对应的是多个<code>id</code>, 则辅助技术会让用户去选择、导航到目标元素。</td>
+            </tr>
+            <tr>
+              <td>aria-grabbed</td>
+              <td>字符串。拖拽中元素的捕获状态。可选值有:<code>true</code>, <code>false</code>, <code>undefined</code>. 默认为<code>undefined</code>，表示元素捕获状态未知。<code>true</code>表示元素可以捕获；<code>false</code>表示不能被捕获。</td>
+              <td>&nbsp;</td>
+              <td>该属性用在拖拽上。类似于HTML5中的<code>draggable</code>属性。</td>
+            </tr>
+            <tr>
+              <td>aria-haspopup</td>
+              <td>字符串。<code>true</code>表示点击的时候会出现菜单或是浮动元素； <code>false</code>表示没有pop-up效果。</td>
+              <td><pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">role</span><span class="pun">=</span><span class="atv">"menubar"</span><span class="pln"> </span><span class="atn">title</span><span class="pun">=</span><span class="atv">"美女菜单"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">role</span><span class="pun">=</span><span class="atv">"menuitem"</span><span class="pln"> </span><span class="atn">tabindex</span><span class="pun">=</span><span class="atv">"0"</span><span class="pln"> </span><span class="atn">aria-haspopup</span><span class="pun">=</span><span class="atv">"true"</span><span class="tag">&gt;</span></li><li class="L2"><span class="pln">      美女</span><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">role</span><span class="pun">=</span><span class="atv">"menu"</span><span class="pln"> </span><span class="atn">aria-hidden</span><span class="pun">=</span><span class="atv">"true"</span><span class="tag">&gt;</span></li><li class="L3"><span class="pln">      </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">role</span><span class="pun">=</span><span class="atv">"menuitemradio"</span><span class="pln"> </span><span class="atn">tabindex</span><span class="pun">=</span><span class="atv">"-1"</span><span class="pln"> </span><span class="atn">aria-checked</span><span class="pun">=</span><span class="atv">"true"</span><span class="tag">&gt;</span><span class="pln">小龙女</span><span class="tag">&lt;/li&gt;</span></li><li class="L4"><span class="pln">      </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">role</span><span class="pun">=</span><span class="atv">"menuitemradio"</span><span class="pln"> </span><span class="atn">tabindex</span><span class="pun">=</span><span class="atv">"-1"</span><span class="pln"> </span><span class="atn">aria-checked</span><span class="pun">=</span><span class="atv">"false"</span><span class="tag">&gt;</span><span class="pln">范爷</span><span class="tag">&lt;/li&gt;</span></li><li class="L5"><span class="pln">      </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">role</span><span class="pun">=</span><span class="atv">"menuitemradio"</span><span class="pln"> </span><span class="atn">tabindex</span><span class="pun">=</span><span class="atv">"-1"</span><span class="pln"> </span><span class="atn">aria-checked</span><span class="pun">=</span><span class="atv">"false"</span><span class="tag">&gt;</span><span class="pln">baby</span><span class="tag">&lt;/li&gt;</span></li><li class="L6"><span class="pln">    </span><span class="tag">&lt;/ul&gt;</span></li><li class="L7"><span class="pln">  </span><span class="tag">&lt;/li&gt;</span></li><li class="L8"><span class="pln">  </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">role</span><span class="pun">=</span><span class="atv">"menuitem"</span><span class="pln"> </span><span class="atn">tabindex</span><span class="pun">=</span><span class="atv">"-1"</span><span class="pln"> </span><span class="atn">aria-haspopup</span><span class="pun">=</span><span class="atv">"false"</span><span class="tag">&gt;</span><span class="pln">靓女</span><span class="tag">&lt;/li&gt;</span></li><li class="L9"><span class="pln">  </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">role</span><span class="pun">=</span><span class="atv">"menuitem"</span><span class="pln"> </span><span class="atn">tabindex</span><span class="pun">=</span><span class="atv">"-1"</span><span class="pln"> </span><span class="atn">aria-haspopup</span><span class="pun">=</span><span class="atv">"false"</span><span class="tag">&gt;</span><span class="pln">淑女</span><span class="tag">&lt;/li&gt;</span></li><li class="L0"><span class="pln">  </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">role</span><span class="pun">=</span><span class="atv">"menuitem"</span><span class="pln"> </span><span class="atn">tabindex</span><span class="pun">=</span><span class="atv">"-1"</span><span class="pln"> </span><span class="atn">aria-haspopup</span><span class="pun">=</span><span class="atv">"false"</span><span class="tag">&gt;</span><span class="pln">熟女</span><span class="tag">&lt;/li&gt;</span></li><li class="L1"><span class="tag">&lt;/ul&gt;</span></li></ol></pre></td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>aria-label</td>
+              <td>字符串。</td>
+              <td>&nbsp;</td>
+              <td>定义一个字符串值标记当前元素。</td>
+            </tr>
+            <tr>
+              <td>aria-labelledby</td>
+              <td>字符串。空格分隔的<code>id</code>们</td>
+              <td><pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">aria-labelledby</span><span class="pun">=</span><span class="atv">"title"</span><span class="pln"> </span><span class="atn">role</span><span class="pun">=</span><span class="atv">"alertdialog"</span><span class="tag">&gt;&lt;h3</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"title"</span><span class="tag">&gt;</span><span class="pln">标题</span><span class="tag">&lt;/h3&gt;&lt;/div&gt;</span></li></ol></pre></td>
+              <td><code>aria-labelledby</code>一般用在区域元素上，对于的<code>id</code>一般为对应的标题或是标签元素的<code>id</code>.关系型属性。</td>
+            </tr>
+            <tr>
+              <td>aria-level</td>
+              <td>数值。表示等级。</td>
+              <td><pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">aria-level</span><span class="pun">=</span><span class="atv">"2"</span><span class="tag">&gt;</span><span class="pln">次标题</span><span class="tag">&lt;/div&gt;</span></li></ol></pre></td>
+              <td>上面的HTML类似于<code>&lt;h2&gt;次标题&lt;/h2&gt;</code></td>
+            </tr>
+            <tr>
+              <td>aria-live</td>
+              <td>字符串。可选值有：<code>off</code>, <code>polite</code>, <code>assertive</code>, <code>rude</code>。默认为<code>off</code>, 表示不宣布更新；<code>polite</code>表示只有用户闲时宣布；<code>assertive</code>表示尽快对用户宣布；<code>rude</code>表示即时提醒用户，必要的时候甚至中断用户。</td>
+              <td><pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">role</span><span class="pun">=</span><span class="atv">"heading"</span><span class="pln"> </span><span class="atn">aria-live</span><span class="pun">=</span><span class="atv">"assertive"</span><span class="pln"> </span><span class="atn">aria-atomic</span><span class="pun">=</span><span class="atv">"true"</span><span class="tag">&gt;</span><span class="pln">2012年 3月</span><span class="tag">&lt;/div&gt;</span></li></ol></pre></td>
+              <td>绝大多数的更新应该在用户闲暇的时候告知，即时提示对用户是一种干扰。如果希望内容完全更新后再提示，可以使用上面提到的<code>aria-busy</code>.
+                <p>左侧的HTML为时间选择控件的年月标题部分，<code>aria-live="assertive"</code>表示的是当用户选择了新的时间的时候，尽快通知用户时间发生了变更。</p></td>
+            </tr>
+            <tr>
+              <td>aria-multiselectable</td>
+              <td>字符串。表示是否可多选。默认为<code>false</code>, 表示一次只能选择一个项。<code>true</code>表示一次可以选择多个项。</td>
+              <td>&nbsp;</td>
+              <td>例如手风琴展开收起效果，我们可以使用<code>aria-multiselectable</code>来告知辅助设备，一次可以展开多个项还是只有一个展开。</td>
+            </tr>
+            <tr>
+              <td>aria-owns</td>
+              <td>字符串。值为目标元素<code>id</code>.</td>
+              <td><pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"cb1-edit"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"cb_edit"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text"</span><span class="pln"> </span><span class="atn">tabindex</span><span class="pun">=</span><span class="atv">" role="</span><span class="atn">combobox</span><span class="atv">" aria-autocomplete="</span><span class="atn">inline</span><span class="atv">" aria-owns="</span><span class="atn">list</span><span class="atv">" /&gt;</span></li><li class="L1"><span class="pln">      </span></li><li class="L2"><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"list"</span><span class="pln"> </span><span class="atn">tabindex</span><span class="pun">=</span><span class="atv">"-1"</span><span class="pln"> </span><span class="atn">role</span><span class="pun">=</span><span class="atv">"listbox"</span><span class="pln"> </span><span class="atn">aria-expanded</span><span class="pun">=</span><span class="atv">"true"</span><span class="tag">&gt;</span></li><li class="L3"><span class="pln">    </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"cb1-opt1"</span><span class="pln"> </span><span class="atn">role</span><span class="pun">=</span><span class="atv">"option"</span><span class="tag">&gt;</span><span class="pln">小龙女</span><span class="tag">&lt;/li&gt;</span></li><li class="L4"><span class="pln">    </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"cb1-opt2"</span><span class="pln"> </span><span class="atn">role</span><span class="pun">=</span><span class="atv">"option"</span><span class="tag">&gt;</span><span class="pln">范爷</span><span class="tag">&lt;/li&gt;</span></li><li class="L5"><span class="pln">    </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"cb1-opt3"</span><span class="pln"> </span><span class="atn">role</span><span class="pun">=</span><span class="atv">"option"</span><span class="tag">&gt;</span><span class="pln">baby</span><span class="tag">&lt;/li&gt;</span></li><li class="L6"><span class="tag">&lt;/ul&gt;</span></li></ol></pre></td>
+              <td><code>aria-owns</code>表示元素所拥有的，这里这里的文本框拥有其对应的下拉列表。
+                <p>&nbsp;</p></td>
+            </tr>
+            <tr>
+              <td>aria-posinset</td>
+              <td>数值。表示当前位置。</td>
+              <td>&nbsp;</td>
+              <td>用在设置和获取一个集合内某项的当前位置。</td>
+            </tr>
+            <tr>
+              <td>aria-readonly</td>
+              <td>字符串。表示是否只读。默认为<code>false</code>, 表示元素值可以被修改；<code>true</code>表示元素指不能被改变。</td>
+              <td><pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;table</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"grid1"</span><span class="pln"> </span><span class="atn">role</span><span class="pun">=</span><span class="atv">"grid"</span><span class="pln"> </span><span class="atn">aria-labelledby</span><span class="pun">=</span><span class="atv">"girl_label"</span><span class="pln"> </span><span class="atn">aria-readonly</span><span class="pun">=</span><span class="atv">"true"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;caption</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"girl_label"</span><span class="tag">&gt;</span><span class="pln">美女们</span><span class="tag">&lt;/caption&gt;</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;tr&gt;</span></li><li class="L3"><span class="pln">      </span><span class="tag">&lt;th</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"grid1_q"</span><span class="pln"> </span><span class="atn">tabindex</span><span class="pun">=</span><span class="atv">"-1"</span><span class="tag">&gt;</span><span class="pln">小龙女</span><span class="tag">&lt;/th&gt;</span></li><li class="L4"><span class="pln">      </span><span class="tag">&lt;th</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"grid1_j"</span><span class="pln"> </span><span class="atn">tabindex</span><span class="pun">=</span><span class="atv">"-1"</span><span class="tag">&gt;</span><span class="pln">范爷</span><span class="tag">&lt;/th&gt;</span></li><li class="L5"><span class="pln">      </span><span class="tag">&lt;th</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"grid1_h"</span><span class="pln"> </span><span class="atn">tabindex</span><span class="pun">=</span><span class="atv">"-1"</span><span class="tag">&gt;</span><span class="pln">baby</span><span class="tag">&lt;/th&gt;</span></li><li class="L6"><span class="pln">    </span><span class="tag">&lt;/tr&gt;</span></li><li class="L7"><span class="tag">&lt;/table&gt;</span></li></ol></pre></td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>aria-relevant</td>
+              <td>字符串。表示区域内哪些操作行为需要做出反应。可选值有：<code>additions</code>, <code>removals</code>, <code>text</code>, <code>all</code>，可以空格分隔多个一起显示. <code>additions</code>表示新增节点的时候做出反应；<code>removals</code>表示删除节点时重要操作；<code>text</code>表示文本改变是值得重视的；<code>all</code>等同于同时使用上面三个属性值。</td>
+              <td><pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">role</span><span class="pun">=</span><span class="atv">"log"</span><span class="pln"> </span><span class="atn">aria-atomic</span><span class="pun">=</span><span class="atv">"false"</span><span class="pln"> </span><span class="atn">aria-relevant</span><span class="pun">=</span><span class="atv">"additions"</span><span class="tag">&gt;&lt;/div&gt;</span></li></ol></pre></td>
+              <td>左边的HTML表示当日志内容有添加的时候做出反应。</td>
+            </tr>
+            <tr>
+              <td>aria-required</td>
+              <td>字符串。元素值是否必需。默认为<code>false</code>, 表示元素值可以为空；<code>true</code>表示元素值是必需的。</td>
+              <td><pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"text"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">   </span><span class="tag">&lt;label</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"name_label"</span><span class="pln"> </span><span class="atn">for</span><span class="pun">=</span><span class="atv">"name"</span><span class="tag">&gt;</span><span class="pln">* 姓名:</span><span class="tag">&lt;/label&gt;</span></li><li class="L2"><span class="pln">   </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"name"</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"name"</span><span class="pln"> </span><span class="atn">aria-labelledby</span><span class="pun">=</span><span class="atv">"name_label"</span><span class="pln"> </span><span class="atn">aria-describedby</span><span class="pun">=</span><span class="atv">"tip"</span><span class="pln"> </span><span class="atn">aria-required</span><span class="pun">=</span><span class="atv">"true"</span><span class="pln"> </span><span class="tag">/&gt;</span></li><li class="L3"><span class="pln">   </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"tip"</span><span class="pln"> </span><span class="atn">role</span><span class="pun">=</span><span class="atv">"tooltip"</span><span class="pln"> </span><span class="atn">aria-hidden</span><span class="pun">=</span><span class="atv">"true"</span><span class="tag">&gt;</span><span class="pln">姓名不能为空</span><span class="tag">&lt;/div&gt;</span></li><li class="L4"><span class="tag">&lt;/div&gt;</span></li></ol></pre></td>
+              <td>多半用在表单控件中。对应HTML5中<code>required</code>属性。</td>
+            </tr>
+            <tr>
+              <td>aria-secret</td>
+              <td>字符串。表示机密状态。</td>
+              <td>&nbsp;</td>
+              <td>具体含义不详</td>
+            </tr>
+            <tr>
+              <td>aria-setsize</td>
+              <td>数值。设置的尺寸大小值。</td>
+              <td></td>
+              <td>顾名思意</td>
+            </tr>
+            <tr>
+              <td>aria-sort</td>
+              <td>字符串。表示表格或格栅中的项是以升序排列还是降序排列。可选值：<code>ascending</code>(↑), <code>descending</code>(↓), <code>none</code>, <code>other</code>.</td>
+              <td></td>
+              <td>Widget组件应用属性。</td>
+            </tr>
+            <tr>
+              <td>aria-valuemax</td>
+              <td>数值。表允许的最大值。</td>
+              <td><pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"slider"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">    </span><span class="tag">&lt;img</span><span class="pln"> </span><span class="atn">aria-valuenow</span><span class="pun">=</span><span class="atv">"45"</span><span class="pln"> </span><span class="atn">aria-valuemax</span><span class="pun">=</span><span class="atv">"100"</span><span class="pln"> </span><span class="atn">aria-valuemin</span><span class="pun">=</span><span class="atv">"0"</span><span class="pln"> </span><span class="atn">role</span><span class="pun">=</span><span class="atv">"slider"</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"slider_control.png"</span><span class="pln"> </span><span class="tag">/&gt;</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">role</span><span class="pun">=</span><span class="atv">"presentation"</span><span class="pln"> </span><span class="atn">tabindex</span><span class="pun">=</span><span class="atv">"0"</span><span class="tag">&gt;</span><span class="pln">45</span><span class="tag">&lt;/div&gt;</span></li><li class="L3"><span class="tag">&lt;/div&gt;</span></li></ol></pre></td>
+              <td>用在范围组件上。对应于HTML5中的<code>max</code>属性。</td>
+            </tr>
+            <tr>
+              <td>aria-valuemin</td>
+              <td>数值。表示允许的最小值。</td>
+              <td><pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"slider"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">    </span><span class="tag">&lt;img</span><span class="pln"> </span><span class="atn">aria-valuenow</span><span class="pun">=</span><span class="atv">"45"</span><span class="pln"> </span><span class="atn">aria-valuemax</span><span class="pun">=</span><span class="atv">"100"</span><span class="pln"> </span><span class="atn">aria-valuemin</span><span class="pun">=</span><span class="atv">"0 role="</span><span class="atn">slider</span><span class="atv">" src="</span><span class="atn">slider_control</span><span class="pln">.</span><span class="atn">png</span><span class="atv">" /&gt;</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">role</span><span class="pun">=</span><span class="atv">"presentation"</span><span class="pln"> </span><span class="atn">tabindex</span><span class="pun">=</span><span class="atv">"0"</span><span class="tag">&gt;</span><span class="pln">45</span><span class="tag">&lt;/div&gt;</span></li><li class="L3"><span class="tag">&lt;/div&gt;</span></li></ol></pre></td>
+              <td>用在范围组件上。对应于HTML5中的<code>min</code>属性。</td>
+            </tr>
+            <tr>
+              <td>aria-valuenow</td>
+              <td>数值。表示当前值。</td>
+              <td><pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"slider"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">    </span><span class="tag">&lt;img</span><span class="pln"> </span><span class="atn">aria-valuenow</span><span class="pun">=</span><span class="atv">"45"</span><span class="pln"> </span><span class="atn">aria-valuemax</span><span class="pun">=</span><span class="atv">"100"</span><span class="pln"> </span><span class="atn">aria-valuemin</span><span class="pun">=</span><span class="atv">"0"</span></li><li class="L2"><span class="pln">        </span><span class="atn">role</span><span class="pun">=</span><span class="atv">"slider"</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"slider_control.png"</span><span class="pln"> </span><span class="tag">/&gt;</span></li><li class="L3"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">role</span><span class="pun">=</span><span class="atv">"presentation"</span><span class="pln"> </span><span class="atn">tabindex</span><span class="pun">=</span><span class="atv">"0"</span><span class="tag">&gt;</span><span class="pln">45</span><span class="tag">&lt;/div&gt;</span></li><li class="L4"><span class="tag">&lt;/div&gt;</span></li></ol></pre></td>
+              <td>用在范围组件上。对应于<code>value</code>属性。</td>
+            </tr>
+            <tr>
+              <td>aria-valuetext</td>
+              <td>字符串。定义等同于<code>aria-valuenow</code>人可读的文本。</td>
+              <td></td>
+              <td>用在范围组件上。</td>
+            </tr>
+          </tbody>
+        </table>
+    </ul>
+    <ul>
+        <h3>ARIA 状态属性表</h3>
+        <table class="table table-border table-bg table-bordered">
+          <tbody>
+            <tr>
+              <th width="15%">属性状态</th>
+              <th width="20%">属性值</th>
+              <th>HTML示意</th>
+              <th width="30%">说明</th>
+            </tr>
+            <tr>
+              <td>aria-checked</td>
+              <td>字符串。表示检查的状态。<code>true</code>表示元素被选择；<code>false</code>表示元素未被选择；<code>mixed</code>表示元素同时有选择和为选择状态。</td>
+              <td><pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">role</span><span class="pun">=</span><span class="atv">"group"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">role</span><span class="pun">=</span><span class="atv">"checkbox"</span><span class="pln"> </span><span class="atn">aria-checked</span><span class="pun">=</span><span class="atv">"mixed"</span><span class="pln"> </span><span class="atn">tabindex</span><span class="pun">=</span><span class="atv">"0"</span><span class="tag">&gt;</span><span class="pln">所有姑娘</span><span class="tag">&lt;/li&gt;</span><span class="pln">  </span></li><li class="L2"><span class="pln">      </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">role</span><span class="pun">=</span><span class="atv">"checkbox"</span><span class="pln"> </span><span class="atn">aria-checked</span><span class="pun">=</span><span class="atv">"false"</span><span class="pln"> </span><span class="atn">tabindex</span><span class="pun">=</span><span class="atv">"0"</span><span class="tag">&gt;</span><span class="pln">小龙女</span><span class="tag">&lt;/li&gt;</span></li><li class="L3"><span class="pln">      </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">role</span><span class="pun">=</span><span class="atv">"checkbox"</span><span class="pln"> </span><span class="atn">aria-checked</span><span class="pun">=</span><span class="atv">"true"</span><span class="pln"> </span><span class="atn">tabindex</span><span class="pun">=</span><span class="atv">"0"</span><span class="tag">&gt;</span><span class="pln">范爷</span><span class="tag">&lt;/li&gt;</span></li><li class="L4"><span class="pln">      </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">role</span><span class="pun">=</span><span class="atv">"checkbox"</span><span class="pln"> </span><span class="atn">aria-checked</span><span class="pun">=</span><span class="atv">"true"</span><span class="pln"> </span><span class="atn">tabindex</span><span class="pun">=</span><span class="atv">"0"</span><span class="tag">&gt;</span><span class="pln">baby</span><span class="tag">&lt;/li&gt;</span></li><li class="L5"><span class="tag">&lt;/ul&gt;</span></li></ol></pre></td>
+              <td>该属性用来表明用户是否选择了某些项（如左边这个截图所示）。</td>
+            </tr>
+            <tr>
+              <td>aria-disabled</td>
+              <td>字符串。表禁用状态，<code>true</code>表示当前是非激活状态；<code>false</code>表示清除非激活状态。</td>
+              <td><pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">role</span><span class="pun">=</span><span class="atv">"button"</span><span class="pln"> </span><span class="atn">tabindex</span><span class="pun">=</span><span class="atv">"0"</span><span class="pln"> </span><span class="atn">title</span><span class="pun">=</span><span class="atv">"添加个姑娘"</span><span class="pln"> </span><span class="atn">aria-pressed</span><span class="pun">=</span><span class="atv">"false"</span></li><li class="L1"><span class="pln">  </span><span class="atn">aria-disabled</span><span class="pun">=</span><span class="atv">"false"</span><span class="tag">&gt;</span><span class="pln">添加</span><span class="tag">&lt;/div&gt;</span></li></ol></pre></td>
+              <td>对应单复选框等控件的<code>disabled</code>属性，一般用在自定义模拟控件中。</td>
+            </tr>
+            <tr>
+              <td>aria-expanded</td>
+              <td>字符串。表示展开状态。默认为<code>undefined</code>, 表示当前展开状态未知。其它可选值：<code>true</code>表示元素是展开的；<code>false</code>表示元素不是展开的。</td>
+              <td><pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;h3</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"tab1"</span><span class="pln"> </span><span class="atn">aria-selected</span><span class="pun">=</span><span class="atv">"true"</span><span class="pln"> </span><span class="atn">aria-controls</span><span class="pun">=</span><span class="atv">"panel1"</span><span class="pln"> </span></li><li class="L1"><span class="pln">    </span><span class="atn">aria-expanded</span><span class="pun">=</span><span class="atv">"true"</span><span class="pln"> </span><span class="atn">role</span><span class="pun">=</span><span class="atv">"tab"</span><span class="pln"> </span><span class="atn">tabindex</span><span class="pun">=</span><span class="atv">"0"</span><span class="tag">&gt;</span><span class="pln">姑娘们</span><span class="tag">&lt;/h3&gt;</span></li><li class="L2"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"panel1"</span><span class="pln"> </span><span class="atn">aria-labelledby</span><span class="pun">=</span><span class="atv">"tab1"</span><span class="pln"> </span><span class="atn">aria-hidden</span><span class="pun">=</span><span class="atv">"false"</span><span class="pln"> </span><span class="atn">role</span><span class="pun">=</span><span class="atv">"tabpanel"</span><span class="tag">&gt;</span></li><li class="L3"><span class="pln">    </span><span class="tag">&lt;h3</span><span class="pln"> </span><span class="atn">tabindex</span><span class="pun">=</span><span class="atv">"0"</span><span class="tag">&gt;</span><span class="pln">请选择你中意的：</span><span class="tag">&lt;/h3&gt;</span></li><li class="L4"><span class="pln">    </span><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"controlList"</span><span class="tag">&gt;</span></li><li class="L5"><span class="pln">        </span><span class="tag">&lt;li&gt;&lt;input</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"p1_1"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"radio"</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"girl"</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"q"</span><span class="pln"> </span><span class="tag">/&gt;</span></li><li class="L6"><span class="pln">            </span><span class="tag">&lt;label</span><span class="pln"> </span><span class="atn">for</span><span class="pun">=</span><span class="atv">"p1_1"</span><span class="tag">&gt;</span><span class="pln">小龙女</span><span class="tag">&lt;/label&gt;&lt;/li&gt;</span></li><li class="L7"><span class="pln">        </span><span class="tag">&lt;li&gt;&lt;input</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"p1_2"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"radio"</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"girl"</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"j"</span><span class="pln"> </span><span class="atn">checked</span><span class="pln"> </span><span class="tag">/&gt;</span></li><li class="L8"><span class="pln">            </span><span class="tag">&lt;label</span><span class="pln"> </span><span class="atn">for</span><span class="pun">=</span><span class="atv">"p1_2"</span><span class="tag">&gt;</span><span class="pln">范爷</span><span class="tag">&lt;/label&gt;&lt;/li&gt;</span></li><li class="L9"><span class="pln">        </span><span class="tag">&lt;li&gt;&lt;input</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"p1_3"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"radio"</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"girl"</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"h"</span><span class="pln"> </span><span class="tag">/&gt;</span></li><li class="L0"><span class="pln">            </span><span class="tag">&lt;label</span><span class="pln"> </span><span class="atn">for</span><span class="pun">=</span><span class="atv">"p1_3"</span><span class="tag">&gt;</span><span class="pln">baby</span><span class="tag">&lt;/label&gt;&lt;/li&gt;</span></li><li class="L1"><span class="pln">    </span><span class="tag">&lt;/ul&gt;</span></li><li class="L2"><span class="tag">&lt;/div&gt;</span></li></ol></pre></td>
+              <td>例如在手风琴交互效果中标示展开与否的状态。该属性对应HTML5的<code>open</code>属性。</td>
+            </tr>
+            <tr>
+              <td>aria-hidden</td>
+              <td>字符串。可选值为<code>true</code>和<code>false</code>, <code>true</code>表示元素隐藏(不可见)，<code>false</code>表示元素可见。</td>
+              <td><pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">aria-hidden</span><span class="pun">=</span><span class="atv">"false"</span><span class="tag">&gt;</span><span class="pln">23%</span><span class="tag">&lt;/div&gt;</span></li></ol></pre></td>
+              <td>该属性使用非常普遍。几乎所有涉及到显示与隐藏这类交互或没有交互的地方都可以应用该属性。左边的示例HTML代码来自进度条进度值显示的<code>div</code>, 当前<code>aria-hidden</code>为<code>false</code>, 表示该进度值是可见的。</td>
+            </tr>
+            <tr>
+              <td>aria-invalid</td>
+              <td>字符串。表示元素值是否错误的。默认为<code>false</code>, 表示是OK的，如果为<code>true</code>, 则表示值验证不通过。</td>
+              <td><pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text"</span><span class="pln"> </span><span class="atn">size</span><span class="pun">=</span><span class="atv">"3"</span><span class="pln"> </span><span class="atn">aria-labelledby</span><span class="pun">=</span><span class="atv">"valid"</span><span class="pln"> </span><span class="atn">aria-invalid</span><span class="pun">=</span><span class="atv">"false"</span><span class="pln"> </span><span class="tag">/&gt;</span></li></ol></pre></td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>aria-pressed</td>
+              <td>字符串。表示按下的状态，可选值有：<code>true</code>, <code>false</code>, <code>mixed</code>, <code>undfined</code>.默认为<code>undfined</code>, 表示按下状态未知；<code>true</code>表示元素往下（按钮按下）；<code>false</code>表示元素抬起；<code>mixed</code>表示元素同时有按下和没有按下的状态。</td>
+              <td><pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">role</span><span class="pun">=</span><span class="atv">"button"</span><span class="pln"> </span><span class="atn">tabindex</span><span class="pun">=</span><span class="atv">"0"</span><span class="pln"> </span><span class="atn">title</span><span class="pun">=</span><span class="atv">"添加个姑娘"</span><span class="pln"> </span><span class="atn">aria-pressed</span><span class="pun">=</span><span class="atv">"false"</span></li><li class="L1"><span class="pln">  </span><span class="atn">aria-disabled</span><span class="pun">=</span><span class="atv">"false"</span><span class="tag">&gt;</span><span class="pln">添加</span><span class="tag">&lt;/div&gt;</span></li></ol></pre></td>
+              <td>左边HTML表示按钮已经按下，同时处于禁用状态。</td>
+            </tr>
+            <tr>
+              <td>aria-selected</td>
+              <td>字符串。表示选择状态。可选值有：<code>true</code>, <code>false</code>, <code>undefined</code>. 默认为<code>undefined</code>，表示元素选择状态未知。<code>true</code>表示元素已选择；<code>false</code>表示未被选中。</td>
+              <td><pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tabpanel"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tablist"</span><span class="pln"> </span><span class="atn">role</span><span class="pun">=</span><span class="atv">"tablist"</span><span class="tag">&gt;</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">role</span><span class="pun">=</span><span class="atv">"tab"</span><span class="pln"> </span><span class="atn">aria-selected</span><span class="pun">=</span><span class="atv">"true"</span><span class="pln"> </span><span class="atn">tabindex</span><span class="pun">=</span><span class="atv">"0"</span><span class="tag">&gt;</span><span class="pln">美女</span><span class="tag">&lt;/li&gt;</span></li><li class="L3"><span class="pln">    </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">role</span><span class="pun">=</span><span class="atv">"tab"</span><span class="pln"> </span><span class="atn">aria-selected</span><span class="pun">=</span><span class="atv">"false"</span><span class="pln"> </span><span class="atn">tabindex</span><span class="pun">=</span><span class="atv">"-1"</span><span class="tag">&gt;</span><span class="pln">淑女</span><span class="tag">&lt;/li&gt;</span></li><li class="L4"><span class="pln">    </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">role</span><span class="pun">=</span><span class="atv">"tab"</span><span class="pln"> </span><span class="atn">aria-selected</span><span class="pun">=</span><span class="atv">"false"</span><span class="pln"> </span><span class="atn">tabindex</span><span class="pun">=</span><span class="atv">"-1"</span><span class="tag">&gt;</span><span class="pln">熟女</span><span class="tag">&lt;/li&gt;</span></li><li class="L5"><span class="pln">    </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">role</span><span class="pun">=</span><span class="atv">"tab"</span><span class="pln"> </span><span class="atn">aria-selected</span><span class="pun">=</span><span class="atv">"false"</span><span class="pln"> </span><span class="atn">tabindex</span><span class="pun">=</span><span class="atv">"-1"</span><span class="tag">&gt;</span><span class="pln">腐女</span><span class="tag">&lt;/li&gt;</span></li><li class="L6"><span class="pln">  </span><span class="tag">&lt;/ul&gt;</span></li><li class="L7"><span class="tag">&lt;/div&gt;</span></li></ol></pre></td>
+              <td><p>元素被选中表明其处于某种交互之中，因此选中元素很可能处于focus焦点获取状态。</p></td>
+            </tr>
+          </tbody>
+        </table>
+    </ul>
+      </div>

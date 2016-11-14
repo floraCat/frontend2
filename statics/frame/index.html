@@ -1,0 +1,477 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8">
+	<title>前端规范文档</title>
+	<link rel="stylesheet" href="../../css/common.css" />
+	<link rel="stylesheet" href="../../css/static-frame.css" />
+	<script src="../../js/rconfig.js"></script>
+	<script src="../../js/require.js" data-main="../../js/app/static-frame.js"></script>
+</head>
+<body data-render="head-foot">
+
+
+
+<!--开发时文件目录结构-->
+<div class="frameFile frame_1">
+
+	<ol>
+		<a class="btn_download" href="../../download/frame-dev.zip">下载整个项目文件夹</a>
+		<a class="key_toggle">以下展开</a>
+		
+		<!--/dist目录-->
+		<div class="dir0 open" data-dir="dist">
+			<p class="key"><a></a><b data-role="appDir">/dist</b><s></s><span>打包后站点根目录</span><i></i></p>
+			<div class="dir dir1">
+				<p class="key"><a></a><b data-role="imagesDir">/images</b><s></s><span>图片目录</span><i></i></p>
+				<div class="dir2 imagesDir">
+					<p><b>1.jpg</b></p>
+				</div>
+			</div>
+
+			<div class="dir dir1">
+				<p class="key"><a></a><b data-role="cssDir">/css</b><s></s><span>css目录</span><i></i></p>
+				<div class="dir dir2 cssDir">
+					<p class="key"><a></a><b data-role="imgsDir">/imgs</b><s></s><span>背景图目录</span><i></i></p>
+					<div class="dir3 imgsDir">
+						<p><b>01.png</b></p>
+					</div>
+					<p><b data-role="commonCss">common.css</b><s></s><span>共用样式表</span><i></i></p>
+					<p><b data-role="indexCss">index.css</b><s></s><span>首页样式表</span><i></i></p>
+					<p><b data-role="listCss">list.css</b><s></s><span>列表页样式表</span><i></i></p>
+				</div>
+			</div>
+
+			<div class="dir dir1">
+				<p class="key"><a></a><b data-role="jsDir">/js</b><s></s><span>脚本目录</span><i></i></p>
+				<div class="dir2 jsDir">
+					<p><b data-role="commonJs">g-common.js</b><s></s><span>共用脚本</span><i></i></p>
+					<p><b data-role="iconfigJs">iconfig.js</b><s></s><span>路径配置文件</span><i></i></p>
+					<p><b data-role="indexJs">p-index.js</b><s></s><span>首页样式表</span><i></i></p>
+					<p><b data-role="listJs">p-list.js</b><s></s><span>列表页样式表</span><i></i></p>
+				</div>
+			</div>
+
+			
+
+			<div class="dir dir1">
+				<p class="key"><a></a><b data-role="libDir">/lib</b><s></s><span>库目录</span><i></i></p>
+				<div class="dir2 libDir">
+					<p><b>jquery-1.10.2.js</b><s></s><span>jquery库</span></p>
+				</div>
+			</div>
+
+			<div class="dir dir1">
+				<p class="key"><a></a><b data-role="pluginsDir">/plugins</b><s></s><span>插件</span><i></i></p>
+				<div class="dir2 pluginsDir">
+					<p><b>my-plugin.js</b><s></s><span>自主开发的插件</span></p>
+				</div>
+			</div>
+
+			<div class="dir1">
+				<p><b data-role="indexHtml">index.html</b><s></s><span>首页</span><i></i></p>
+				<p><b data-role="listHtml">list.html</b><s></s><span>列表页</span><i></i></p>
+			</div>
+		</div>
+
+		<!--/dev目录-->
+		<div class="dir0 open" data-dir="dev">
+			<p class="key"><a></a><b data-role="appDir">/dev</b><s></s><span>开发时站点根目录</span><i></i></p>
+			<div class="dir dir1">
+				<p class="key"><a></a><b data-role="imagesDir">/images</b><s></s><span>图片目录</span><i></i></p>
+				<div class="dir2 imagesDir">
+					<p><b>1.jpg</b></p>
+				</div>
+			</div>
+
+			<div class="dir dir1">
+				<p class="key"><a></a><b data-role="jsDir">/js</b><s></s><span>脚本目录</span><i></i></p>
+				<div class="dir2 jsDir">
+					<p><b data-role="commonJs">g-functions.js</b><s></s><span>共用脚本</span><i></i></p>
+					<p><b data-role="headerJs">g-header.js</b><s></s><span>头部脚本</span><i></i></p>
+					<p><b data-role="lessJs">less.js</b><s></s><span>html中可直接执行less</span><i></i></p>
+					<p><b data-role="iconfigJs">iconfig.js</b><s></s><span>路径配置文件</span><i></i></p>
+					<p><b data-role="indexJs">p-index.js</b><s></s><span>首页样式表</span><i></i></p>
+					<p><b data-role="listJs">p-list.js</b><s></s><span>列表页样式表</span><i></i></p>
+				</div>
+			</div>
+
+			<div class="dir dir1">
+				<p class="key"><a></a><b data-role="lessDir">/less</b><s></s><span>less目录</span><i></i></p>
+				<div class="dir dir2 lessDir">
+					<p class="key"><a></a><b data-role="imgsDir">/imgs</b><s></s><span>背景图目录</span><i></i></p>
+					<div class="dir3 imgsDir">
+						<p><b>01.png</b></p>
+					</div>
+					<p><b data-role="varLess">pre-var.less</b><s></s><span>预定义less变量</span><i></i></p>
+					<p><b data-role="mixLess">pre-mix.less</b><s></s><span>预定义less类</span><i></i></p>
+					<p><b data-role="resetLess">reset.less</b><s></s><span>重置样式表预编译</span><i></i></p>
+					<p><b data-role="commonLess">common.less</b><s></s><span>共用样式表预编译</span><i></i></p>
+					<p><b data-role="indexLess">index.less</b><s></s><span>首页样式表预编译</span><i></i></p>
+					<p><b data-role="listLess">list.less</b><s></s><span>列表页样式表预编译</span><i></i></p>
+				</div>
+			</div>
+
+			<div class="dir dir1">
+				<p class="key"><a></a><b data-role="libDir">/lib</b><s></s><span>库目录</span><i></i></p>
+				<div class="dir2 libDir">
+					<p><b>jquery-1.10.2.js</b><s></s><span>jquery库</span></p>
+				</div>
+			</div>
+
+			<div class="dir dir1">
+				<p class="key"><a></a><b data-role="pluginsDir">/plugins</b><s></s><span>插件</span><i></i></p>
+				<div class="dir2 pluginsDir">
+					<p><b>my-plugin.js</b><s></s><span>自主开发的插件</span></p>
+				</div>
+			</div>
+
+			<div class="dir1">
+				<p><b data-role="indexHtml">index.html</b><s></s><span>首页</span><i></i></p>
+				<p><b data-role="listHtml">list.html</b><s></s><span>列表页</span><i></i></p>
+			</div>
+
+			<p><b data-role="enterHtml">__enter.html</b><s></s><span>整站页面链接入口</span><i></i></p>
+			<p><b data-role="gulpfileJs">gulpfile.html</b><s></s><span>构建gulp文件</span><i></i></p>
+		</div>
+
+	</ol>
+
+	<!--/dist各文件说明-->
+	<div class="showDivs">
+		<section>
+			<!--appDir note-->
+			<ul class="show dist_appDir">
+				gulp打包后的站点根目录：<br />
+				- 此文件夹下的文件是由gulp构建工具对开发目录'/dev/'下文件处理后转移而来的
+			</ul>
+			<!--cssDir note-->
+			<ul class="show dist_cssDir">
+			css目录<br />
+			- 存放css样式文件;<br />
+			- 此目录中的css是由开发目录'/dev/less/'经gulp编译压缩后转移而来
+			</ul>
+			<!--imgsDir note-->
+			<ul class="show dist_imgsDir">
+			背景图目录：<br />
+			- 存放项目用到的背景图 [一般为图标]<br />
+			- 此文件夹内的背景图由开发目录'/dev/less/imgs'下的背景图分类整合并经gulp压缩后转移而来
+			</ul>
+			<!--commonCss note-->
+			<ul class="show dist_commonCss">
+			共用样式表预编译：<br />
+			- 此文件是由开发目录'/dev/less/'中的'reset.less'和'common.less'等网站通用样式less文件经gulp编译合并压缩后转移而来
+			</ul>
+			<!--indexCss note-->
+			<ul class="show dist_indexCss">
+			首页样式表预编译：<br />
+			- 此文件是由开发目录'/dev/less/index.less'经gulp编译压缩后转移而来
+			</ul>
+			<!--listCss note-->
+			<ul class="show dist_listCss">
+			列表页样式表预编译：<br />
+			- 此文件是由开发目录'/dev/less/list.less'经gulp编译压缩后转移而来
+			</ul>
+			<!--imagesDir note-->
+			<ul class="show dist_imagesDir">
+			图片目录：<br />
+			- 存放整个项目除背景图以外的图片；<br />
+			- 此目录中的图片是由开发目录'/dev/images/'经gulp压缩后转移而来
+			</ul>
+			<!--jsDir note-->
+			<ul class="show dist_jsDir">
+			脚本目录：<br />
+			- 存放项目中的业务js脚本文件;<br />
+			- 除去 外调插件[存放到'/lib/'] & 自主插件[存放到/'plugins'/] 以外的其他脚本文件;<br />
+			- 此目录中的js是由开发目录下'/dev/js/'经gulp处理后转移而来
+			</ul>
+			<!--commonJs note-->
+			<ul class="show dist_commonJs">
+			共用脚本：<br />
+			- 项目各页面共用的脚本；<br />
+			- 此文件是由开发目录'/dev/js/'中的'g-functions.js'和'g-header.js'等网站共用脚本文件经gulp合并压缩后转移而来
+			</ul>
+			<!--rconfigJs note-->
+			<ul class="show dist_rconfigJs">
+			requireJs配置文件：<br />
+			- 整站通用的requireJs的参数配置<br />
+			- 此文件是由开发目录'/dev/js/rconfig.js'经gulp压缩后转移而来
+			</ul>
+			<!--requireJs note-->
+			<ul class="show dist_requireJs">
+			requireJs核心文件：<br />
+			- 此文件可使页面模块化调入js文件，以方便脚本文件的管理；<br />
+			- 项目各html均需调用此文件；<br />
+			- 此文件是由开发目录'/dev/js/require.js'经gulp压缩后转移而来
+			</ul>
+			<!--iconfigJs note-->
+			<ul class="show dist_iconfigJs">
+			路径配置文件：<br />
+			- 后端用以方便配置整站的链接路径<br />
+			- 此文件是由开发目录'/dev/js/iconfig.js'经gulp压缩后转移而来
+			</ul>
+			<!--indexJs note-->
+			<ul class="show dist_indexJs">
+			首页样式表：<br />
+			- 首页中除共用脚本以外的脚本<br />
+			- 此文件是由开发目录'/dev/js/p-index.js'经gulp压缩后转移而来
+			</ul>
+			<!--listJs note-->
+			<ul class="show dist_listJs">
+			列表页样式表：<br />
+			- 列表页中除共用脚本以外的脚本<br />
+			- 此文件是由开发目录'/dev/js/p-list.js'经gulp压缩后转移而来
+			</ul>
+			
+			<!--libDir note-->
+			<ul class="show dist_libDir">
+			库目录：<br />
+			- 存放外调的插件
+			- 此目录下的文件是由开发目录'/dev/js/lib'的文件经gulp压缩后转移而来
+			</ul>
+			<!--pluginsDir note-->
+			<ul class="show dist_pluginsDir">
+			插件目录：<br />
+			- 存放自主开发的插件
+			- 此目录下的文件是由开发目录'/dev/js/plugin'的文件经gulp压缩后转移而来
+			</ul>
+			<!--indexHtml note-->
+			<ul class="show dist_indexHtml">
+			首页html
+			</ul>
+			<!--listHtml note-->
+			<ul class="show dist_listHtml">
+			列表页html
+			</ul>
+		</section>
+
+		<section>
+			<!--appDir note-->
+			<ul class="show dev_appDir">
+				站点根目录：<br />
+				- 开发中的整个项目文件夹；<br />
+				- 项目发布前此文件夹内的文件会被gulp构建工具处理后转移到正式的项目发布目录'/dist/';
+			</ul>
+			<!--imagesDir note-->
+			<ul class="show dev_imagesDir">
+			图片目录：<br />
+			- 存放整个项目除背景图以外的图片；<br />
+			- 此目录内的图片在项目发布前会被gulp构建工具压缩后转移到目录'/dist/image/';
+			</ul>
+			<!--jsDir note-->
+			<ul class="show dev_jsDir">
+			脚本目录：<br />
+			- 存放项目中的业务js脚本文件;<br />
+			- 除去 外调插件[存放到'/lib/'] & 自主插件[存放到/'plugins'/] 以外的其他脚本文件;
+			</ul>
+			<!--commonJs note-->
+			<ul class="show dev_commonJs">
+			共用脚本：<br />
+			- 项目中通用的函数等脚本；<br />
+			- 发布前会与同目录的g-header.js等网站共用脚本文件合并成g-common.js经压缩后转移到目录'/dist/js'
+			</ul>
+			<!--headerJs note-->
+			<ul class="show dev_headerJs">
+			头部脚本：<br />
+			- 项目的共用头部用到的js脚本独立一个文件<br />
+			- 发布前会与同目录的g-function.js合并成g-common.js经压缩后转移到目录'/dist/js'
+			</ul>
+			<!--lessJs note-->
+			<ul class="show dev_lessJs">
+			less.js：<br />
+			- 默认html渲染中不能执行less预编译的样式文件<br />
+			- 此插件使得html可以直接执行less样式以方便前端测试<br />
+			- 发布前此脚本文件不会被包含到正式发布项目中<br />
+			- 发布前项目中的less会被编译成css转移到目录'/dist/css/'，html中调用的less会被css替换
+			</ul>
+			<!--rconfigJs note-->
+			<ul class="show dev_rconfigJs">
+			requireJs配置文件：<br />
+			- 整站通用的requireJs的参数配置
+			</ul>
+			<!--requireJs note-->
+			<ul class="show dev_requireJs">
+			requireJs核心文件：<br />
+			- 此文件可使页面模块化调入js文件，以方便脚本文件的管理；<br />
+			- 项目各html均需调用此文件；
+			</ul>
+			<!--iconfigJs note-->
+			<ul class="show dev_iconfigJs">
+			路径配置文件：<br />
+			- 后端用以方便配置整站的链接路径
+			</ul>
+			<!--indexJs note-->
+			<ul class="show dev_indexJs">
+			首页样式表：<br />
+			- 首页中除共用脚本以外的脚本
+			</ul>
+			<!--listJs note-->
+			<ul class="show dev_listJs">
+			列表页样式表：<br />
+			- 列表页中除共用脚本以外的脚本
+			</ul>
+			<!--lessDir note-->
+			<ul class="show dev_lessDir">
+			less目录<br />
+			- 存放less预编译样式文件;<br />
+			- 发布前项目中的less会被编译成css转移到目录'/dist/css/'，此目录最后不会被包含到正式发布项目中<br />
+			- 发布前html中调用的less会被css替换
+			</ul>
+			<!--imgsDir note-->
+			<ul class="show dev_imgsDir">
+			背景图目录：<br />
+			- 存放项目用到的背景图 [一般为图标]<br />
+			- 发布前此文件夹内的背景图会被分类整合到一张背景图中，再转移到目录'/dist/css/imgs/';
+			</ul>
+			<!--varLess note-->
+			<ul class="show dev_varLess">
+			预定义less变量：<br />
+			- 此less文件中预定义了项目通用的样式变量以供其他less文件调用；<br />
+			- 发布前此文件不会被编辑成css，也不会被包含在正式发布项目中
+			</ul>
+			<!--mixLess note-->
+			<ul class="show dev_mixLess">
+			预定义less类：<br />
+			- 此less文件中预定义了项目通用的样式class以供其他less文件调用；<br />
+			- 发布前此文件不会被编辑成css，也不会被包含在正式发布项目中
+			</ul>
+			<!--resetLess note-->
+			<ul class="show dev_resetLess">
+			重置样式表预编译：<br />
+			- 发布前此脚本文件会与同目录的common.less合并编译成common.css，再转存到正式发布目录'/dist/css/'中
+			</ul>
+			<!--commonLess note-->
+			<ul class="show dev_commonLess">
+			共用样式表预编译：<br />
+			- 发布前此脚本文件会与同目录的reset.less合并编译成common.css，再转存到正式发布目录'/dist/css/'中
+			</ul>
+			<!--indexLess note-->
+			<ul class="show dev_indexLess">
+			首页样式表预编译：<br />
+			- 发布前此脚本文件会被编译成index.css，再转存到正式发布目录'/dist/css/'中
+			</ul>
+			<!--listLess note-->
+			<ul class="show dev_listLess">
+			列表页样式表预编译：<br />
+			- 发布前此脚本文件会被编译成list.css，再转存到正式发布目录'/dist/css/'中
+			</ul>
+			<!--libDir note-->
+			<ul class="show dev_libDir">
+			库目录：<br />
+			- 存放外调的插件
+			- 此文件夹内的文件会被压缩后转存到正式发布目录'/dist/lib/'中
+			</ul>
+			<!--pluginsDir note-->
+			<ul class="show dev_pluginsDir">
+			插件目录：<br />
+			- 存放自主开发的插件
+			- 此文件夹内的文件会被压缩后转存到正式发布目录'/dist/plugins/'中
+			</ul>
+			<!--indexHtml note-->
+			<ul class="show dev_indexHtml">
+			首页html，其内部结构如下：<br />
+			- 具体代码请查看：<a class="btn" target="_blank" href="../../statics/frame/frame_index.html">index.html源码</a>
+			</ul>
+			<!--listHtml note-->
+			<ul class="show dev_listHtml">
+				列表页html，其内部结构如下：<br />
+			- 具体代码请查看：<a class="btn" target="_blank" href="../../statics/frame/frame_list.html">list.html源码</a>
+			</ul>
+			<!--enterHtml note-->
+			<ul class="show dev_enterHtml">
+			整站页面链接入口：<br />
+			- 所有页面的链接入口，使得项目结构一目了然，方便前后端开发测试
+			</ul>
+			<!--gulpfileJs note-->
+			<ul class="show dev_gulpfileJs">
+			gulp构建工具：<br />
+			- 具体代码请查看：<a class="btn" target="_blank" href="../../statics/frame/frame_gulpfile.html">gulpfile.html源码</a>
+			</ul>
+		</section>
+	</div>
+
+	<!--/dev各文件说明-->
+	<!-- <div class="showDivs">
+
+	</div> -->
+
+</div>
+
+
+<!------------------------------------------------------------------------------------------------------------------------>
+
+
+
+<!--打包后文件目录结构-->
+<div class="frameFile frame_2" style="left:-9999px;">
+
+<!-- 	<ol>
+		<a class="btn_download" href="../../download/frame-dest.zip">下载'打包后'整个项目文件夹'/dest'</a>
+		<a class="key_toggle">展开全部</a>
+		<div class="dir0">
+			<p class="key"><b style="padding-left: 32px;" data-role="appDir">/app</b><s></s><span>站点根目录</span><i></i></p>
+			<div class="dir dir1">
+				<p class="key"><a></a><b data-role="imagesDir">/images</b><s></s><span>图片目录</span><i></i></p>
+				<div class="dir2 imagesDir">
+					<p><b>1.jpg</b></p>
+				</div>
+			</div>
+
+			<div class="dir dir1">
+				<p class="key"><a></a><b data-role="cssDir">/css</b><s></s><span>css目录</span><i></i></p>
+				<div class="dir dir2 cssDir">
+					<p class="key"><a></a><b data-role="imgsDir">/imgs</b><s></s><span>背景图目录</span><i></i></p>
+					<div class="dir3 imgsDir">
+						<p><b>01.png</b></p>
+					</div>
+					<p><b data-role="commonCss">common.css</b><s></s><span>共用样式表</span><i></i></p>
+					<p><b data-role="indexCss">index.css</b><s></s><span>首页样式表</span><i></i></p>
+					<p><b data-role="listCss">list.css</b><s></s><span>列表页样式表</span><i></i></p>
+				</div>
+			</div>
+
+			<div class="dir dir1">
+				<p class="key"><a></a><b data-role="jsDir">/js</b><s></s><span>脚本目录</span><i></i></p>
+				<div class="dir2 jsDir">
+					<p><b data-role="commonJs">g_common.js</b><s></s><span>共用脚本</span><i></i></p>
+					<p><b data-role="rconfigJs">rconfig.js</b><s></s><span>requirejs配置文件</span><i></i></p>
+					<p><b data-role="requireJs">require.js</b><s></s><span>requirejs核心文件</span><i></i></p>
+					<p><b data-role="iconfigJs">iconfig.js</b><s></s><span>路径配置文件</span><i></i></p>
+					<p><b data-role="indexJs">p_index.js</b><s></s><span>首页样式表</span><i></i></p>
+					<p><b data-role="listJs">p_list.js</b><s></s><span>列表页样式表</span><i></i></p>
+				</div>
+			</div>
+
+			
+
+			<div class="dir dir1">
+				<p class="key"><a></a><b data-role="libDir">/lib</b><s></s><span>库目录</span><i></i></p>
+				<div class="dir2 libDir">
+					<p><b>jquery-1.10.2.js</b><s></s><span>jquery库</span></p>
+				</div>
+			</div>
+
+			<div class="dir dir1">
+				<p class="key"><a></a><b data-role="pluginsDir">/plugins</b><s></s><span>插件</span><i></i></p>
+				<div class="dir2 pluginsDir">
+					<p><b>catCarousel.js</b><s></s><span>幻灯片插件</span></p>
+				</div>
+			</div>
+
+			<div class="dir1">
+				<p><b data-role="indexHtml">index.html</b><s></s><span>首页</span><i></i></p>
+				<p><b data-role="listHtml">list.html</b><s></s><span>列表页</span><i></i></p>
+			</div>
+
+		</div>
+	</ol> -->
+
+</div>
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+
+
+
+/* top_* */
+.p-cats{ overflow:hidden; width:800px; margin: 40px auto 0;}
+.p-cats li{ float:left; text-align:center; padding: 0 14px; margin:20px 0px 10px;}
+.p-cats li a{ cursor: pointer;}
+.p-cats li .img{ display:table-cell; width:120px; height:120px; overflow: hidden; vertical-align: middle; text-align: center; border:#ddd solid 6px;
+border-radius:66px; -webkit-border-radius:66px; -moz-border-radius:66px; -khtml-border-radius:66px;}
+.p-cats li:hover .img{ border-color:#3f86f0;}
+.p-cats li .img img{ width:120px; max-height:120px; 
+border-radius:60px; -webkit-border-radius:60px; -moz-border-radius:60px; -khtml-border-radius:60px;}
+.p-cats li h4{ font-size:13px;line-height: 30px;}
+.p-cats li h4 a{ color: #444;}
+.p-cats li h4 a i{ display: inline; font-size: 12px; color: #5cb85c; font-style: normal;}
+.p-cats-wraper .p-cats{ display: none;}
+.p-cats .hd{ font-size: 14px; font-weight: bold;}
+

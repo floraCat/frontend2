@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8">
+	<title>组件</title>
+	<link rel="stylesheet" href="../../css/common.css" />
+	<link rel="stylesheet" href="../../css/page-cat.css" />
+	<script src="../../js/rconfig.js"></script>
+	<script src="../../js/require.js" data-main="../../js/app/cat-default.js"></script>
+</head>
+<body data-render="head-foot">
+
+
+
+<div class="p-container">
+
+	<div class="g-note">
+	    <p class="s">以下为网页常用模块的分类，每个分类包含 <i>[ </i><em>'基本结构模块'</em><i>：只注重结构定位和布局 ]</i> 和 <i>[ </i><em>'参考样式模块'</em><i>：基于基本结构的各种表现效果 ]</i></p>
+	</div>
+
+	<!--=====jsRender渲染======-->
+	<ul class="p-cats" data-rs="rs-cat" data-link="../../tpls/lists/list-default.html"></ul>
+	<script data-tpl="tpl-cat" type="text/x-jsrender">
+		{{for _cat_}}
+	    <li data-trans="{{:_title_}}">
+	        <a class="img">
+	        	{{if ~root.col.indexOf("others/bs/bs-")>=0}}<!--bs-->
+	        		<img src="../../images/sketch/{{:~root.col}}/{{:_title_}}_01.png" alt="" />
+	        	{{else}}
+					<img src="../../images/3.jpg" alt="" />
+	        	{{/if}}
+	        </a>
+	        <h4><a class="A">{{:_zh_}} <i>{{:_title_}}</i></a></h4>
+	    </li>
+	    {{/for}}
+	</script>
+	<!--=====/jsRender渲染======-->
+
+</div><!--/p-container-->
+
+
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_article_>
+		<_title_>dialog_self</_title_>
+		<_desc_>对话框</_desc_>
+		<_demo_>
+			<_item_>
+				<_title2_>dialog_self_default</_title2_>
+				<_zh2_>默认</_zh2_>
+			</_item_>
+			<_item_>
+				<_title2_>dialog_self_callback</_title2_>
+				<_zh2_>确定后回调</_zh2_>
+			</_item_>
+			<_item_>
+				<_title2_>dialog_self_icon</_title2_>
+				<_zh2_>带提示图标</_zh2_>
+			</_item_>
+			<_item_>
+				<_title2_>dialog_self_link</_title2_>
+				<_zh2_>确定后跳转</_zh2_>
+			</_item_>
+			<_item_>
+				<_title2_>dialog_self_setTime</_title2_>
+				<_zh2_>倒计时关闭</_zh2_>
+			</_item_>
+		</_demo_>
+		<_rely_>
+			<_item_>
+				<_url2_>../../js/examples/plugins/show/h-dialog.js</_url2_>
+				<_desc2_>主要执行脚本</_desc2_>
+			</_item_>
+		</_rely_>
+		<_hack_>
+			<_f_>Firefox</_f_>
+			<_c_>Chrome</_c_>
+			<_s_>Safari</_s_>
+			<_i11_>i11</_i11_>
+			<_i11_>i10</_i11_>
+			<_i11_>i9</_i11_>
+			<_i11_>i8</_i11_>
+			<_i11_>i7</_i11_>
+			<_i11_>i6</_i11_>
+		</_hack_>
+		<_link_>
+			<_item_>暂无</_item_>
+		</_link_>
+		<_parm_>
+			<_item_>
+				<_name2_>parmName1</_name2_>
+				<_need2_>yse</_need2_>
+				<_txt2_>descText</_txt2_>
+			</_item_>
+		</_parm_>
+		<_content_>
+			<![CDATA[
+<pre>
+ * 插件名称：提示弹窗
+ * 插件描述：可配置多种常用的提示弹窗
+ * 参数说明：
+ *   - @data_id:弹窗的识别ID
+ *   - @icon:提示图标的类名
+ *   - @title:标题
+ *   - @note: 提示信息：文本|定位 [例：'弹窗提示信息|center']
+ *   - @setTime: 倒计时：毫秒数
+ *   - @btn: 按键：文本|定位|data-role值|底色|字色|边线色|链接 [例：'确定|right|confirm|#89b632|white|#89b632|http://www.baidu.com']
+ *   - @btn2: 按键2：文本|定位|data-role值|底色|字色|边线色|链接 [例：'取消|left|cancel|#fff|#529d20|#beda84']
+ *   - @icon_quit: 弹窗退出图标定位
+ *   - @callback: 回调函数
+ * 其他说明：
+ *   - 兼容chorme,firefox,ie
+</pre>
+	]]>
+		</_content_>
+
+</_article_>

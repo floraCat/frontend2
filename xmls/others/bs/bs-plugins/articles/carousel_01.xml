@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<_article_>
+
+		<_title_>carousel_01</_title_>
+
+		<_desc_>幻灯片</_desc_>
+
+		<_hack_>
+			<_f_>Firefox</_f_>
+			<_c_>Chrome</_c_>
+			<_s_>Safari</_s_>
+			<_i11_>i11</_i11_>
+			<_i10_>i10</_i10_>
+			<_i9_>i9</_i9_>
+			<_i8_>i8</_i8_>
+			<_i7_></_i7_>
+			<_i6_></_i6_>
+		</_hack_>
+
+		<_rely_>
+			<_item_>
+				<_url2_>../../js/lib/bootstrap/css/bootstrap.min.css</_url2_>
+				<_desc2_>bs样式表</_desc2_>
+			</_item_>
+			<_item_>
+				<_url2_>../../js/lib/bootstrap/js/bootstrap.min.js</_url2_>
+				<_desc2_>bs脚本文件</_desc2_>
+			</_item_>
+		</_rely_>
+
+		<_link_>
+			<_item_>暂无</_item_>
+		</_link_>
+
+		<_parm_>
+			<_item_>
+				<_name2_>parmName1</_name2_>
+				<_need2_>yse</_need2_>
+				<_txt2_>descText</_txt2_>
+			</_item_>
+		</_parm_>
+
+		<_style_>
+		</_style_>
+
+		<_html_>
+<![CDATA[
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="../../images/list1.jpg" alt="...">
+      <div class="carousel-caption">
+        ...
+      </div>
+    </div>
+    <div class="item">
+      <img src="../../images/list1.jpg" alt="...">
+      <div class="carousel-caption">
+        ...
+      </div>
+    </div>
+    ...
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+]]>
+		</_html_>
+
+		<_script_>
+		</_script_>
+
+		<_content_>
+<![CDATA[
+<pre>
+说明正文
+</pre>
+]]>
+		</_content_>
+
+</_article_>

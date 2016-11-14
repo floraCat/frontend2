@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<_list_>
+
+	<_text_>
+		<_item_><_title_>text_01</_title_><_zh_>文本域</_zh_></_item_>
+		<_item_><_title_>text_02</_title_><_zh_>文本域_座机号码</_zh_></_item_>
+		<_item_><_title_>text_03</_title_><_zh_>文本域</_zh_></_item_>
+	</_text_>
+
+	<_password_>
+		<_item_><_title_>password_01</_title_><_zh_>密码域</_zh_></_item_>
+		<_item_><_title_>password_02</_title_><_zh_>密码域_可切换是否显示真实数据</_zh_></_item_>
+		<_item_><_title_>password_03</_title_><_zh_>密码域</_zh_></_item_>
+		<_item_><_title_>password_04</_title_><_zh_>密码域_可切换是否显示真实数据</_zh_></_item_>
+	</_password_>
+
+	<_radio_>
+		<_item_><_title_>radio_01</_title_><_zh_>单选</_zh_></_item_>
+	</_radio_>
+
+	<_checkbox_>
+		<_item_><_title_>checkbox_01</_title_><_zh_>复选框</_zh_></_item_>
+		<_item_><_title_>checkbox_02</_title_><_zh_>复选框_单个</_zh_></_item_>
+		<_item_><_title_>checkbox_03</_title_><_zh_>复选框+链接</_zh_></_item_>
+	</_checkbox_>
+
+	<_file_>
+		<_item_><_title_>file_01</_title_><_zh_>图片上传_单个/隐藏控件</_zh_></_item_>
+		<_item_><_title_>file_02</_title_><_zh_>图片上传_单个</_zh_></_item_>
+		<_item_><_title_>file_03</_title_><_zh_>图片上传_固定多个</_zh_></_item_>
+		<_item_><_title_>file_04</_title_><_zh_>图片上传_个数不限</_zh_></_item_>
+	</_file_>
+
+	<_select_>
+		<_item_><_title_>select_01</_title_><_zh_>选项框_默认样式</_zh_></_item_>
+		<_item_><_title_>select_02</_title_><_zh_>选项框_默认样式/多个</_zh_></_item_>
+		<_item_><_title_>select_11</_title_><_zh_>选项框_下拉前隐藏控件</_zh_></_item_>
+		<_item_><_title_>select_12</_title_><_zh_>选项框_下拉前隐藏控件/多个</_zh_></_item_>
+		<_item_><_title_>select_21</_title_><_zh_>选项框_隐藏控件/自定义样式</_zh_></_item_>
+		<_item_><_title_>select_22</_title_><_zh_>选项框_隐藏控件/自定义样式/多个</_zh_></_item_>
+	</_select_>
+
+	<_textarea_>
+		<_item_><_title_>textarea_01</_title_><_zh_>多行文本域_限制字数</_zh_></_item_>
+		<_item_><_title_>textarea_02</_title_><_zh_>多行文本域_限制及显示剩余字数</_zh_></_item_>
+	</_textarea_>
+
+	<_others_>
+		<_item_><_title_>others_01</_title_><_zh_>验证码</_zh_></_item_>
+		<_item_><_title_>others_02</_title_><_zh_>手机获取验证码</_zh_></_item_>
+		<_item_><_title_>others_03</_title_><_zh_>表单底部入口</_zh_></_item_>
+		<_item_><_title_>others_04</_title_><_zh_>提交按键</_zh_></_item_>
+	</_others_>
+
+</_list_>

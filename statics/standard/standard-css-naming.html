@@ -1,0 +1,173 @@
+<link rel="stylesheet" href="../../css/static-standard.css" />
+
+<div class="txtBody">
+
+<div class="section">
+	<h5>外容器类名：</h5>
+	<h6>规范说明：</h6>
+	<ul>
+		<li>外容器针对的是页面中各个模块的外容器元素</li>
+		<li>要求需要前缀'p-'，(p寓意page)</li>
+		<li>整个项目中是唯一的，不能重复</li>
+	</ul>
+	<i></i>
+	<h6>类名参考：</h6>
+	<pre>p-topbar            //顶部工具栏
+p-header            //网页头部
+p-search            //网页搜索框
+p-mainnav            //头部主导航
+p-sidebar            //侧导航
+p-crumb            //面包屑导航
+p-floor            //楼层
+p-channel            //频道
+p-column            //栏目
+p-special            //专栏
+p-cats            //分类列表
+p-ttls            //标题列表
+p-menu            //菜单
+p-submenu            //下级菜单
+p-wraper            //容器
+p-container            //容器
+p-main            //主体内容
+p-details            //详情
+p-article            //文档正文
+p-list            //通用列表
+p-list-news            //新闻列表
+p-list-prod            //产品列表
+p-list-case            //案例列表
+p-pagination            //分页
+p-banner-ad            //广告横幅
+p-ads            //广告位
+p-info            //相关信息
+p-notice            //通告之类
+p-friendlink            //友情链接
+p-partner            //合作伙伴
+p-brand            //合作品牌
+p-guide            //向导之类
+p-copyright            //版权之类
+p-footer            //网页底部
+p-login            //登录
+p-register            //注册
+p-layout            //版面布局
+p-form            //表单
+p-table            //表格
+...</pre>
+</div>
+
+
+<div class="section">
+	<h5>共用模块类名：</h5>
+	<h6>规范说明：</h6>
+	<ul>
+		<li>包括共用样式的命名和独立(功能)模块的命名</li>
+		<li>要求需要前缀'g-'，(g寓意global)</li>
+		<li>整个项目中是唯一的，不能重复</li>
+	</ul>
+	<i></i>
+	<h6>类名参考：</h6>
+	<pre>g-ttl            //通用标题
+g-hd            //栏目头部
+g-btn            //按键
+g-label            //标签之类
+g-switch            //切换小控件
+g-toggle            //切换小控件
+g-arrow-down            //通用箭头样式（如下拉箭头）
+g-flex            //flex弹性盒模型通用样式
+g-check            //自定义勾选框
+g-select            //自定义选项框
+g-cart            //购物车模块
+...</pre>
+</div>
+
+<div class="section">
+	<h5>下级类名：</h5>
+	<h6>规范说明：</h6>
+	<ul>
+		<li>下级类名指的是外容器下级的元素类名，这里排除掉共用模块</li>
+		<li>要求不要带有前缀如'p-'和'g-'，以区分外容器和共用模块的类名</li>
+		<li>除切换用途外请避免使用类名'active','on'和'cur'，以防止与js设置的切换类名冲突</li>
+		<li>一组时可在类名后适当添加's',如：多个条目可使用'items'</li>
+		<li>只要不在同一个外容器内命名可以重复，只要其样式设置在外容器下级即可</li>
+	</ul>
+	<i></i>
+	<h6>类名参考：</h6>
+	<pre>left            //左边
+right            //右边
+cen            //中间
+top            //顶部
+btm            //底部
+logo            //商标
+ttl            //标题
+hd            //分栏头部
+btn            //按键
+more            //更多
+item            //条目
+list            //列表
+unit            //一组
+drop            //下拉
+nav            //导航
+menu            //菜单
+pannel            //面板
+wrap            //容器
+list            //列表
+info            //信息
+desc            //描述
+summary            //摘要
+body            //主体
+banner            //横幅
+tab            //标签
+label            //标签
+msg            //信息
+link            //链接
+icon            //图标
+hot            //热点
+new            //最新
+tel            //电话
+column            //栏目
+status            //状态
+ad            //广告
+slogan            //标语
+keyword            //搜索关键字
+submit            //提交控件
+spec            //特定样式
+img            //图片
+first            //第一
+last            //最后
+prev            //上一个
+next            //下一个
+hidden            //隐藏
+power            //版权
+brand            //品牌
+switch            //切换
+txt            //文本
+...</pre>
+</div>
+
+
+
+<div class="section">
+	<h5>样式表命名：</h5>
+	<h6>规范说明：</h6>
+	<ul>
+		<li>分隔符适当使用点'.'或中划线'-'</li>
+	</ul>
+	<i></i>
+	<h6>类名参考：</h6>
+	<pre>通用样式：common.css     //重置代码及网站头部底部侧栏等公用代码（开发时可按模块区分开来，如：reset.css+header.css+footer.css+common.css，发布前合并成一个样式表）
+首页：index.css
+各页面特定样式（如 新闻列表页：list-news.css）     //样式表名称尽量跟html文件名对应
+布局/版面：layout.css
+主题：themes.css
+文字：font.css
+表单：forms.css
+补丁：mend.css
+打印：print.css
+jq插件样式：jquery.plugin-name.css
+...</pre>
+</div>
+
+
+
+</div>
+
+

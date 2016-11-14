@@ -1,0 +1,1484 @@
+<link rel="stylesheet" href="../../css/static-standard.css" />
+<link rel="stylesheet" href="http://static.h-ui.net/h-ui/css/H-ui.min.css" />
+<style>
+<style type="text/css">
+html {overflow-y:auto}
+.navbar .container{padding-left: 15px; padding-right: 15px; width: auto!important}
+.nav-toggle { display: none!important}
+.colortab{ background-color:rgba(255, 255, 255, 0.7); padding:5px 0px;border-bottom:solid 1px #ddd; z-index:99; left:0; right:0}
+.colortab.isStuck{ padding:5px 15px}
+.colortab span{ cursor:pointer; display:inline-block; float:left; background-color:#e8e8e8; padding:5px 15px; margin-right:10px; margin-bottom:5px;}
+.colortab span.selected{ background-color:#222; color:#fff}
+.colorcon{ display:none;}
+.colors-list .item .swatch {display:block;height:70px;border: 1px solid #E6E6E6;}
+.colors-list .item h3{font-size: 0.8em;padding:5px; margin:0}
+.colors-list .item h3 .html,.colors-list .item h3 .rgb{ display:block; color:#808080; height:20px; line-height:20px}
+.colors-list .item h3 span b{font-weight: bold;padding-right:15px; color:#333}
+.colors-list .item h3 .rgb b{ padding-right:22px}
+@media (max-width: 767px) {
+	.colortab.isStuck{ padding:5px 15px}
+}
+</style>
+
+
+
+<body>
+
+<div id="page-websafecolor" class="container-fluid">
+	<div class="cl pt-20" style="margin-top: 0px;">
+		<div class="cl colortab stuckMenu" style="position: relative; top: 0px;"><span class="">216 Web安全色</span><span>绿色 / 蓝色</span><span class="selected">红色 / 蓝色</span><span class="">红色 / 绿色</span><span class="">柔和色</span><span class="">Earth Tones</span><span class="">灰色</span></div>
+		<article class="colorcon" id="all_colors" style="display: none;">
+			<h2>216 Web安全色</h2>
+			<div class="colors-list cl row">
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #000000" class="swatch"></span>
+					<h3><span class="html"> <b>HTML</b>#000000 </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">0</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #000033" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#000033 </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">0</span> <span class="blue">51</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #000066" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#000066 </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">0</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #000099" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#000099 </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">0</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #0000CC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#0000CC </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">0</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #0000FF" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#0000FF </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">0</span> <span class="blue">255</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #003300" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#003300 </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">51</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #003333" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#003333 </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">51</span> <span class="blue">51</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #003366" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#003366 </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">51</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #003399" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#003399 </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">51</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #0033CC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#0033CC </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">51</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #0033FF" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#0033FF </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">51</span> <span class="blue">255</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #006600" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#006600 </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">102</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #006633" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#006633 </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">102</span> <span class="blue">51</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #006666" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#006666 </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">102</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #006699" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#006699 </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">102</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #0066CC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#0066CC </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">102</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #0066FF" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#0066FF </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">102</span> <span class="blue">255</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #009900" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#009900 </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">153</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #009933" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#009933 </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">153</span> <span class="blue">51</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #009966" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#009966 </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">153</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #009999" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#009999 </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">153</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #0099CC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#0099CC </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">153</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #0099FF" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#0099FF </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">153</span> <span class="blue">255</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #00CC00" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#00CC00 </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">204</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #00CC33" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#00CC33 </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">204</span> <span class="blue">51</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #00CC66" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#00CC66 </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">204</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #00CC99" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#00CC99 </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">204</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #00CCCC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#00CCCC </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">204</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #00CCFF" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#00CCFF </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">204</span> <span class="blue">255</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #00FF00" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#00FF00 </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">255</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #00FF33" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#00FF33 </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">255</span> <span class="blue">51</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #00FF66" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#00FF66 </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">255</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #00FF99" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#00FF99 </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">255</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #00FFCC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#00FFCC </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">255</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #00FFFF" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#00FFFF </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">255</span> <span class="blue">255</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #330000" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#330000 </span> <span class="rgb"> <b>RGB</b> <span class="red">51</span> <span class="green">0</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #330033" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#330033 </span> <span class="rgb"> <b>RGB</b> <span class="red">51</span> <span class="green">0</span> <span class="blue">51</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #330066" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#330066 </span> <span class="rgb"> <b>RGB</b> <span class="red">51</span> <span class="green">0</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #330099" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#330099 </span> <span class="rgb"> <b>RGB</b> <span class="red">51</span> <span class="green">0</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #3300CC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#3300CC </span> <span class="rgb"> <b>RGB</b> <span class="red">51</span> <span class="green">0</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #3300FF" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#3300FF </span> <span class="rgb"> <b>RGB</b> <span class="red">51</span> <span class="green">0</span> <span class="blue">255</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #333300" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#333300 </span> <span class="rgb"> <b>RGB</b> <span class="red">51</span> <span class="green">51</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #333333" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#333333 </span> <span class="rgb"> <b>RGB</b> <span class="red">51</span> <span class="green">51</span> <span class="blue">51</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #333366" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#333366 </span> <span class="rgb"> <b>RGB</b> <span class="red">51</span> <span class="green">51</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #333399" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#333399 </span> <span class="rgb"> <b>RGB</b> <span class="red">51</span> <span class="green">51</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #3333CC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#3333CC </span> <span class="rgb"> <b>RGB</b> <span class="red">51</span> <span class="green">51</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #3333FF" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#3333FF </span> <span class="rgb"> <b>RGB</b> <span class="red">51</span> <span class="green">51</span> <span class="blue">255</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #336600" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#336600 </span> <span class="rgb"> <b>RGB</b> <span class="red">51</span> <span class="green">102</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #336633" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#336633 </span> <span class="rgb"> <b>RGB</b> <span class="red">51</span> <span class="green">102</span> <span class="blue">51</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #336666" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#336666 </span> <span class="rgb"> <b>RGB</b> <span class="red">51</span> <span class="green">102</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #336699" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#336699 </span> <span class="rgb"> <b>RGB</b> <span class="red">51</span> <span class="green">102</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #3366CC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#3366CC </span> <span class="rgb"> <b>RGB</b> <span class="red">51</span> <span class="green">102</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #3366FF" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#3366FF </span> <span class="rgb"> <b>RGB</b> <span class="red">51</span> <span class="green">102</span> <span class="blue">255</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #339900" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#339900 </span> <span class="rgb"> <b>RGB</b> <span class="red">51</span> <span class="green">153</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #339933" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#339933 </span> <span class="rgb"> <b>RGB</b> <span class="red">51</span> <span class="green">153</span> <span class="blue">51</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #339966" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#339966 </span> <span class="rgb"> <b>RGB</b> <span class="red">51</span> <span class="green">153</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #339999" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#339999 </span> <span class="rgb"> <b>RGB</b> <span class="red">51</span> <span class="green">153</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #3399CC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#3399CC </span> <span class="rgb"> <b>RGB</b> <span class="red">51</span> <span class="green">153</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #3399FF" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#3399FF </span> <span class="rgb"> <b>RGB</b> <span class="red">51</span> <span class="green">153</span> <span class="blue">255</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #33CC00" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#33CC00 </span> <span class="rgb"> <b>RGB</b> <span class="red">51</span> <span class="green">204</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #33CC33" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#33CC33 </span> <span class="rgb"> <b>RGB</b> <span class="red">51</span> <span class="green">204</span> <span class="blue">51</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #33CC66" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#33CC66 </span> <span class="rgb"> <b>RGB</b> <span class="red">51</span> <span class="green">204</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #33CC99" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#33CC99 </span> <span class="rgb"> <b>RGB</b> <span class="red">51</span> <span class="green">204</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #33CCCC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#33CCCC </span> <span class="rgb"> <b>RGB</b> <span class="red">51</span> <span class="green">204</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #33CCFF" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#33CCFF </span> <span class="rgb"> <b>RGB</b> <span class="red">51</span> <span class="green">204</span> <span class="blue">255</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #33FF00" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#33FF00 </span> <span class="rgb"> <b>RGB</b> <span class="red">51</span> <span class="green">255</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #33FF33" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#33FF33 </span> <span class="rgb"> <b>RGB</b> <span class="red">51</span> <span class="green">255</span> <span class="blue">51</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #33FF66" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#33FF66 </span> <span class="rgb"> <b>RGB</b> <span class="red">51</span> <span class="green">255</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #33FF99" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#33FF99 </span> <span class="rgb"> <b>RGB</b> <span class="red">51</span> <span class="green">255</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #33FFCC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#33FFCC </span> <span class="rgb"> <b>RGB</b> <span class="red">51</span> <span class="green">255</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #33FFFF" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#33FFFF </span> <span class="rgb"> <b>RGB</b> <span class="red">51</span> <span class="green">255</span> <span class="blue">255</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #660000" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#660000 </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">0</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #660033" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#660033 </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">0</span> <span class="blue">51</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #660066" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#660066 </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">0</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #660099" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#660099 </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">0</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #6600CC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#6600CC </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">0</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #6600FF" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#6600FF </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">0</span> <span class="blue">255</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #663300" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#663300 </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">51</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #663333" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#663333 </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">51</span> <span class="blue">51</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #663366" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#663366 </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">51</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #663399" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#663399 </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">51</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #6633CC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#6633CC </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">51</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #6633FF" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#6633FF </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">51</span> <span class="blue">255</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #666600" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#666600 </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">102</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #666633" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#666633 </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">102</span> <span class="blue">51</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #666666" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#666666 </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">102</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #666699" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#666699 </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">102</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #6666CC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#6666CC </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">102</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #6666FF" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#6666FF </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">102</span> <span class="blue">255</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #669900" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#669900 </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">153</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #669933" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#669933 </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">153</span> <span class="blue">51</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #669966" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#669966 </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">153</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #669999" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#669999 </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">153</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #6699CC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#6699CC </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">153</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #6699FF" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#6699FF </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">153</span> <span class="blue">255</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #66CC00" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#66CC00 </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">204</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #66CC33" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#66CC33 </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">204</span> <span class="blue">51</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #66CC66" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#66CC66 </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">204</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #66CC99" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#66CC99 </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">204</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #66CCCC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#66CCCC </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">204</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #66CCFF" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#66CCFF </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">204</span> <span class="blue">255</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #66FF00" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#66FF00 </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">255</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #66FF33" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#66FF33 </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">255</span> <span class="blue">51</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #66FF66" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#66FF66 </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">255</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #66FF99" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#66FF99 </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">255</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #66FFCC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#66FFCC </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">255</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #66FFFF" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#66FFFF </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">255</span> <span class="blue">255</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #990000" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#990000 </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">0</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #990033" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#990033 </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">0</span> <span class="blue">51</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #990066" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#990066 </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">0</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #990099" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#990099 </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">0</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #9900CC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#9900CC </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">0</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #9900FF" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#9900FF </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">0</span> <span class="blue">255</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #993300" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#993300 </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">51</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #993333" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#993333 </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">51</span> <span class="blue">51</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #993366" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#993366 </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">51</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #993399" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#993399 </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">51</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #9933CC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#9933CC </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">51</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #9933FF" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#9933FF </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">51</span> <span class="blue">255</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #996600" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#996600 </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">102</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #996633" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#996633 </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">102</span> <span class="blue">51</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #996666" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#996666 </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">102</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #996699" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#996699 </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">102</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #9966CC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#9966CC </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">102</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #9966FF" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#9966FF </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">102</span> <span class="blue">255</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #999900" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#999900 </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">153</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #999933" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#999933 </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">153</span> <span class="blue">51</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #999966" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#999966 </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">153</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #999999" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#999999 </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">153</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #9999CC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#9999CC </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">153</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #9999FF" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#9999FF </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">153</span> <span class="blue">255</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #99CC00" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#99CC00 </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">204</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #99CC33" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#99CC33 </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">204</span> <span class="blue">51</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #99CC66" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#99CC66 </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">204</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #99CC99" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#99CC99 </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">204</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #99CCCC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#99CCCC </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">204</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #99CCFF" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#99CCFF </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">204</span> <span class="blue">255</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #99FF00" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#99FF00 </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">255</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #99FF33" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#99FF33 </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">255</span> <span class="blue">51</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #99FF66" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#99FF66 </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">255</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #99FF99" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#99FF99 </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">255</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #99FFCC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#99FFCC </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">255</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #99FFFF" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#99FFFF </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">255</span> <span class="blue">255</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CC0000" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CC0000 </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">0</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CC0033" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CC0033 </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">0</span> <span class="blue">51</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CC0066" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CC0066 </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">0</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CC0099" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CC0099 </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">0</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CC00CC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CC00CC </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">0</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CC00FF" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CC00FF </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">0</span> <span class="blue">255</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CC3300" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CC3300 </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">51</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CC3333" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CC3333 </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">51</span> <span class="blue">51</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CC3366" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CC3366 </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">51</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CC3399" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CC3399 </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">51</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CC33CC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CC33CC </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">51</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CC33FF" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CC33FF </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">51</span> <span class="blue">255</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CC6600" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CC6600 </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">102</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CC6633" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CC6633 </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">102</span> <span class="blue">51</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CC6666" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CC6666 </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">102</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CC6699" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CC6699 </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">102</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CC66CC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CC66CC </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">102</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CC66FF" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CC66FF </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">102</span> <span class="blue">255</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CC9900" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CC9900 </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">153</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CC9933" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CC9933 </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">153</span> <span class="blue">51</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CC9966" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CC9966 </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">153</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CC9999" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CC9999 </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">153</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CC99CC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CC99CC </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">153</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CC99FF" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CC99FF </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">153</span> <span class="blue">255</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CCCC00" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CCCC00 </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">204</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CCCC33" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CCCC33 </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">204</span> <span class="blue">51</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CCCC66" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CCCC66 </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">204</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CCCC99" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CCCC99 </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">204</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CCCCCC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CCCCCC </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">204</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CCCCFF" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CCCCFF </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">204</span> <span class="blue">255</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CCFF00" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CCFF00 </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">255</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CCFF33" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CCFF33 </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">255</span> <span class="blue">51</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CCFF66" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CCFF66 </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">255</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CCFF99" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CCFF99 </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">255</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CCFFCC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CCFFCC </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">255</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CCFFFF" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CCFFFF </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">255</span> <span class="blue">255</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #FF0000" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#FF0000 </span> <span class="rgb"> <b>RGB</b> <span class="red">255</span> <span class="green">0</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #FF0033" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#FF0033 </span> <span class="rgb"> <b>RGB</b> <span class="red">255</span> <span class="green">0</span> <span class="blue">51</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #FF0066" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#FF0066 </span> <span class="rgb"> <b>RGB</b> <span class="red">255</span> <span class="green">0</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #FF0099" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#FF0099 </span> <span class="rgb"> <b>RGB</b> <span class="red">255</span> <span class="green">0</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #FF00CC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#FF00CC </span> <span class="rgb"> <b>RGB</b> <span class="red">255</span> <span class="green">0</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #FF00FF" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#FF00FF </span> <span class="rgb"> <b>RGB</b> <span class="red">255</span> <span class="green">0</span> <span class="blue">255</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #FF3300" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#FF3300 </span> <span class="rgb"> <b>RGB</b> <span class="red">255</span> <span class="green">51</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #FF3333" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#FF3333 </span> <span class="rgb"> <b>RGB</b> <span class="red">255</span> <span class="green">51</span> <span class="blue">51</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #FF3366" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#FF3366 </span> <span class="rgb"> <b>RGB</b> <span class="red">255</span> <span class="green">51</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #FF3399" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#FF3399 </span> <span class="rgb"> <b>RGB</b> <span class="red">255</span> <span class="green">51</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #FF33CC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#FF33CC </span> <span class="rgb"> <b>RGB</b> <span class="red">255</span> <span class="green">51</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #FF33FF" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#FF33FF </span> <span class="rgb"> <b>RGB</b> <span class="red">255</span> <span class="green">51</span> <span class="blue">255</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #FF6600" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#FF6600 </span> <span class="rgb"> <b>RGB</b> <span class="red">255</span> <span class="green">102</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #FF6633" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#FF6633 </span> <span class="rgb"> <b>RGB</b> <span class="red">255</span> <span class="green">102</span> <span class="blue">51</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #FF6666" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#FF6666 </span> <span class="rgb"> <b>RGB</b> <span class="red">255</span> <span class="green">102</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #FF6699" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#FF6699 </span> <span class="rgb"> <b>RGB</b> <span class="red">255</span> <span class="green">102</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #FF66CC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#FF66CC </span> <span class="rgb"> <b>RGB</b> <span class="red">255</span> <span class="green">102</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #FF66FF" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#FF66FF </span> <span class="rgb"> <b>RGB</b> <span class="red">255</span> <span class="green">102</span> <span class="blue">255</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #FF9900" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#FF9900 </span> <span class="rgb"> <b>RGB</b> <span class="red">255</span> <span class="green">153</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #FF9933" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#FF9933 </span> <span class="rgb"> <b>RGB</b> <span class="red">255</span> <span class="green">153</span> <span class="blue">51</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #FF9966" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#FF9966 </span> <span class="rgb"> <b>RGB</b> <span class="red">255</span> <span class="green">153</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #FF9999" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#FF9999 </span> <span class="rgb"> <b>RGB</b> <span class="red">255</span> <span class="green">153</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #FF99CC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#FF99CC </span> <span class="rgb"> <b>RGB</b> <span class="red">255</span> <span class="green">153</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #FF99FF" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#FF99FF </span> <span class="rgb"> <b>RGB</b> <span class="red">255</span> <span class="green">153</span> <span class="blue">255</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #FFCC00" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#FFCC00 </span> <span class="rgb"> <b>RGB</b> <span class="red">255</span> <span class="green">204</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #FFCC33" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#FFCC33 </span> <span class="rgb"> <b>RGB</b> <span class="red">255</span> <span class="green">204</span> <span class="blue">51</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #FFCC66" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#FFCC66 </span> <span class="rgb"> <b>RGB</b> <span class="red">255</span> <span class="green">204</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #FFCC99" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#FFCC99 </span> <span class="rgb"> <b>RGB</b> <span class="red">255</span> <span class="green">204</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #FFCCCC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#FFCCCC </span> <span class="rgb"> <b>RGB</b> <span class="red">255</span> <span class="green">204</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #FFCCFF" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#FFCCFF </span> <span class="rgb"> <b>RGB</b> <span class="red">255</span> <span class="green">204</span> <span class="blue">255</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #FFFF00" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#FFFF00 </span> <span class="rgb"> <b>RGB</b> <span class="red">255</span> <span class="green">255</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #FFFF33" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#FFFF33 </span> <span class="rgb"> <b>RGB</b> <span class="red">255</span> <span class="green">255</span> <span class="blue">51</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #FFFF66" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#FFFF66 </span> <span class="rgb"> <b>RGB</b> <span class="red">255</span> <span class="green">255</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #FFFF99" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#FFFF99 </span> <span class="rgb"> <b>RGB</b> <span class="red">255</span> <span class="green">255</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #FFFFCC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#FFFFCC </span> <span class="rgb"> <b>RGB</b> <span class="red">255</span> <span class="green">255</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #FFFFFF" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#FFFFFF </span> <span class="rgb"> <b>RGB</b> <span class="red">255</span> <span class="green">255</span> <span class="blue">255</span> </span> </h3>
+				</div>
+			</div>
+		</article>
+		<article class="colorcon" id="greens_blues" style="display: none;">
+			<h2>Greens / Blues</h2>
+			<div class="colors-list cl row">
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #000000" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#000000 </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">0</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #000033" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#000033 </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">0</span> <span class="blue">51</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #000066" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#000066 </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">0</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #000099" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#000099 </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">0</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #0000CC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#0000CC </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">0</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #0000FF" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#0000FF </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">0</span> <span class="blue">255</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #003300" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#003300 </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">51</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #003333" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#003333 </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">51</span> <span class="blue">51</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #003366" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#003366 </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">51</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #003399" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#003399 </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">51</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #0033CC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#0033CC </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">51</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #0033FF" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#0033FF </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">51</span> <span class="blue">255</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #006600" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#006600 </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">102</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #006633" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#006633 </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">102</span> <span class="blue">51</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #006666" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#006666 </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">102</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #006699" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#006699 </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">102</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #0066CC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#0066CC </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">102</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #0066FF" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#0066FF </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">102</span> <span class="blue">255</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #009900" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#009900 </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">153</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #009933" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#009933 </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">153</span> <span class="blue">51</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #009966" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#009966 </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">153</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #009999" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#009999 </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">153</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #0099CC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#0099CC </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">153</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #0099FF" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#0099FF </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">153</span> <span class="blue">255</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #00CC00" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#00CC00 </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">204</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #00CC33" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#00CC33 </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">204</span> <span class="blue">51</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #00CC66" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#00CC66 </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">204</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #00CC99" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#00CC99 </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">204</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #00CCCC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#00CCCC </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">204</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #00CCFF" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#00CCFF </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">204</span> <span class="blue">255</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #00FF00" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#00FF00 </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">255</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #00FF33" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#00FF33 </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">255</span> <span class="blue">51</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #00FF66" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#00FF66 </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">255</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #00FF99" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#00FF99 </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">255</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #00FFCC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#00FFCC </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">255</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #00FFFF" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#00FFFF </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">255</span> <span class="blue">255</span> </span> </h3>
+				</div>
+			</div>
+		</article>
+		<article class="colorcon" id="reds_blues" style="display: block;">
+			<h2>Reds / Blues</h2>
+			<div class="colors-list cl row">
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #000000" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#000000 </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">0</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #000033" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#000033 </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">0</span> <span class="blue">51</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #000066" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#000066 </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">0</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #000099" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#000099 </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">0</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #0000CC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#0000CC </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">0</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #0000FF" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#0000FF </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">0</span> <span class="blue">255</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #330000" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#330000 </span> <span class="rgb"> <b>RGB</b> <span class="red">51</span> <span class="green">0</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #330033" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#330033 </span> <span class="rgb"> <b>RGB</b> <span class="red">51</span> <span class="green">0</span> <span class="blue">51</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #330066" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#330066 </span> <span class="rgb"> <b>RGB</b> <span class="red">51</span> <span class="green">0</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #330099" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#330099 </span> <span class="rgb"> <b>RGB</b> <span class="red">51</span> <span class="green">0</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #3300CC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#3300CC </span> <span class="rgb"> <b>RGB</b> <span class="red">51</span> <span class="green">0</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #3300FF" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#3300FF </span> <span class="rgb"> <b>RGB</b> <span class="red">51</span> <span class="green">0</span> <span class="blue">255</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #660000" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#660000 </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">0</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #660033" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#660033 </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">0</span> <span class="blue">51</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #660066" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#660066 </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">0</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #660099" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#660099 </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">0</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #6600CC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#6600CC </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">0</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #6600FF" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#6600FF </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">0</span> <span class="blue">255</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #990000" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#990000 </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">0</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #990033" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#990033 </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">0</span> <span class="blue">51</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #990066" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#990066 </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">0</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #990099" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#990099 </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">0</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #9900CC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#9900CC </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">0</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #9900FF" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#9900FF </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">0</span> <span class="blue">255</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CC0000" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CC0000 </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">0</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CC0033" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CC0033 </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">0</span> <span class="blue">51</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CC0066" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CC0066 </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">0</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CC0099" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CC0099 </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">0</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CC00CC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CC00CC </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">0</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CC00FF" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CC00FF </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">0</span> <span class="blue">255</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #FF0000" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#FF0000 </span> <span class="rgb"> <b>RGB</b> <span class="red">255</span> <span class="green">0</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #FF0033" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#FF0033 </span> <span class="rgb"> <b>RGB</b> <span class="red">255</span> <span class="green">0</span> <span class="blue">51</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #FF0066" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#FF0066 </span> <span class="rgb"> <b>RGB</b> <span class="red">255</span> <span class="green">0</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #FF0099" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#FF0099 </span> <span class="rgb"> <b>RGB</b> <span class="red">255</span> <span class="green">0</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #FF00CC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#FF00CC </span> <span class="rgb"> <b>RGB</b> <span class="red">255</span> <span class="green">0</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #FF00FF" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#FF00FF </span> <span class="rgb"> <b>RGB</b> <span class="red">255</span> <span class="green">0</span> <span class="blue">255</span> </span> </h3>
+				</div>
+			</div>
+		</article>
+		<article class="colorcon" id="reds_greens" style="display: none;">
+			<h2>Reds / Greens</h2>
+			<div class="colors-list cl row">
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #000000" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#000000 </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">0</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #003300" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#003300 </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">51</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #006600" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#006600 </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">102</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #009900" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#009900 </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">153</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #00CC00" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#00CC00 </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">204</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #00FF00" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#00FF00 </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">255</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #330000" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#330000 </span> <span class="rgb"> <b>RGB</b> <span class="red">51</span> <span class="green">0</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #333300" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#333300 </span> <span class="rgb"> <b>RGB</b> <span class="red">51</span> <span class="green">51</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #336600" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#336600 </span> <span class="rgb"> <b>RGB</b> <span class="red">51</span> <span class="green">102</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #339900" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#339900 </span> <span class="rgb"> <b>RGB</b> <span class="red">51</span> <span class="green">153</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #33CC00" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#33CC00 </span> <span class="rgb"> <b>RGB</b> <span class="red">51</span> <span class="green">204</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #33FF00" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#33FF00 </span> <span class="rgb"> <b>RGB</b> <span class="red">51</span> <span class="green">255</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #660000" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#660000 </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">0</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #663300" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#663300 </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">51</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #666600" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#666600 </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">102</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #669900" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#669900 </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">153</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #66CC00" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#66CC00 </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">204</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #66FF00" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#66FF00 </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">255</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #990000" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#990000 </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">0</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #993300" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#993300 </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">51</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #996600" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#996600 </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">102</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #999900" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#999900 </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">153</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #99CC00" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#99CC00 </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">204</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #99FF00" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#99FF00 </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">255</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CC0000" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CC0000 </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">0</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CC3300" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CC3300 </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">51</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CC6600" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CC6600 </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">102</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CC9900" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CC9900 </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">153</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CCCC00" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CCCC00 </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">204</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CCFF00" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CCFF00 </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">255</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #FF0000" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#FF0000 </span> <span class="rgb"> <b>RGB</b> <span class="red">255</span> <span class="green">0</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #FF3300" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#FF3300 </span> <span class="rgb"> <b>RGB</b> <span class="red">255</span> <span class="green">51</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #FF6600" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#FF6600 </span> <span class="rgb"> <b>RGB</b> <span class="red">255</span> <span class="green">102</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #FF9900" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#FF9900 </span> <span class="rgb"> <b>RGB</b> <span class="red">255</span> <span class="green">153</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #FFCC00" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#FFCC00 </span> <span class="rgb"> <b>RGB</b> <span class="red">255</span> <span class="green">204</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #FFFF00" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#FFFF00 </span> <span class="rgb"> <b>RGB</b> <span class="red">255</span> <span class="green">255</span> <span class="blue">0</span> </span> </h3>
+				</div>
+			</div>
+		</article>
+		<article class="colorcon" id="pastels" style="display: none;">
+			<h2>Pastels</h2>
+			<div class="colors-list cl row">
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #666666" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#666666 </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">102</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #666699" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#666699 </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">102</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #6666CC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#6666CC </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">102</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #6666FF" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#6666FF </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">102</span> <span class="blue">255</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #669966" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#669966 </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">153</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #669999" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#669999 </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">153</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #6699CC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#6699CC </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">153</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #6699FF" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#6699FF </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">153</span> <span class="blue">255</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #66CC66" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#66CC66 </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">204</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #66CC99" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#66CC99 </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">204</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #66CCCC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#66CCCC </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">204</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #66CCFF" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#66CCFF </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">204</span> <span class="blue">255</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #66FF66" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#66FF66 </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">255</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #66FF99" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#66FF99 </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">255</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #66FFCC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#66FFCC </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">255</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #66FFFF" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#66FFFF </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">255</span> <span class="blue">255</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #996666" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#996666 </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">102</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #996699" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#996699 </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">102</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #9966CC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#9966CC </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">102</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #9966FF" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#9966FF </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">102</span> <span class="blue">255</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #999966" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#999966 </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">153</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #999999" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#999999 </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">153</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #9999CC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#9999CC </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">153</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #9999FF" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#9999FF </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">153</span> <span class="blue">255</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #99CC66" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#99CC66 </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">204</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #99CC99" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#99CC99 </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">204</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #99CCCC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#99CCCC </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">204</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #99CCFF" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#99CCFF </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">204</span> <span class="blue">255</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #99FF66" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#99FF66 </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">255</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #99FF99" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#99FF99 </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">255</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #99FFCC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#99FFCC </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">255</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #99FFFF" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#99FFFF </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">255</span> <span class="blue">255</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CC6666" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CC6666 </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">102</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CC6699" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CC6699 </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">102</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CC66CC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CC66CC </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">102</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CC66FF" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CC66FF </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">102</span> <span class="blue">255</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CC9966" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CC9966 </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">153</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CC9999" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CC9999 </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">153</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CC99CC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CC99CC </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">153</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CC99FF" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CC99FF </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">153</span> <span class="blue">255</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CCCC66" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CCCC66 </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">204</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CCCC99" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CCCC99 </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">204</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CCCCCC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CCCCCC </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">204</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CCCCFF" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CCCCFF </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">204</span> <span class="blue">255</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CCFF66" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CCFF66 </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">255</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CCFF99" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CCFF99 </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">255</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CCFFCC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CCFFCC </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">255</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CCFFFF" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CCFFFF </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">255</span> <span class="blue">255</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #FF6666" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#FF6666 </span> <span class="rgb"> <b>RGB</b> <span class="red">255</span> <span class="green">102</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #FF6699" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#FF6699 </span> <span class="rgb"> <b>RGB</b> <span class="red">255</span> <span class="green">102</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #FF66CC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#FF66CC </span> <span class="rgb"> <b>RGB</b> <span class="red">255</span> <span class="green">102</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #FF66FF" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#FF66FF </span> <span class="rgb"> <b>RGB</b> <span class="red">255</span> <span class="green">102</span> <span class="blue">255</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #FF9966" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#FF9966 </span> <span class="rgb"> <b>RGB</b> <span class="red">255</span> <span class="green">153</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #FF9999" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#FF9999 </span> <span class="rgb"> <b>RGB</b> <span class="red">255</span> <span class="green">153</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #FF99CC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#FF99CC </span> <span class="rgb"> <b>RGB</b> <span class="red">255</span> <span class="green">153</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #FF99FF" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#FF99FF </span> <span class="rgb"> <b>RGB</b> <span class="red">255</span> <span class="green">153</span> <span class="blue">255</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #FFCC66" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#FFCC66 </span> <span class="rgb"> <b>RGB</b> <span class="red">255</span> <span class="green">204</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #FFCC99" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#FFCC99 </span> <span class="rgb"> <b>RGB</b> <span class="red">255</span> <span class="green">204</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #FFCCCC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#FFCCCC </span> <span class="rgb"> <b>RGB</b> <span class="red">255</span> <span class="green">204</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #FFCCFF" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#FFCCFF </span> <span class="rgb"> <b>RGB</b> <span class="red">255</span> <span class="green">204</span> <span class="blue">255</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #FFFF66" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#FFFF66 </span> <span class="rgb"> <b>RGB</b> <span class="red">255</span> <span class="green">255</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #FFFF99" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#FFFF99 </span> <span class="rgb"> <b>RGB</b> <span class="red">255</span> <span class="green">255</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #FFFFCC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#FFFFCC </span> <span class="rgb"> <b>RGB</b> <span class="red">255</span> <span class="green">255</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #FFFFFF" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#FFFFFF </span> <span class="rgb"> <b>RGB</b> <span class="red">255</span> <span class="green">255</span> <span class="blue">255</span> </span> </h3>
+				</div>
+			</div>
+		</article>
+		<article class="colorcon" id="earth_tones" style="display: none;">
+			<h2>Earth Tones</h2>
+			<div class="colors-list cl row">
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #333333" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#333333 </span> <span class="rgb"> <b>RGB</b> <span class="red">51</span> <span class="green">51</span> <span class="blue">51</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #333366" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#333366 </span> <span class="rgb"> <b>RGB</b> <span class="red">51</span> <span class="green">51</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #333399" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#333399 </span> <span class="rgb"> <b>RGB</b> <span class="red">51</span> <span class="green">51</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #3333CC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#3333CC </span> <span class="rgb"> <b>RGB</b> <span class="red">51</span> <span class="green">51</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #336633" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#336633 </span> <span class="rgb"> <b>RGB</b> <span class="red">51</span> <span class="green">102</span> <span class="blue">51</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #336666" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#336666 </span> <span class="rgb"> <b>RGB</b> <span class="red">51</span> <span class="green">102</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #336699" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#336699 </span> <span class="rgb"> <b>RGB</b> <span class="red">51</span> <span class="green">102</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #3366CC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#3366CC </span> <span class="rgb"> <b>RGB</b> <span class="red">51</span> <span class="green">102</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #339933" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#339933 </span> <span class="rgb"> <b>RGB</b> <span class="red">51</span> <span class="green">153</span> <span class="blue">51</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #339966" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#339966 </span> <span class="rgb"> <b>RGB</b> <span class="red">51</span> <span class="green">153</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #339999" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#339999 </span> <span class="rgb"> <b>RGB</b> <span class="red">51</span> <span class="green">153</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #3399CC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#3399CC </span> <span class="rgb"> <b>RGB</b> <span class="red">51</span> <span class="green">153</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #33CC33" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#33CC33 </span> <span class="rgb"> <b>RGB</b> <span class="red">51</span> <span class="green">204</span> <span class="blue">51</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #33CC66" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#33CC66 </span> <span class="rgb"> <b>RGB</b> <span class="red">51</span> <span class="green">204</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #33CC99" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#33CC99 </span> <span class="rgb"> <b>RGB</b> <span class="red">51</span> <span class="green">204</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #33CCCC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#33CCCC </span> <span class="rgb"> <b>RGB</b> <span class="red">51</span> <span class="green">204</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #663333" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#663333 </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">51</span> <span class="blue">51</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #663366" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#663366 </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">51</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #663399" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#663399 </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">51</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #6633CC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#6633CC </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">51</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #666633" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#666633 </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">102</span> <span class="blue">51</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #666666" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#666666 </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">102</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #666699" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#666699 </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">102</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #6666CC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#6666CC </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">102</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #669933" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#669933 </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">153</span> <span class="blue">51</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #669966" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#669966 </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">153</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #669999" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#669999 </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">153</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #6699CC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#6699CC </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">153</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #66CC33" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#66CC33 </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">204</span> <span class="blue">51</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #66CC66" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#66CC66 </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">204</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #66CC99" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#66CC99 </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">204</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #66CCCC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#66CCCC </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">204</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #993333" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#993333 </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">51</span> <span class="blue">51</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #993366" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#993366 </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">51</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #993399" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#993399 </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">51</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #9933CC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#9933CC </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">51</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #996633" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#996633 </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">102</span> <span class="blue">51</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #996666" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#996666 </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">102</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #996699" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#996699 </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">102</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #9966CC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#9966CC </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">102</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #999933" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#999933 </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">153</span> <span class="blue">51</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #999966" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#999966 </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">153</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #999999" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#999999 </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">153</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #9999CC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#9999CC </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">153</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #99CC33" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#99CC33 </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">204</span> <span class="blue">51</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #99CC66" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#99CC66 </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">204</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #99CC99" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#99CC99 </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">204</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #99CCCC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#99CCCC </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">204</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CC3333" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CC3333 </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">51</span> <span class="blue">51</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CC3366" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CC3366 </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">51</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CC3399" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CC3399 </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">51</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CC33CC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CC33CC </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">51</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CC6633" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CC6633 </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">102</span> <span class="blue">51</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CC6666" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CC6666 </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">102</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CC6699" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CC6699 </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">102</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CC66CC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CC66CC </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">102</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CC9933" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CC9933 </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">153</span> <span class="blue">51</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CC9966" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CC9966 </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">153</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CC9999" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CC9999 </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">153</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CC99CC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CC99CC </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">153</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CCCC33" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CCCC33 </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">204</span> <span class="blue">51</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CCCC66" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CCCC66 </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">204</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CCCC99" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CCCC99 </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">204</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CCCCCC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CCCCCC </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">204</span> <span class="blue">204</span> </span> </h3>
+				</div>
+			</div>
+		</article>
+		<article class="colorcon" id="greys" style="display: none;">
+			<h2>Greys</h2>
+			<div class="colors-list cl row">
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #000000" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#000000 </span> <span class="rgb"> <b>RGB</b> <span class="red">0</span> <span class="green">0</span> <span class="blue">0</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #111111" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#111111 </span> <span class="rgb"> <b>RGB</b> <span class="red">17</span> <span class="green">17</span> <span class="blue">17</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #222222" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#222222 </span> <span class="rgb"> <b>RGB</b> <span class="red">34</span> <span class="green">34</span> <span class="blue">34</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #333333" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#333333 </span> <span class="rgb"> <b>RGB</b> <span class="red">51</span> <span class="green">51</span> <span class="blue">51</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #444444" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#444444 </span> <span class="rgb"> <b>RGB</b> <span class="red">68</span> <span class="green">68</span> <span class="blue">68</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #555555" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#555555 </span> <span class="rgb"> <b>RGB</b> <span class="red">85</span> <span class="green">85</span> <span class="blue">85</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #666666" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#666666 </span> <span class="rgb"> <b>RGB</b> <span class="red">102</span> <span class="green">102</span> <span class="blue">102</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #777777" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#777777 </span> <span class="rgb"> <b>RGB</b> <span class="red">119</span> <span class="green">119</span> <span class="blue">119</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #888888" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#888888 </span> <span class="rgb"> <b>RGB</b> <span class="red">136</span> <span class="green">136</span> <span class="blue">136</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #999999" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#999999 </span> <span class="rgb"> <b>RGB</b> <span class="red">153</span> <span class="green">153</span> <span class="blue">153</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #AAAAAA" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#AAAAAA </span> <span class="rgb"> <b>RGB</b> <span class="red">170</span> <span class="green">170</span> <span class="blue">170</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #BBBBBB" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#BBBBBB </span> <span class="rgb"> <b>RGB</b> <span class="red">187</span> <span class="green">187</span> <span class="blue">187</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #CCCCCC" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#CCCCCC </span> <span class="rgb"> <b>RGB</b> <span class="red">204</span> <span class="green">204</span> <span class="blue">204</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #DDDDDD" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#DDDDDD </span> <span class="rgb"> <b>RGB</b> <span class="red">221</span> <span class="green">221</span> <span class="blue">221</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #EEEEEE" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#EEEEEE </span> <span class="rgb"> <b>RGB</b> <span class="red">238</span> <span class="green">238</span> <span class="blue">238</span> </span> </h3>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-2 item"> <span style="background-color: #FFFFFF" class="swatch"></span>
+					<h3> <span class="html"> <b>HTML</b>#FFFFFF </span> <span class="rgb"> <b>RGB</b> <span class="red">255</span> <span class="green">255</span> <span class="blue">255</span> </span> </h3>
+				</div>
+			</div>
+		</article>
+	</div>
+</div>
+
+</body>
+
+
+
+<script src="../../js/lib/jquery/jquery-1.10.2.js"></script>
+<script>
+$(function(){
+	$(".colortab span").on("click",function(){
+		$(this).addClass("selected").siblings().removeClass("selected");
+		$(".colorcon").eq($(this).index()).show().siblings(".colorcon").hide();
+	});
+});
+</script>

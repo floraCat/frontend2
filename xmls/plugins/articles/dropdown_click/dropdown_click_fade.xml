@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_article_>
+    <_style_>
+    .p-dropdown{ width: 100px; position: relative;}
+    .p-dropdown .key{ display: block; height: 30px; line-height: 30px; background: #f8f8f8;}
+    .p-dropdown .key.on{ color:red; }
+    .p-dropdown .drop{ position: absolute; top: 30px; left: 0; display: none; width: 100%; height: 100px; background: #333; color: #fff; }
+    </_style_>
+    <_html_>
+<![CDATA[
+<ul class="p-dropdown" data-js-dropdown=".key|.drop|fade">
+    <a class="key" href="javascript:;">click触发按键</a>
+    <ol class="drop">
+        click下拉框
+    </ol>
+</ul>
+]]>
+    </_html_>
+    <_script_></_script_>
+</_article_>

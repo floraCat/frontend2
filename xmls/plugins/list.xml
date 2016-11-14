@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_list_>
+	<_carousel_>
+		<_item_><_title_>carousel_self</_title_><_zh_>幻灯片</_zh_></_item_>
+	</_carousel_>
+	<_tabs_>
+		<_item_><_title_>tabs_self</_title_><_zh_>切换卡</_zh_></_item_>
+	</_tabs_>
+	<_dropdown_>
+		<_item_><_title_>dropdown_click</_title_><_zh_>点击下拉</_zh_></_item_>
+		<_item_><_title_>dropdown_hover</_title_><_zh_>hover下拉</_zh_></_item_>
+	</_dropdown_>
+	<_pop_>
+		<_item_><_title_>pop_self</_title_><_zh_>弹出层</_zh_></_item_>
+	</_pop_>
+	<_dialog_>
+		<_item_><_title_>dialog_self</_title_><_zh_>对话框</_zh_></_item_>
+	</_dialog_>
+	<_select_>
+		<_item_><_title_>select_self</_title_><_zh_>选项框</_zh_></_item_>
+	</_select_>
+
+	<_datePicker_>
+		<_item_><_title_>WdatePicker</_title_><_zh_>日期选择</_zh_></_item_>
+	</_datePicker_>
+	<_test1_>
+		<_item_><_title_>test1</_title_><_zh_>测试</_zh_></_item_>
+	</_test1_>
+	<_test2_>
+		<_item_><_title_>test2</_title_><_zh_>测试</_zh_></_item_>
+	</_test2_>
+	<_test3_>
+		<_item_><_title_>test3</_title_><_zh_>测试</_zh_></_item_>
+	</_test3_>
+</_list_>

@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <title>其他</title>
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/static-others.css" />
+    <script src="../../js/rconfig.js"></script>
+    <script src="../../js/require.js" data-main="../../js/app/static-others.js"></script>
+</head>
+<body data-render="head-foot">
+
+
+
+<div class="Marticle">
+
+    <div class="Mbody MStyle">
+
+        <ol>
+            <h3>消浮：</h3>
+            <ul>
+                <xmp class="code">.clr{ *display: inline-block;}
+.clr:after{ content:"."; display:block; height:0; clear:both; visibility:hidden;}</xmp>
+                <a class="copy">复制代码</a>
+            </ul>
+        </ol>
+        <ol>
+            <h3>背景透明度：</h3>
+            <ul>
+                <xmp class="code">background:#000; opacity:.5; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=50);</xmp>
+                <xmp class="des">说明：此方案一兼容ie7及以上版本的浏览器；不足之处在于内部的文本会继承其透明度，从而字体看上去比较浅</xmp>
+                <a class="copy">复制代码</a>
+            </ul>
+            <ul>
+                <xmp class="code">background:rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7F000000,endcolorstr=#7F000000);</xmp>
+                <xmp class="des">说明：此方案二兼容ie7及以上版本的浏览器；不足之处在于ie9会识别两次透明度，从而较其他浏览器透明度要底</xmp>
+                <a class="copy">复制代码</a>
+            </ul>
+        </ol>
+        <ol>
+            <h3>图片垂直和水平居中：</h3>
+            <ul>
+                <xmp class="code">display: table-cell; width: 200px; height: 200px; vertical-align: middle; text-align: center;</xmp>
+                <xmp class="des">说明：以上样式设置在容器上，如容器绝对定位或浮动，垂直居中不生效</xmp>
+                <a class="copy">复制代码</a>
+            </ul>
+        </ol>
+
+        <!-- <ol>
+            <h3>文本或格式相关：</h3>
+            <ul>
+                <xmp class="code">font-family: Consolas;</xmp>
+                <xmp class="des">说明：html代码字体使用此字体较其他美观</xmp>
+                <a class="copy">复制代码</a>
+            </ul>
+            <ul>
+                <xmp class="code">xmp{ white-space: pre-wrap;}</xmp>
+                <xmp class="des">说明：让xmp标签中的文本自动换行</xmp>
+                <a class="copy">复制代码</a>
+            </ul>
+            <ul>
+                <xmp class="code"><textarea spellcheck="false"></textarea></xmp>
+                <xmp class="des">说明：此设置让浏览器不要对元素内容进行拼写检查，即不会出现波浪底线等样式</xmp>
+                <a class="copy">复制代码</a>
+            </ul>
+        </ol>
+        <ol>
+            <h3>html代码字体：</h3>
+            <ul>
+                <xmp class="code"></xmp>
+                <xmp class="des">说明：显示效果较其他字体美观</xmp>
+                <a class="copy">复制代码</a>
+            </ul>
+        </ol> -->
+
+    </div>
+
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8">
+	<title>组件</title>
+	<link rel="stylesheet" href="../../css/common.css" />
+	<link rel="stylesheet" href="../../css/page-list.css" />
+	<link rel="stylesheet" href="../../css/extra-form.css" />
+	<script src="../../js/rconfig.js"></script>
+	<script src="../../js/require.js" data-main="../../js/app/list-form.js"></script>
+</head>
+<body data-render="head-foot">
+
+
+
+<xmp class="dataTrans" style="display: none;"></xmp><!--传递的数据(下级窗口获取)-->
+
+
+
+<div class="p-container p-form">
+
+
+	<div class="g-note">
+		<p style="width:1200px; margin:0 auto; text-align: left;">
+			<span>点击图片进入详情页 / </span>
+			<span>快捷键说明 </span>
+			<span class="f"> -></span>
+			<span><em>效果展示</em>：模块的前端展示效果</span>
+			<span class="c"> | </span>
+			<span><em>源码复制</em>：把模板的主体源码复制到剪切板</span>
+			<span class="c"> | </span>
+			<span><em>自定义设置</em>：提供源码的修改</span>
+		</p>
+	</div>
+
+
+
+    <div class="btn_form">
+        <a data-j-clearCookie class="clearCookie" href="javascript:;">清空控件清单</a>
+        <a class="listCookie" href="../../tpls/extra/form_cart.html?col=form">自定义表单控件清单<p data-j-cartNum>0</p></a>
+        <i></i>
+        <div class="desc">选择控件添加到清单里，点击上面的按键可进入清单列表，可选择预览或生成整个表单，表单中的控件重复的样式会自动被共用起来。</div>
+    </div>
+
+
+	<!--=====jsRender渲染======-->
+	<div class="p-list" data-rs="rs-list" data-link="../../tpls/articles/articles-form.html"></div>
+	<script data-tpls="tpl-list" type="text/x-jsrender">
+		{{for _searchKey_}}
+		<li data-trans="{{:_title_}}">
+			<a class="a img"><img src="../../images/sketch/form/{{:_title_}}.png"></a>
+			<h4><span>{{:_title_}}</span> / {{:_zh_}}</h4>
+			<ol>
+				<a data-j-display class="display">效果展示</a>
+				<a data-j-copy class="copy">源码复制</a>
+				<a class="custom off">自定义设置</a>
+			</ol>
+			<xmp class="code" style=" display:none;">
+<style>
+	.p-form{ width:500px; margin:10px 0; }
+{{:_style_}}
+</style>
+<form class="p-form">
+{{:_html_}}
+</form>
+{{if _rely_[0]._url2_}}
+{{for _rely_}}
+{{if #data._url2_.indexOf(".css")>=0}}
+<link rel="stylesheet" href="{{:#data._url2_}}" />
+{{else}}
+<script src="{{:#data._url2_}}">{{:~root._searchKey_[0]._tab_script_right_}}
+{{/if}}
+{{/for}}
+{{/if}}
+<script>
+{{:_script_}}
+{{:_tab_script_right_}}
+			</xmp>
+			<div class="check" data-ttl="{{:_title_}}"></div>
+		</li>
+		{{/for}}
+	</script>
+	<!--=====/jsRender渲染======-->
+
+
+	<div class="g-mask"></div><!--覆盖层-->
+	<div class="g-pop-copy">已复制到剪切板！</div>
+
+
+</div><!--/p-container-->
+
+
+
+
+
+
+</body>
+</html>

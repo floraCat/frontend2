@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_sidebar_>
+        <_title_>aaa</_title_>
+        <_content_>
+                <![CDATA[
+                <div class="p-sidebar">
+                    <a href="../../tpls/cats/cat-default.html?col=others/widget" data-col="widget">小部件</a>
+                    <a href="../../statics/others/bs.html?col=others&cat=bs" data-col="bs">BS模块</a>
+                    <a href="../../statics/others/website.html?col=others&cat=website" data-col="website">前端网址</a>
+                    <a href="../../statics/others/style.html?col=others&cat=style" data-col="style">style代码</a>
+                    <a href="../../statics/others/js.html?col=others&cat=js" data-col="js">js代码</a>
+                    <a href="../../statics/others/regexp.html?col=others&cat=regexp" data-col="regexp">正则表达式</a>
+                </div>
+                ]]>
+        </_content_>
+</_sidebar_>

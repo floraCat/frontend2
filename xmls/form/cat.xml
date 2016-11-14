@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_cat_>
+	<_item_>
+		<_title_>text</_title_>
+		<_zh_>输入框</_zh_>
+	</_item_>
+	<_item_>
+		<_title_>password</_title_>
+		<_zh_>密码域</_zh_>
+	</_item_>
+	<_item_>
+		<_title_>radio</_title_>
+		<_zh_>单选</_zh_>
+	</_item_>
+	<_item_>
+		<_title_>checkbox</_title_>
+		<_zh_>复选框</_zh_>
+	</_item_>
+	<_item_>
+		<_title_>file</_title_>
+		<_zh_>上传控件</_zh_>
+	</_item_>
+	<_item_>
+		<_title_>select</_title_>
+		<_zh_>选择框</_zh_>
+	</_item_>
+	<_item_>
+		<_title_>textarea</_title_>
+		<_zh_>文本框</_zh_>
+	</_item_>
+	<_item_>
+		<_title_>others</_title_>
+		<_zh_>其他</_zh_>
+	</_item_>
+</_cat_>

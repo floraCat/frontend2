@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_nav_>
+	<_item_>
+		<_title_>show</_title_>
+		<_zh_>展示</_zh_>
+	</_item_>
+	<_item_>
+		<_title_>function</_title_>
+		<_zh_>功能</_zh_>
+	</_item_>
+	<_item_>
+		<_title_>layout</_title_>
+		<_zh_>布局</_zh_>
+	</_item_>
+	<_item_>
+		<_title_>compat</_title_>
+		<_zh_>兼容</_zh_>
+	</_item_>
+	<_item_>
+		<_title_>other</_title_>
+		<_zh_>其他</_zh_>
+	</_item_>
+</_nav_>

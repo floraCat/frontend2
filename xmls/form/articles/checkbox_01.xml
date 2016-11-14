@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<_article_>
+
+		<_title_>checkbox_01</_title_>
+
+		<_desc_>复选框</_desc_>
+
+		<_hack_>
+			<_f_>Firefox</_f_>
+			<_c_>Chrome</_c_>
+			<_s_>Safari</_s_>
+			<_i11_>i11</_i11_>
+			<_i10_>i10</_i10_>
+			<_i9_>i9</_i9_>
+			<_i8_>i8</_i8_>
+			<_i7_></_i7_>
+			<_i6_></_i6_>
+		</_hack_>
+
+		<_rely_>
+			<_item_>
+				<_url2_></_url2_>
+				<_desc2_></_desc2_>
+			</_item_>
+		</_rely_>
+
+		<_link_>
+			<_item_>暂无</_item_>
+		</_link_>
+
+		<_parm_>
+			<_item_>
+				<_name2_>parmName1</_name2_>
+				<_need2_>yse</_need2_>
+				<_txt2_>descText</_txt2_>
+			</_item_>
+		</_parm_>
+
+		<_style_>
+    .g-flex:after{ content:"."; clear:both; display:block; height:0; visibility:hidden;}
+    .g-flex > *{ float:left;}
+    .g-check input{ display:none;}
+    .g-check label{ display:inline-block; height:19px; padding-left:25px; line-height:19px; background:url(../../css/imgs/i_check.png) no-repeat 0 center; background-size:18px; cursor: pointer;}
+    .g-check.on label{ background:url(../../css/imgs/i_check_on.png) no-repeat 0 center; background-size:18px;}
+    .p-form dl{ position:relative; overflow:hidden; margin-bottom:15px;}
+    .p-form dt{ float:left; width:80px; line-height:35px; text-align:right; white-space:nowrap;}
+    .p-form dd{ margin-left:90px;}
+    .p-form .checks.g-flex > *{ width:23%; padding:7px 1%;}
+		</_style_>
+
+		<_html_>
+<![CDATA[
+	<dl>
+	    <dt>复选框：</dt>
+	    <dd>
+	        <ol class="checks g-flex" data-j-checkbox>
+	            <div class="g-check"><input type="checkbox" value="1" name="fav" /><label>兴趣一</label></div>
+	            <div class="g-check"><input type="checkbox" value="2" name="fav" /><label>兴趣二</label></div>
+	            <div class="g-check"><input type="checkbox" value="3" name="fav" /><label>兴趣三</label></div>
+	            <div class="g-check"><input type="checkbox" value="4" name="fav" /><label>兴趣四</label></div>
+	        </ol>
+	    </dd>
+	</dl>
+]]>
+		</_html_>
+
+		<_script_>
+    $("[data-j-checkbox]")
+        .find("input[checked]")
+        .parent(".g-check").addClass("on")
+        .siblings(".g-check").removeClass("on");
+    $("[data-j-checkbox]")
+        .find("label").click(function(){
+            $(this).parent().toggleClass("on"); 
+            if($(this).parent().hasClass("on")){
+                $(this).siblings("input").attr("checked",true); 
+            }else{
+                $(this).siblings("input").attr("checked",false);    
+            }
+        });
+		</_script_>
+
+		<_content_>
+<![CDATA[
+<pre>
+复选框
+</pre>
+]]>
+		</_content_>
+
+</_article_>
