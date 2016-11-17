@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<_article_>
+
+		<_title_>p-pagination-010</_title_>
+
+		<_desc_>分页</_desc_>
+
+		<_hack_>
+			<_f_>Firefox</_f_>
+			<_c_>Chrome</_c_>
+			<_s_>Safari</_s_>
+			<_i11_>i11</_i11_>
+			<_i10_>i10</_i10_>
+			<_i9_>i9</_i9_>
+			<_i8_>i8</_i8_>
+			<_i7_></_i7_>
+			<_i6_></_i6_>
+		</_hack_>
+
+		<_rely_>
+			<_item_>
+				<_url2_></_url2_>
+				<_desc2_></_desc2_>
+			</_item_>
+		</_rely_>
+
+		<_link_>
+			<_item_>暂无</_item_>
+		</_link_>
+
+		<_parm_>
+			<_item_>
+				<_name2_>parmName1</_name2_>
+				<_need2_>yse</_need2_>
+				<_txt2_>descText</_txt2_>
+			</_item_>
+		</_parm_>
+
+		<_style_>
+	.p-pagination-010{ line-height:26px; text-align:center; padding:20px 0;}
+	.p-pagination-010 ul{ overflow:hidden; display:inline-block;}
+	.p-pagination-010 li{ float: left; margin:0 2px 5px;}
+	.p-pagination-010 li a{ display:block; height:26px; padding:0 8px; border:#ccc 1px solid;}
+	.p-pagination-010 .active a{ cursor: default; }
+	.p-pagination-010 li a:hover,
+	.p-pagination-010 .active a{ border:#e43a3d 1px solid; color:#e43a3d;}
+	.p-pagination-010 .hidden a{ border:#ddd 1px solid; color:#bbb; cursor:default; }
+	.p-pagination-010 .hidden a:hover{ border:#ddd 1px solid; color:#bbb;}
+	.p-pagination-010 .info{ display: inline-block; padding:0 5px; vertical-align: top;}
+	.p-pagination-010 .info span{ padding: 0 4px;}
+		</_style_>
+
+		<_html_>
+<![CDATA[
+<div class="p-pagination-010">
+	<ul>
+	    <li class="first hidden"><a href="javascript:;">首页</a></li>
+	    <li class="prev hidden"><a href="javascript:;">上一页</a></li>
+	    <li class="page active"><a href="javascript:;">1</a></li>
+	    <li class="page"><a href="#">2</a></li>
+	    <li class="page"><a href="#">3</a></li>
+	    <li class="page"><a href="#">4</a></li>
+	    <li class="next"><a href="#">下一页</a></li>
+	    <li class="last"><a href="#">末页</a></li>
+    </ul>
+    <p class="info">
+	    <span>总数<b>33</b>条</span>
+	    <span>每页<b>12</b>条</span>
+    </p>
+</div>
+]]>
+		</_html_>
+
+		<_script_>
+		</_script_>
+
+		<_content_>
+<![CDATA[
+<pre>
+分页
+</pre>
+]]>
+		</_content_>
+
+</_article_>

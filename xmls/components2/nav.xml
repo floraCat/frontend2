@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_nav_>
+	<_item_>
+		<_title_>widget</_title_>
+		<_zh_>小部件</_zh_>
+	</_item_>
+	<_item_>
+		<_title_>component</_title_>
+		<_zh_>单一组件</_zh_>
+	</_item_>
+	<_item_>
+		<_title_>group</_title_>
+		<_zh_>布局组合</_zh_>
+	</_item_>
+</_nav_>

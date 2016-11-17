@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<_article_>
+
+		<_title_>p-special-010</_title_>
+
+		<_desc_>单图文</_desc_>
+
+		<_hack_>
+			<_f_>Firefox</_f_>
+			<_c_>Chrome</_c_>
+			<_s_>Safari</_s_>
+			<_i11_>i11</_i11_>
+			<_i10_>i10</_i10_>
+			<_i9_>i9</_i9_>
+			<_i8_>i8</_i8_>
+			<_i7_></_i7_>
+			<_i6_></_i6_>
+		</_hack_>
+
+		<_rely_>
+			<_item_>
+				<_url2_></_url2_>
+				<_desc2_></_desc2_>
+			</_item_>
+		</_rely_>
+
+		<_link_>
+			<_item_>暂无</_item_>
+		</_link_>
+
+		<_parm_>
+			<_item_>
+				<_name2_>parmName1</_name2_>
+				<_need2_>yse</_need2_>
+				<_txt2_>descText</_txt2_>
+			</_item_>
+		</_parm_>
+
+		<_style_>
+	.p-special-010{ width:200px;}
+	.p-special-010 .img img{ width:200px; height:200px;}
+	.p-special-010 ol{ padding:5px 5px 0;}
+	.p-special-010 h4{ overflow:hidden; height:40px; line-height:20px;}
+	.p-special-010 .desc{ overflow: hidden; max-height: 60px; line-height:20px; color:#999;}
+	.p-special-010 .info span{ color:#aaa;}
+	.p-special-010 .info em{ color:#ff0004;}
+	.p-special-010 .info s{ color:#aaa;}
+	.p-special-010 .btm{ overflow:hidden;}
+	.p-special-010 .btm .fl{ float:left; color:#aaa;}
+	.p-special-010 .btm .fr{ float:right;}
+		</_style_>
+
+		<_html_>
+<![CDATA[
+<div class="p-special-010">
+	<a class="img" href="#"><img src="../../images/3.jpg" alt="" /></a>
+	<ol>
+		<h4><a href="#">d1_图片标题图片标题图片标题图片标题图片标题</a></h4>
+		<p class="desc">d2文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述...</p>
+		<p class="info"><span>_span_</span><em>_em_</em><s>_sss_</s><i>_iii_</i><a href="#">_aaa_</a></p>
+		<p class="btm"><span class="fl">_span___fl_</span><a class="fr" href="#">_a___fr_</a></p>
+	</ol>
+</div>
+]]>
+		</_html_>
+
+		<_script_>
+		</_script_>
+
+		<_content_>
+<![CDATA[
+<pre>
+单图文
+</pre>
+]]>
+		</_content_>
+
+</_article_>

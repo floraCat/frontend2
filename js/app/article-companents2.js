@@ -21,13 +21,17 @@ require([
 				url:url,
 				success:function(rs){
 					var data=fModule.xmlToObj($(rs).find("_article_"));
-					$(".p-pic2 img").attr("src","../../images/sketch/plugins/"+nav+"/"+title+".png");
 					var rely="";
 					var relyData=$("[data-rely]").data("rely");
 					var relyArr=relyData.substr(0,relyData.length-1).split(",");
 					for(var i in relyArr){
 						rely+='<script src="'+relyArr[i]+'"></script>';
 					}
+					$(".p-pic ol").html(
+						rely+"\n"+
+						'<style>'+"\n"+data._style_+"\n"+'</style>'
+						+"\n"+'<html>'+"\n"+data._html_+"\n"+'</html>'
+						+"\n"+'<script>'+"\n"+data._script_+"\n"+'</script>');
 					$(".dataTrans").text(
 						rely+"\n"+
 						'<style>'+"\n"+data._style_+"\n"+'</style>'

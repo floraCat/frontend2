@@ -80,7 +80,7 @@
 		if($("body").find("[data-tpl=tpl-article]").length>0){
 			var search_key=fModule.urlOpts()["opt"];
 			var col=fModule.urlOpts()["col"];
-			if(col=="plugins"){
+			if(col=="plugins" || col=="components2"){
 				var url="../../xmls/"+col+"/articles/"+search_key+"/index.xml";
 			}else{ var url="../../xmls/"+col+"/articles/"+search_key+".xml";}
 			fModule.render(url,"","[data-tpl=tpl-article]","[data-rs=rs-article]",fModule.callback_article);
