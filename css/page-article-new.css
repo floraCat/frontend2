@@ -6,9 +6,9 @@
 .p-pic{ padding: 0 10px 10px; border-bottom: #dff3df 1px solid; background:#f7faf4;}
 // .p-pic ul{ width: 500px; margin: 0 auto;}
 .p-pic ul{ display: table-cell; vertical-align: middle; text-align: center; width: 500px; border:20px #eee solid; background-color:#fff; border:#dff3df 1px solid;}
-.p-pic ol img{ max-width:500px; }
 // .p-pic2 ul{ width: 680px;}
 .p-pic ol{ width: 658px; padding: 10px;}
+.p-pic ol iframe{ border:none; width: 100%;}
 .p-details .ttl{ line-height: 26px; padding:10px 20px; text-align: center; font-size: 16px;}
 .p-hack{ overflow:hidden; padding: 5px 0 15px 25px; margin: 20px 0 0; background: #fff; border-top:#dff3df 1px solid; border-bottom: #dff3df 1px solid; }
 .p-hack ol{ float: left; padding: 0 22px 0 10px; margin-right: 15px; opacity: .7;}

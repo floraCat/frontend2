@@ -52,7 +52,7 @@
 					var data=xmlToObj($(rs).find("_"+search_key+"_"));
 					rsData["_searchKey_"]=data;
 					rsData["col"]=urlOpts()["col"];//分栏
-					rsData["nav"]=urlOpts()["col"]=="plugins"?urlOpts()["nav"]:"";//导航
+					rsData["nav"]=urlOpts()["col"]=="plugins" || "components2"?urlOpts()["nav"]:"";//导航
 					if(render_tpl.indexOf("data-tpls")>=0){
 						render_add(render_tpl,render_rs,rsData,xmlToObj,callback);//嵌套数据xml
 					}else{
@@ -65,7 +65,7 @@
 					rsData[key]=data;
 					rsData[key]["_tab_script_right_"]="</script>";
 					rsData["col"]=urlOpts()["col"];//分栏
-					rsData["nav"]=urlOpts()["col"]=="plugins"?urlOpts()["nav"]:"";//导航
+					rsData["nav"]=urlOpts()["col"]=="plugins" || "components2"?urlOpts()["nav"]:"";//导航
 					$(render_rs).html($.templates(render_tpl).render(rsData));
 					if(callback){callback();}
 				}

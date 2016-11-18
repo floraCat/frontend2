@@ -2,20 +2,8 @@
 <_cat_>
 	<_widget_>
 		<_item_>
-			<_title_>w-arrow-left</_title_>
-			<_zh_>箭头向左</_zh_>
-		</_item_>
-		<_item_>
-			<_title_>w-arrow-right</_title_>
-			<_zh_>箭头向右</_zh_>
-		</_item_>
-		<_item_>
-			<_title_>w-arrow-top</_title_>
-			<_zh_>箭头向上</_zh_>
-		</_item_>
-		<_item_>
-			<_title_>w-arrow-bottom</_title_>
-			<_zh_>箭头向下</_zh_>
+			<_title_>w-arrow</_title_>
+			<_zh_>箭头</_zh_>
 		</_item_>
 	</_widget_>
 	<_component_>
@@ -24,12 +12,12 @@
 			<_zh_>搜索框</_zh_>
 		</_item_>
 		<_item_>
-			<_title_>p-mainnav</_title_>
-			<_zh_>头部导航</_zh_>
+			<_title_>p-navH</_title_>
+			<_zh_>横向导航</_zh_>
 		</_item_>
 		<_item_>
-			<_title_>p-sidenav</_title_>
-			<_zh_>侧栏</_zh_>
+			<_title_>p-navV</_title_>
+			<_zh_>纵向导航</_zh_>
 		</_item_>
 		<_item_>
 			<_title_>p-crumb</_title_>
@@ -37,27 +25,19 @@
 		</_item_>
 		<_item_>
 			<_title_>g-hd</_title_>
-			<_zh_>栏目标题</_zh_>
+			<_zh_>标题头</_zh_>
 		</_item_>
 		<_item_>
-			<_title_>p-cats</_title_>
-			<_zh_>分类列表</_zh_>
+			<_title_>p-label</_title_>
+			<_zh_>分类标签</_zh_>
 		</_item_>
 		<_item_>
-			<_title_>p-ttls</_title_>
+			<_title_>p-title</_title_>
 			<_zh_>标题列表</_zh_>
 		</_item_>
 		<_item_>
-			<_title_>p-list</_title_>
-			<_zh_>图文列表</_zh_>
-		</_item_>
-		<_item_>
-			<_title_>p-special</_title_>
-			<_zh_>单图文</_zh_>
-		</_item_>
-		<_item_>
-			<_title_>p-ads</_title_>
-			<_zh_>广告位</_zh_>
+			<_title_>p-thumbnail</_title_>
+			<_zh_>缩略图</_zh_>
 		</_item_>
 		<_item_>
 			<_title_>p-pagination</_title_>

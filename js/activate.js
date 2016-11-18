@@ -13,7 +13,7 @@ require([
 	//链接跳转传参
 	$(".p-container").on("click","a.A,a.img",function(){
 		var col=fModule.urlOpts()["col"];
-		if(col=="plugins"){
+		if(col=="plugins" || col=="components2"){
 			var nav=fModule.urlOpts()["nav"]?fModule.urlOpts()["nav"]:$(this).parents("ul").attr("data-nav");
 			var opt_nav='&nav='+nav;
 		}else{ var opt_nav="";}

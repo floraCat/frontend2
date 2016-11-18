@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <_list_>
-	<_w-arrow-left_>
-		<_item_><_title_>w-arrow-left-01</_title_><_zh_>箭头向左</_zh_></_item_>
-	</_w-arrow-left_>
-	<_w-arrow-right_>
-		<_item_><_title_>w-arrow-right-01</_title_><_zh_>箭头向左</_zh_></_item_>
-	</_w-arrow-right_>
-	<_w-arrow-top_>
-		<_item_><_title_>w-arrow-top-01</_title_><_zh_>箭头向左</_zh_></_item_>
-	</_w-arrow-top_>
-	<_w-arrow-bottom_>
-		<_item_><_title_>w-arrow-bottom-01</_title_><_zh_>箭头向左</_zh_></_item_>
-	</_w-arrow-bottom_>
+	<_w-arrow_>
+		<_item_><_title_>w-arrow-left-010</_title_><_zh_>箭头向左</_zh_></_item_>
+		<_item_><_title_>w-arrow-right-010</_title_><_zh_>箭头向左右</_zh_></_item_>
+		<_item_><_title_>w-arrow-top-010</_title_><_zh_>箭头向上</_zh_></_item_>
+		<_item_><_title_>w-arrow-bottom-010</_title_><_zh_>箭头向下</_zh_></_item_>
+	</_w-arrow_>
 	<_p-topbar_>
 		<_item_><_title_>p-topbar-010</_title_><_zh_>顶部工具栏</_zh_></_item_>
 	</_p-topbar_>
@@ -19,18 +13,18 @@
 		<_item_><_title_>p-header-010</_title_><_zh_>头部</_zh_></_item_>
 	</_p-header_>
 	<_p-search_>
-		<_item_><_title_>p-search-01</_title_><_zh_>搜索框</_zh_></_item_>
+		<_item_><_title_>p-search-010</_title_><_zh_>搜索框</_zh_></_item_>
 	</_p-search_>
-	<_p-mainnav_>
-		<_item_><_title_>p-mainnav-010</_title_><_zh_>头部导航[无下拉]</_zh_></_item_>
-		<_item_><_title_>p-mainnav-020</_title_><_zh_>头部导航[带二级下拉]</_zh_></_item_>
-		<_item_><_title_>p-mainnav-030</_title_><_zh_>头部导航[带三级下拉]</_zh_></_item_>
-	</_p-mainnav_>
-	<_p-sidenav_>
-		<_item_><_title_>p-sidenav-010</_title_><_zh_>侧栏[一级]</_zh_></_item_>
-		<_item_><_title_>p-sidenav-020</_title_><_zh_>侧栏[二级右弹出]</_zh_></_item_>
-		<_item_><_title_>p-sidenav-030</_title_><_zh_>侧栏[带二级下拉]</_zh_></_item_>
-	</_p-sidenav_>
+	<_p-navH_>
+		<_item_><_title_>p-navH-010</_title_><_zh_>头部导航[无下拉]</_zh_></_item_>
+		<_item_><_title_>p-navH-020</_title_><_zh_>头部导航[带二级下拉]</_zh_></_item_>
+		<_item_><_title_>p-navH-030</_title_><_zh_>头部导航[带三级下拉]</_zh_></_item_>
+	</_p-navH_>
+	<_p-navV_>
+		<_item_><_title_>p-navV-010</_title_><_zh_>侧栏[一级]</_zh_></_item_>
+		<_item_><_title_>p-navV-020</_title_><_zh_>侧栏[二级右弹出]</_zh_></_item_>
+		<_item_><_title_>p-navV-030</_title_><_zh_>侧栏[带二级下拉]</_zh_></_item_>
+	</_p-navV_>
 	<_p-crumb_>
 		<_item_><_title_>p-crumb-010</_title_><_zh_>面包屑导航</_zh_></_item_>
 	</_p-crumb_>
@@ -39,22 +33,22 @@
 		<_item_><_title_>g-hd-020</_title_><_zh_>栏目标题2</_zh_></_item_>
 		<_item_><_title_>g-hd-030</_title_><_zh_>栏目标题3</_zh_></_item_>
 	</_g-hd_>
-	<_p-cats_>
-		<_item_><_title_>p-cats-010</_title_><_zh_>分类列表</_zh_></_item_>
-		<_item_><_title_>p-cats-020</_title_><_zh_>分类列表</_zh_></_item_>
-		<_item_><_title_>p-cats-030</_title_><_zh_>分类列表</_zh_></_item_>
-		<_item_><_title_>p-cats-040</_title_><_zh_>分类列表</_zh_></_item_>
-		<_item_><_title_>p-cats-050</_title_><_zh_>分类列表</_zh_></_item_>
-		<_item_><_title_>p-cats-060</_title_><_zh_>分类列表</_zh_></_item_>
-		<_item_><_title_>p-cats-070</_title_><_zh_>分类列表</_zh_></_item_>
-		<_item_><_title_>p-cats-080</_title_><_zh_>分类列表</_zh_></_item_>
-		<_item_><_title_>p-cats-090</_title_><_zh_>分类列表</_zh_></_item_>
-		<_item_><_title_>p-cats-010</_title_><_zh_>分类列表</_zh_></_item_>
-		<_item_><_title_>p-cats-110</_title_><_zh_>分类列表</_zh_></_item_>
-		<_item_><_title_>p-cats-120</_title_><_zh_>分类列表</_zh_></_item_>
-		<_item_><_title_>p-cats-130</_title_><_zh_>分类列表</_zh_></_item_>
-		<_item_><_title_>p-cats-131</_title_><_zh_>图片垂直居中</_zh_></_item_>
-	</_p-cats_>
+	<_p-label_>
+		<_item_><_title_>p-label-010</_title_><_zh_>分类列表</_zh_></_item_>
+<!-- 		<_item_><_title_>p-label-020</_title_><_zh_>分类列表</_zh_></_item_>
+		<_item_><_title_>p-label-030</_title_><_zh_>分类列表</_zh_></_item_>
+		<_item_><_title_>p-label-040</_title_><_zh_>分类列表</_zh_></_item_>
+		<_item_><_title_>p-label-050</_title_><_zh_>分类列表</_zh_></_item_>
+		<_item_><_title_>p-label-060</_title_><_zh_>分类列表</_zh_></_item_>
+		<_item_><_title_>p-label-070</_title_><_zh_>分类列表</_zh_></_item_>
+		<_item_><_title_>p-label-080</_title_><_zh_>分类列表</_zh_></_item_>
+		<_item_><_title_>p-label-090</_title_><_zh_>分类列表</_zh_></_item_>
+		<_item_><_title_>p-label-010</_title_><_zh_>分类列表</_zh_></_item_>
+		<_item_><_title_>p-label-110</_title_><_zh_>分类列表</_zh_></_item_>
+		<_item_><_title_>p-label-120</_title_><_zh_>分类列表</_zh_></_item_>
+		<_item_><_title_>p-label-130</_title_><_zh_>分类列表</_zh_></_item_>
+		<_item_><_title_>p-label-131</_title_><_zh_>图片垂直居中</_zh_></_item_> -->
+	</_p-label_>
 	<_p-ttls_>
 		<_item_><_title_>p-ttls-010</_title_><_zh_>标题列表</_zh_></_item_>
 		<_item_><_title_>p-ttls-020</_title_><_zh_>标题列表</_zh_></_item_>

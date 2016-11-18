@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_article_>
+    <_style_>
+.p-search-010{ position:relative; width:200px; height:30px;}
+.p-search-010 .keyword{ width:163px; height:24px; line-height:26px; padding:2px 3px; border-right:none;}
+.p-search-010 .submit{ position:absolute; top:0; right:0; width:30px; height:30px; background: #fff; cursor:pointer;}
+    </_style_>
+
+    <_html_>
+<![CDATA[
+<form class="p-search-010" name="form_search" method="get" action="#">
+<input type="text" class="keyword" name="keyword" placeholder="..." />
+<input type="submit" class="submit" value=">" />
+</form>
+]]>
+    </_html_>
+    <_script_></_script_>
+</_article_>

@@ -27,23 +27,25 @@ require([
 					for(var i in relyArr){
 						rely+='<script src="'+relyArr[i]+'"></script>';
 					}
-					$(".p-pic ol").html(
-						rely+"\n"+
-						'<style>'+"\n"+data._style_+"\n"+'</style>'
-						+"\n"+'<html>'+"\n"+data._html_+"\n"+'</html>'
-						+"\n"+'<script>'+"\n"+data._script_+"\n"+'</script>');
 					$(".dataTrans").text(
 						rely+"\n"+
 						'<style>'+"\n"+data._style_+"\n"+'</style>'
 						+"\n"+'<html>'+"\n"+data._html_+"\n"+'</html>'
-						+"\n"+'<script>'+"\n"+data._script_+"\n"+'</script>');
+						+"\n"+'<script>'+"\n"+data._script_+"\n"+'</script>'
+					);
+					$(".p-pic ul ol").html(
+						'<iframe id="iframe-demo" src="../../tpls/extra/iframe.html"></iframe>'
+					);
 				}
 			});
 		});
 		$(".demos-wraper .tabs a").eq(0).click();
 
 		//代码复制
-		fModule.copyCode();
+		setTimeout(function(){
+			fModule.copyCode();
+		},100);
+		
 
 		//效果展示
 		fModule.display();
@@ -57,3 +59,30 @@ require([
 	window.fModule=fModule;
 
 });
+
+
+
+
+
+
+
+
+
+// 					$(".p-pic ul ol").html(
+// '<iframe id="iframe-demo">'
+// +'<!DOCTYPE HTML>'
+// +'<html lang="zh-cn">'
+// +'<head>'
+// 	+'<meta charset="utf-8">'
+// 	+'<title>DEMO展示</title>'
+// 	+'<link rel="stylesheet" href="../../css/common.css" />'
+// +'</head>'
+// +'<body>'
+// 	+rely+"\n"
+// 	+'<style>'+"\n"+data._style_+"\n"+'</style>'
+// 	+"\n"+'<html>'+"\n"+data._html_+"\n"+'</html>'
+// 	+"\n"+'<script>'+"\n"+data._script_+"\n"+'</script>'
+// +'</body>'
+// +'</html>'
+// +'</iframe>'
+// 					);

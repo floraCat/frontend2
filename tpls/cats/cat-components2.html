@@ -16,7 +16,7 @@
 
 
     <!--插件导航-->
-	<div class="p-tabs" data-rs="rs-nav"></div>
+	<div class="p-tabs" data-rs="rs-nav" style="width: 395px"></div>
 	<script data-tpl="tpl-nav" type="text/x-jsrender">
 		{{for _nav_}}
 	    <li>{{:_zh_}}</li>
@@ -30,7 +30,7 @@
     		{{for _cat_._widget_}}
             <li data-trans="{{:_title_}}">
                 <a class="img"><img src="../../images/3.jpg" alt="" /></a>
-                <h4><a class="A">{{:_zh_}}</a></h4>
+                <h4><a class="A">{{:_zh_}} <i>{{:_title_}}</i></a></h4>
             </li>
             {{/for}}
         </ul>
@@ -38,7 +38,7 @@
     		{{for _cat_._component_}}
             <li data-trans="{{:_title_}}">
                 <a class="img"><img src="../../images/3.jpg" alt="" /></a>
-                <h4><a class="A">{{:_zh_}}</a></h4>
+                <h4><a class="A">{{:_zh_}} <i>{{:_title_}}</i></a></h4>
             </li>
             {{/for}}
         </ul>
@@ -46,7 +46,7 @@
             {{for _cat_._group_}}
             <li data-trans="{{:_title_}}">
                 <a class="img"><img src="../../images/3.jpg" alt="" /></a>
-                <h4><a class="A">{{:_zh_}}</a></h4>
+                <h4><a class="A">{{:_zh_}} <i>{{:_title_}}</i></a></h4>
             </li>
             {{/for}}
         </ul>
