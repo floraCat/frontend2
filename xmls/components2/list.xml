@@ -35,6 +35,10 @@
 	</_g-hd_>
 	<_p-label_>
 		<_item_><_title_>p-label-010</_title_><_zh_>分类列表</_zh_></_item_>
+		<_item_><_title_>p-label-020</_title_><_zh_>分类列表</_zh_></_item_>
+		<_item_><_title_>p-label-030</_title_><_zh_>分类列表</_zh_></_item_>
+		<_item_><_title_>p-label-040</_title_><_zh_>分类列表</_zh_></_item_>
+		<_item_><_title_>p-label-050</_title_><_zh_>分类列表</_zh_></_item_>
 <!-- 		<_item_><_title_>p-label-020</_title_><_zh_>分类列表</_zh_></_item_>
 		<_item_><_title_>p-label-030</_title_><_zh_>分类列表</_zh_></_item_>
 		<_item_><_title_>p-label-040</_title_><_zh_>分类列表</_zh_></_item_>
@@ -49,28 +53,22 @@
 		<_item_><_title_>p-label-130</_title_><_zh_>分类列表</_zh_></_item_>
 		<_item_><_title_>p-label-131</_title_><_zh_>图片垂直居中</_zh_></_item_> -->
 	</_p-label_>
-	<_p-ttls_>
-		<_item_><_title_>p-ttls-010</_title_><_zh_>标题列表</_zh_></_item_>
-		<_item_><_title_>p-ttls-020</_title_><_zh_>标题列表</_zh_></_item_>
-		<_item_><_title_>p-ttls-030</_title_><_zh_>标题列表</_zh_></_item_>
-		<_item_><_title_>p-ttls-040</_title_><_zh_>标题列表</_zh_></_item_>
-		<_item_><_title_>p-ttls-050</_title_><_zh_>标题列表</_zh_></_item_>
-		<_item_><_title_>p-ttls-060</_title_><_zh_>标题列表</_zh_></_item_>
-	</_p-ttls_>
-	<_p-list_>
-		<_item_><_title_>p-list-010</_title_><_zh_>图文列表</_zh_></_item_>
-		<_item_><_title_>p-list-011</_title_><_zh_>图文列表</_zh_></_item_>
-		<_item_><_title_>p-list-020</_title_><_zh_>图文列表(四周居中)</_zh_></_item_>
-		<_item_><_title_>p-list-021</_title_><_zh_>图文列表(四周居中)</_zh_></_item_>
-		<_item_><_title_>p-list-030</_title_><_zh_>图文列表</_zh_></_item_>
-		<_item_><_title_>p-list-031</_title_><_zh_>图文列表</_zh_></_item_>
-		<_item_><_title_>p-list-050</_title_><_zh_>图文列表</_zh_></_item_>
-		<_item_><_title_>p-list-060</_title_><_zh_>图文列表</_zh_></_item_>
-		<_item_><_title_>p-list-080</_title_><_zh_>图文列表</_zh_></_item_>
-		<_item_><_title_>p-list-090</_title_><_zh_>图文列表</_zh_></_item_>
-		<_item_><_title_>p-list-100</_title_><_zh_>图文列表</_zh_></_item_>
-		<_item_><_title_>p-list-110</_title_><_zh_>图文列表</_zh_></_item_>
-	</_p-list_>
+	<_p-title_>
+		<_item_><_title_>p-title-010</_title_><_zh_>标题列表</_zh_></_item_>
+		<_item_><_title_>p-title-020</_title_><_zh_>标题列表</_zh_></_item_>
+		<_item_><_title_>p-title-030</_title_><_zh_>标题列表</_zh_></_item_>
+		<_item_><_title_>p-title-040</_title_><_zh_>标题列表</_zh_></_item_>
+	</_p-title_>
+	<_p-thumbnail_>
+		<_item_><_title_>p-thumbnail-010</_title_><_zh_>图文列表</_zh_></_item_>
+		<_item_><_title_>p-thumbnail-020</_title_><_zh_>图文列表(四周居中)</_zh_></_item_>
+		<_item_><_title_>p-thumbnail-030</_title_><_zh_>图文列表</_zh_></_item_>
+		<_item_><_title_>p-thumbnail-040</_title_><_zh_>图文列表</_zh_></_item_>
+		<_item_><_title_>p-thumbnail-050</_title_><_zh_>图文列表</_zh_></_item_>
+		<_item_><_title_>p-thumbnail-060</_title_><_zh_>图文列表</_zh_></_item_>
+		<_item_><_title_>p-thumbnail-070</_title_><_zh_>图文列表</_zh_></_item_>
+		<_item_><_title_>p-thumbnail-080</_title_><_zh_>图文列表</_zh_></_item_>
+	</_p-thumbnail_>
 	<_p-special_>
 		<_item_><_title_>p-special-010</_title_><_zh_>单图文</_zh_></_item_>
 		<_item_><_title_>p-special-011</_title_><_zh_>单图文</_zh_></_item_>
