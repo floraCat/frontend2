@@ -1,1 +1,0 @@
-!function(){"use strict";var S={CXT:"",ROOT:"",HOST:"",JS:"",CSS:"",IMAGES:"",LIB:""};window.Iconfig=S}();

@@ -1,1 +1,0 @@
-require(["jq","common","header"],function(){console.log("列表页")}),define("p_list",function(){});
